@@ -44,7 +44,7 @@ class ChannelScreen extends StatelessWidget {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20.r))),
                           child: CustomText(
-                            text: channelController.countryList[index].name ?? '',
+                            text: "${channelController.countryList[index].flag ?? ''} ${channelController.countryList[index].name ?? ''}",
                             color: whiteColor,
                           ),
                         ),
