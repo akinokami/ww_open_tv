@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/controller/news_controller.dart';
+import 'package:ww_open_tv/screens/channels/player_screen.dart';
 
 import '../../constants/color_const.dart';
 import '../../custom_widgets/custom_text.dart';
@@ -55,35 +56,34 @@ class NewsScreen extends StatelessWidget {
             ),
             Expanded(
               child: Obx(
-                () => ListView.builder(
+                () => GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 10.w,
+                      mainAxisSpacing: 10.h,
+                      childAspectRatio: 2),
                   itemCount: newsCountroller.filterList.length,
                   itemBuilder: (context, index) {
-                    return Container(
-                      margin: EdgeInsets.only(top: 10.h),
-                      padding: EdgeInsets.all(10.w),
-                      decoration: BoxDecoration(
-                          color: cardColor,
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(10.r))),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          CustomText(
+                    return GestureDetector(
+                      onTap: () {
+                       //some code here
+                        Get.to(PlayerScreen(url: newsCountroller.filterList[index].url??""));
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(top: 10.h),
+                        padding: EdgeInsets.all(10.w),
+                        decoration: BoxDecoration(
+                            color: cardColor,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10.r))),
+                        child: Center(
+                          child: CustomText(
                             text: newsCountroller.filterList[index].name ?? '',
                             color: whiteColor,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.bold,
                           ),
-                          SizedBox(
-                            height: 5.h,
-                          ),
-                          CustomText(
-                            text:
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc ultrices ultricies. Donec nec odio vitae nunc ultrices ultricies.',
-                            color: whiteColor,
-                            fontSize: 14.sp,
-                          ),
-                        ],
+                        ),
                       ),
                     );
                   },

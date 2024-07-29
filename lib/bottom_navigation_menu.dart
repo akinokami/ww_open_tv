@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:ww_open_tv/screens/news/news_screen.dart';
+import 'package:ww_open_tv/screens/channels/channels_screen.dart';
 import 'constants/color_const.dart';
 import 'controller/bottom_nav_controller.dart';
 import 'custom_widgets/custom_card.dart';
@@ -77,7 +77,7 @@ class BottomNavigationMenu extends StatelessWidget {
       body: Obx(() => IndexedStack(
             index: bottomNavController.tabIndex.value,
             children: [
-              NewsScreen(),
+              const NewsScreen(),
               Center(
                   child: CustomTextField(
                 controller: TextEditingController(),
