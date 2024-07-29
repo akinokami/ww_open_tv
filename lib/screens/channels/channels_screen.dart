@@ -70,8 +70,8 @@ class ChannelScreen extends StatelessWidget {
                     return GestureDetector(
                       onTap: () {
                         //some code here
-                        Get.to(PlayerScreen(
-                            url:
+                        Get.to(() => PlayerScreen(
+                            streammingUrl:
                                 channelController.filterList[index].url ?? ""));
                       },
                       child: Container(

@@ -709,7 +709,7 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'af',
-    name: ',BB 24',
+    name: 'BB 24',
     url: 'https://edge15.vedge.infomaniak.com/livecast/ik:bb24-1/playlist.m3u8',
     imageUrl: '',
   ),
