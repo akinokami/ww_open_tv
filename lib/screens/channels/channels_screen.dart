@@ -31,6 +31,8 @@ class ChannelScreen extends StatelessWidget {
                           channelController.selectedIndex.value = index;
                           channelController.selectedCountry.value =
                               channelController.countryList[index];
+                          channelController.filterChannel(
+                              channelController.countryList[index].code ?? '');
                         },
                         child: Container(
                           margin: EdgeInsets.symmetric(horizontal: 5.w),
@@ -44,7 +46,8 @@ class ChannelScreen extends StatelessWidget {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20.r))),
                           child: CustomText(
-                            text: "${channelController.countryList[index].flag ?? ''} ${channelController.countryList[index].name ?? ''}",
+                            text:
+                                "${channelController.countryList[index].flag ?? ''} ${channelController.countryList[index].name ?? ''}",
                             color: whiteColor,
                           ),
                         ),
@@ -66,8 +69,10 @@ class ChannelScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                       //some code here
-                        Get.to(PlayerScreen(url: channelController.filterList[index].url??""));
+                        //some code here
+                        Get.to(PlayerScreen(
+                            url:
+                                channelController.filterList[index].url ?? ""));
                       },
                       child: Container(
                         margin: EdgeInsets.only(top: 10.h),
@@ -78,7 +83,8 @@ class ChannelScreen extends StatelessWidget {
                                 BorderRadius.all(Radius.circular(10.r))),
                         child: Center(
                           child: CustomText(
-                            text: channelController.filterList[index].name ?? '',
+                            text:
+                                channelController.filterList[index].name ?? '',
                             color: whiteColor,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.bold,

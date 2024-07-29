@@ -29,7 +29,8 @@ class ChannelController extends GetxController {
 
   void filterChannel(String countryCode) {
     filterList.value = channelList
-        .where((element) => element.countryCode == countryCode)
+        .where((element) =>
+            element.countryCode?.toLowerCase() == countryCode.toLowerCase())
         .toList();
   }
 }
