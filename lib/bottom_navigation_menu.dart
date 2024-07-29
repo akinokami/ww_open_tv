@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:ww_open_tv/screens/news/news_screen.dart';
 import 'constants/color_const.dart';
 import 'controller/bottom_nav_controller.dart';
 import 'custom_widgets/custom_card.dart';
@@ -18,7 +18,7 @@ class BottomNavigationMenu extends StatelessWidget {
       fontSize: 11.sp);
 
   final TextStyle selectedLabelStyle = TextStyle(
-      color:secondaryColor, fontWeight: FontWeight.w500, fontSize: 11.sp);
+      color: secondaryColor, fontWeight: FontWeight.w500, fontSize: 11.sp);
 
   buildBottomNavigationMenu(context, landingPageController) {
     return Obx(() => MediaQuery(
@@ -30,7 +30,7 @@ class BottomNavigationMenu extends StatelessWidget {
             showSelectedLabels: true,
             onTap: landingPageController.changeTabIndex,
             currentIndex: landingPageController.tabIndex.value,
-            backgroundColor: const Color(0xff1B8B00),
+            backgroundColor: primaryColor,
             unselectedItemColor: Colors.white.withOpacity(0.5),
             selectedItemColor: secondaryColor,
             unselectedLabelStyle: unselectedLabelStyle,
@@ -41,23 +41,7 @@ class BottomNavigationMenu extends StatelessWidget {
                   Icons.home_filled,
                   size: 18.w,
                 ),
-                label: 'Home',
-                backgroundColor: primaryColor,
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.account_box,
-                  size: 18.w,
-                ),
-                label: 'Profile',
-                backgroundColor: primaryColor,
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.history,
-                  size: 18.w,
-                ),
-                label: 'History',
+                label: 'News',
                 backgroundColor: primaryColor,
               ),
               BottomNavigationBarItem(
@@ -87,17 +71,23 @@ class BottomNavigationMenu extends StatelessWidget {
         Get.put(BottomNavController(), permanent: false);
     return SafeArea(
         child: Scaffold(
-          backgroundColor: primaryColor,
+      backgroundColor: primaryColor,
       bottomNavigationBar:
           buildBottomNavigationMenu(context, bottomNavController),
       body: Obx(() => IndexedStack(
             index: bottomNavController.tabIndex.value,
-            children:  [
-              const Center(child: CustomText(text: "Menu 1")),
-              Center(child: CustomTextField(controller: TextEditingController(),hintText: "Menu 2",)),
-              Center(child: CustomTextButton(text: "Menu 3", onPressed: () {  },)),
-              Center(child: CustomCard(widget: const CustomText(text: "Menu 4"),color: secondaryColor,)),
-              const Center(child: CustomText(text: "Menu 5")),
+            children: [
+              NewsScreen(),
+              Center(
+                  child: CustomTextField(
+                controller: TextEditingController(),
+                hintText: "Menu 2",
+              )),
+              Center(
+                  child: CustomTextButton(
+                text: "Menu 3",
+                onPressed: () {},
+              )),
             ],
           )),
     ));
