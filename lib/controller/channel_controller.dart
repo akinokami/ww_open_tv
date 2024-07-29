@@ -7,7 +7,7 @@ import 'package:ww_open_tv/models/country_model.dart';
 
 import '../data/channel_m3u8.dart';
 
-class NewsController extends GetxController {
+class ChannelController extends GetxController {
   final selectedIndex = 0.obs;
   RxList<CountryModel> countryList = <CountryModel>[].obs;
   Rx<CountryModel> selectedCountry =

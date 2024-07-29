@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:ww_open_tv/controller/news_controller.dart';
+import 'package:ww_open_tv/controller/channel_controller.dart';
 import 'package:ww_open_tv/screens/channels/player_screen.dart';
 
 import '../../constants/color_const.dart';
 import '../../custom_widgets/custom_text.dart';
 
-class NewsScreen extends StatelessWidget {
-  const NewsScreen({super.key});
+class ChannelScreen extends StatelessWidget {
+  const ChannelScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final newsCountroller = Get.put(NewsController());
+    final channelController = Get.put(ChannelController());
     return Scaffold(
         backgroundColor: primaryColor,
         body: Column(
@@ -22,15 +22,15 @@ class NewsScreen extends StatelessWidget {
                 height: 28.h,
                 child: ListView.builder(
                   shrinkWrap: true,
-                  itemCount: newsCountroller.countryList.length,
+                  itemCount: channelController.countryList.length,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Obx(
                       () => GestureDetector(
                         onTap: () {
-                          newsCountroller.selectedIndex.value = index;
-                          newsCountroller.selectedCountry.value =
-                              newsCountroller.countryList[index];
+                          channelController.selectedIndex.value = index;
+                          channelController.selectedCountry.value =
+                              channelController.countryList[index];
                         },
                         child: Container(
                           margin: EdgeInsets.symmetric(horizontal: 5.w),
@@ -38,13 +38,13 @@ class NewsScreen extends StatelessWidget {
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                               color:
-                                  newsCountroller.selectedIndex.value == index
+                                  channelController.selectedIndex.value == index
                                       ? secondaryColor
                                       : greyColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20.r))),
                           child: CustomText(
-                            text: newsCountroller.countryList[index].name ?? '',
+                            text: channelController.countryList[index].name ?? '',
                             color: whiteColor,
                           ),
                         ),
@@ -62,12 +62,12 @@ class NewsScreen extends StatelessWidget {
                       crossAxisSpacing: 10.w,
                       mainAxisSpacing: 10.h,
                       childAspectRatio: 2),
-                  itemCount: newsCountroller.filterList.length,
+                  itemCount: channelController.filterList.length,
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
                        //some code here
-                        Get.to(PlayerScreen(url: newsCountroller.filterList[index].url??""));
+                        Get.to(PlayerScreen(url: channelController.filterList[index].url??""));
                       },
                       child: Container(
                         margin: EdgeInsets.only(top: 10.h),
@@ -78,7 +78,7 @@ class NewsScreen extends StatelessWidget {
                                 BorderRadius.all(Radius.circular(10.r))),
                         child: Center(
                           child: CustomText(
-                            text: newsCountroller.filterList[index].name ?? '',
+                            text: channelController.filterList[index].name ?? '',
                             color: whiteColor,
                             fontSize: 16.sp,
                             fontWeight: FontWeight.bold,

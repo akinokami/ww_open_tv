@@ -77,7 +77,7 @@ class BottomNavigationMenu extends StatelessWidget {
       body: Obx(() => IndexedStack(
             index: bottomNavController.tabIndex.value,
             children: [
-              const NewsScreen(),
+              const ChannelScreen(),
               Center(
                   child: CustomTextField(
                 controller: TextEditingController(),
