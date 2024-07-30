@@ -9,6 +9,7 @@ import '../data/channel_m3u8.dart';
 
 class ChannelController extends GetxController {
   final selectedIndex = 0.obs;
+  final selectedChannelList = <ChannelModel>[].obs;
   RxList<CountryModel> countryList = <CountryModel>[].obs;
   Rx<CountryModel> selectedCountry =
       CountryModel(name: 'Afghanistan', code: 'AF', flag: "🇦🇫").obs;
@@ -33,6 +34,16 @@ class ChannelController extends GetxController {
             element.countryCode?.toLowerCase() == countryCode.toLowerCase())
         .toList();
   }
+void addToFavorite(ChannelModel channel) {
+    if(selectedChannelList.contains(channel)){
+      selectedChannelList.remove(channel);
+      return;
+    }else{
+      selectedChannelList.add(channel);
+    }
+
+  }
+
 
 
 }
