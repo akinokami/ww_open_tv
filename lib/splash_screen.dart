@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
 import 'package:ww_open_tv/constants/dimen_const.dart';
 import 'package:ww_open_tv/custom_widgets/custom_text.dart';
@@ -15,18 +16,18 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
-        color: primaryColor,
+        color: Colors.white,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const FlutterLogo(size: 100.0),
+            Image.asset("assets/images/launcher.webp",width: 100.w,height: 100.h,),
             kSizedBoxH30,
-            const CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+             CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(secondaryColor),
             ),
             kSizedBoxH30,
-            const CustomText(text: 'Please wait......', color: Colors.white),
+            const CustomText(text: 'Please wait......', ),
           ],
         ),
       ),

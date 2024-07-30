@@ -1,15 +1,115 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:ww_open_tv/controller/channel_controller.dart';
+import 'package:ww_open_tv/custom_widgets/custom_cache_network_image.dart';
 import 'package:ww_open_tv/screens/channels/player_screen.dart';
 
 import '../../constants/color_const.dart';
+import '../../controller/language_controller.dart';
 import '../../custom_widgets/custom_text.dart';
+import '../../utils/global.dart';
 
-class ChannelScreen extends StatelessWidget {
+class ChannelScreen extends StatefulWidget {
   const ChannelScreen({super.key});
 
+  @override
+  State<ChannelScreen> createState() => _ChannelScreenState();
+}
+
+class _ChannelScreenState extends State<ChannelScreen> {
+  bool isAccepted = false;
+  bool isChecked = false;
+  String first = '';
+final languageController = Get.put(LanguageController());
+  @override
+  void initState() {
+    super.initState();
+    final box = GetStorage();
+    first = box.read('first') ?? '';
+
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (first == '') {
+        return showDialog(
+          barrierColor: Colors.black.withOpacity(0.5),
+          context: context,
+          barrierDismissible: false,
+          builder: (ctx) => Builder(builder: (context) {
+            return StatefulBuilder(
+              builder: (context, StateSetter setState) {
+                return AlertDialog(
+                  surfaceTintColor: whiteColor,
+                  backgroundColor: whiteColor,
+                  title: const CustomText(
+
+                    text: 'Privacy Policy',
+                    fontWeight: FontWeight.w500,
+                  ),
+                  content: SizedBox(
+
+                    height: MediaQuery.of(context).size.height * 0.70,
+                    child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Text(languageController.language.value=="en"?Global.policyEn:Global.policyCn, style: TextStyle(fontSize: 12)),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Checkbox(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)),
+                                  activeColor: Colors.green,
+                                  side:  BorderSide(
+                                    width: 1.5,
+                                    color:
+                                    isChecked ? Colors.green : Colors.black,
+                                  ),
+
+                                  value: isChecked,
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      isChecked = value!;
+                                      if (isChecked) {
+                                        isAccepted = true;
+                                      } else {
+                                        isAccepted = false;
+                                      }
+                                    });
+                                  },
+                                ),
+                                CustomText(
+                                  text: 'I agreed to the Privacy Policy.',
+                                  fontSize: 12.sp,
+                                )
+                              ],
+                            ),
+                            MaterialButton(
+                              disabledColor: Colors.grey,
+                              color: isAccepted ? secondaryColor : Colors.black,
+                              onPressed: isAccepted
+                                  ? () {
+                                final box = GetStorage();
+                                box.write('first', 'notfirst');
+                                Navigator.pop(context);
+                              }
+                                  : null,
+                              child: CustomText(
+                                text: 'Accept', fontSize: 14.sp,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        )),
+                  ),
+                );
+              },
+            );
+          }),
+        );
+      }
+    });
+  }
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
@@ -69,7 +169,7 @@ class ChannelScreen extends StatelessWidget {
                                   crossAxisCount: 2,
                                   crossAxisSpacing: 0.w,
                                   mainAxisSpacing: 0.h,
-                                  childAspectRatio: 1.5),
+                                  childAspectRatio: 1.4),
                           itemCount: channelController.filterList.length,
                           itemBuilder: (context, index) {
                             return GestureDetector(
@@ -83,7 +183,7 @@ class ChannelScreen extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
-                                  padding: EdgeInsets.all(10.w),
+                                  padding: EdgeInsets.all(5.w),
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.all(
@@ -122,7 +222,7 @@ class ChannelScreen extends StatelessWidget {
                                                                 .name)
                                                     ? Colors.red
                                                     : greyColor,
-                                                size: 15.w,
+                                                size: 20.w,
                                               ),
                                             ),
                                           )),
@@ -136,15 +236,15 @@ class ChannelScreen extends StatelessWidget {
                                       // )),
                                       Center(
                                         child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceEvenly,
                                           children: [
-                                            Image.network(
-                                              channelController
-                                                      .filterList[index]
-                                                      .imageUrl ??
-                                                  '',
-                                              width: 50.w,
-                                              height: 50.h,
-                                            ),
+                                            CustomFastCacheNetworkImage(url: channelController
+                                                .filterList[index]
+                                                .imageUrl ??
+                                                '',  width: 48.w,
+                                              height: 48.h,),
+
                                             CustomText(
                                               text: channelController
                                                       .filterList[index].name ??
