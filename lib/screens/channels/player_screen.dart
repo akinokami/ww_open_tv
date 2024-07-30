@@ -13,19 +13,29 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   late VideoPlayerController videoPlayerController;
   late ChewieController chewieController;
+  bool isLoading = true;
 
   @override
   void initState() {
+    super.initState();
     videoPlayerController =
-        VideoPlayerController.networkUrl(Uri.parse(widget.streammingUrl));
-    videoPlayerController.initialize();
+        VideoPlayerController.networkUrl(Uri.parse(widget.streammingUrl))
+          ..initialize().then((_) {
+            setState(() {
+              isLoading = false;
+            });
+          }).catchError((error) {
+            setState(() {
+              isLoading = false;
+            });
+          });
+
     chewieController = ChewieController(
       videoPlayerController: videoPlayerController,
       autoPlay: true,
       looping: true,
       aspectRatio: 16 / 9,
     );
-    super.initState();
   }
 
   @override
@@ -38,9 +48,13 @@ class _PlayerScreenState extends State<PlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Chewie(
-        controller: chewieController,
-      ),
+      body: isLoading
+          ? const Center(
+              child: CircularProgressIndicator(),
+            )
+          : Chewie(
+              controller: chewieController,
+            ),
     );
   }
 }

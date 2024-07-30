@@ -59,41 +59,47 @@ class ChannelScreen extends StatelessWidget {
             ),
             Expanded(
               child: Obx(
-                () => GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 10.w,
-                      mainAxisSpacing: 10.h,
-                      childAspectRatio: 2),
-                  itemCount: channelController.filterList.length,
-                  itemBuilder: (context, index) {
-                    return GestureDetector(
-                      onTap: () {
-                        //some code here
-                        Get.to(() => PlayerScreen(
-                            streammingUrl:
-                                channelController.filterList[index].url ?? ""));
-                      },
-                      child: Container(
-                        margin: EdgeInsets.only(top: 10.h),
-                        padding: EdgeInsets.all(10.w),
-                        decoration: BoxDecoration(
-                            color: cardColor,
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(10.r))),
-                        child: Center(
-                          child: CustomText(
-                            text:
-                                channelController.filterList[index].name ?? '',
-                            color: whiteColor,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                () => channelController.filterList.isNotEmpty
+                    ? GridView.builder(
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 10.w,
+                            mainAxisSpacing: 10.h,
+                            childAspectRatio: 2),
+                        itemCount: channelController.filterList.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              //some code here
+                              Get.to(() => PlayerScreen(
+                                  streammingUrl:
+                                      channelController.filterList[index].url ??
+                                          ""));
+                            },
+                            child: Container(
+                              margin: EdgeInsets.only(top: 10.h),
+                              padding: EdgeInsets.all(10.w),
+                              decoration: BoxDecoration(
+                                  color: cardColor,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10.r))),
+                              child: Center(
+                                child: CustomText(
+                                  text: channelController
+                                          .filterList[index].name ??
+                                      '',
+                                  color: whiteColor,
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      )
+                    : Center(
+                        child: CustomText(text: 'no_data_found'.tr),
                       ),
-                    );
-                  },
-                ),
               ),
             ),
           ],

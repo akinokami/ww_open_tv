@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/screens/channels/channels_screen.dart';
+import 'package:ww_open_tv/screens/search/search_screen.dart';
+import 'package:ww_open_tv/screens/settings/settings_screen.dart';
 import 'constants/color_const.dart';
 import 'controller/bottom_nav_controller.dart';
-import 'custom_widgets/custom_card.dart';
-import 'custom_widgets/custom_text.dart';
-import 'custom_widgets/custom_text_button.dart';
 import 'custom_widgets/custom_text_field.dart';
 
 class BottomNavigationMenu extends StatelessWidget {
@@ -38,10 +37,10 @@ class BottomNavigationMenu extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.home_filled,
+                  Icons.newspaper,
                   size: 18.w,
                 ),
-                label: 'News',
+                label: 'news'.tr,
                 backgroundColor: primaryColor,
               ),
               BottomNavigationBarItem(
@@ -49,7 +48,7 @@ class BottomNavigationMenu extends StatelessWidget {
                   Icons.search,
                   size: 18.w,
                 ),
-                label: 'Search',
+                label: 'search'.tr,
                 backgroundColor: primaryColor,
               ),
               BottomNavigationBarItem(
@@ -57,7 +56,7 @@ class BottomNavigationMenu extends StatelessWidget {
                   Icons.settings,
                   size: 18.w,
                 ),
-                label: 'Settings',
+                label: 'settings'.tr,
                 backgroundColor: primaryColor,
               ),
             ],
@@ -76,18 +75,10 @@ class BottomNavigationMenu extends StatelessWidget {
           buildBottomNavigationMenu(context, bottomNavController),
       body: Obx(() => IndexedStack(
             index: bottomNavController.tabIndex.value,
-            children: [
-              const ChannelScreen(),
-              Center(
-                  child: CustomTextField(
-                controller: TextEditingController(),
-                hintText: "Menu 2",
-              )),
-              Center(
-                  child: CustomTextButton(
-                text: "Menu 3",
-                onPressed: () {},
-              )),
+            children: const [
+              ChannelScreen(),
+              SearchScreen(),
+              SettingsScreen(),
             ],
           )),
     ));
