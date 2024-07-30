@@ -1,4 +1,5 @@
 import 'package:ww_open_tv/models/channel_model.dart';
+import 'package:ww_open_tv/models/country_model.dart';
 
 List<ChannelModel> channelList = [
   //Afghanistan af
@@ -32,12 +33,6 @@ List<ChannelModel> channelList = [
     url: 'https://dunyanhls.wns.live/hls/stream.m3u8',
     imageUrl: '',
   ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'Eslah TV',
-    url: 'https://eslahtvhls.wns.live/hls/stream.m3u8',
-    imageUrl: '',
-  ),
 
   //Albania
 
@@ -45,12 +40,6 @@ List<ChannelModel> channelList = [
     countryCode: 'al',
     name: 'AlbKanale Music TV',
     url: 'https://albportal.net/albkanalemusic.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'al',
-    name: 'CNA',
-    url: 'https://live1.mediadesk.al/cnatvlive.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -95,7 +84,7 @@ List<ChannelModel> channelList = [
     countryCode: 'ao',
     name: 'Muzangala TV',
     url:
-    'https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8',
+        'https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -118,7 +107,7 @@ List<ChannelModel> channelList = [
     countryCode: 'ar',
     name: 'Aire de Santa Fe',
     url:
-    'https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8',
+        'https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -183,114 +172,57 @@ List<ChannelModel> channelList = [
   //Australia
   ChannelModel(
     countryCode: 'au',
-    name: '2GB Sydney',
-    url: 'https://2gblive.akamaized.net/hls/live/2033805/2GB/index.m3u8',
+    name: 'ABC Me',
+    url: 'https://c.mjh.nz/abc-me.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'au',
-    name: '3AW Melbourne',
-    url: 'https://3awlive.akamaized.net/hls/live/2032295/3AW/index.m3u8',
+    name: 'Bloomberg TV',
+    url: 'https://bloomberg.com/media-manifest/streams/aus.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'au',
-    name: 'Tamil TV',
+    name: 'Channel 44',
+    url: 'https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'au',
+    name: 'Hope Channel',
     url:
-        'https://6n3yogbnd9ok-hls-live.5centscdn.com/threetamil/d0dbe915091d400bd8ee7f27f0791303.sdp/index.m3u8',
+        'https://videodelivery.net/9fb3596948ddf463fde0ec4b85625b24/manifest/video.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'au',
-    name: '6PR Perth',
-    url: 'https://6prlive.akamaized.net/hls/live/2033806/6PR/index.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'au',
-    name: '9Gem',
+    name: 'Racing',
     url:
-        'https://9now-livestreams.akamaized.net/hls/live/2008311/gem-syd/master.m3u8',
+        'https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index1500.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'au',
-    name: '9Go!',
+    name: 'Ticker News',
     url:
-        'https://9now-livestreams.akamaized.net/hls/live/2008312/go-syd/master.m3u8',
+        'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01486-tickernews-tickernewsweb-ono/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'au',
-    name: '9Life',
+    name: 'TVSN',
     url:
-        'https://9now-livestreams.akamaized.net/hls/live/2008313/life-syd/master.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'au',
-    name: '9Rush',
-    url:
-        'https://9now-livestreams.akamaized.net/hls/live/2010626/rush-syd/master.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'au',
-    name: '10 Bold',
-    url: 'https://i.mjh.nz/10bold-nsw.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'au',
-    name: '10 Peach',
-    url: 'https://i.mjh.nz/10peach-nsw.m3u8',
+        'https://tvsnhlslivetest.akamaized.net/hls/live/2034711/TVSN-MSL4/master.m3u8',
     imageUrl: '',
   ),
 
   //Austria
   ChannelModel(
     countryCode: 'at',
-    name: 'Antenne Vorarlberg',
-    url:
-        'https://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
-    name: 'Dorf TV',
-    url: 'https://stream.openplayout.org/hls/dorftv/live.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
-    name: 'FS1 Salzburg',
-    url: 'http://stream.fs1.tv:8080/hls/webstream.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
     name: 'FUEL TV',
     url:
         'https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/fuel-tv/606c2f67-acff-4152-975a-e5bfef54eb61/2.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
-    name: 'GoTV',
-    url: 'https://nstream17.gotv.at:1443/live/gotvlive/manifest.mpd',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
-    name: 'Hitradio Ö3',
-    url:
-        'https://studiocam-oe3.mdn.ors.at/out/u/studiocam_oe3/q6a/manifest_1.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
-    name: 'K19',
-    url: 'https://1853185335.rsc.cdn77.org/K192/tv/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -301,43 +233,32 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'at',
-    name: 'Krone.TV',
-    url: 'https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'at',
     name: 'Kronehit',
     url: 'https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8',
     imageUrl: '',
   ),
+  ChannelModel(
+    countryCode: 'at',
+    name: 'Okto TV',
+    url:
+        'https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'at',
+    name: 'Red Bull TV',
+    url: 'https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'at',
+    name: 'TV 1 Oberösterreich',
+    url:
+        'https://streaming10.huberwebmedia.at/LiveApp/streams/238985177034727564068269_adaptive.m3u8',
+    imageUrl: '',
+  ),
 
   //Azerbaijan
-  ChannelModel(
-    countryCode: 'az',
-    name: 'Agro TV Azerbaijan',
-    url: 'https://yayin30.haber100.com/live/agrotv2/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'Alvin Channel TV',
-    url:
-        'https://cdn10-alvinchannel.yayin.com.tr/alvinchannel/alvinchannel/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'APA TV',
-    url: 'http://rtmp.apa.tv/@pagroup!23.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'ARB Günəş',
-    url: 'http://149.255.152.199/arbgunes.m3u8',
-    imageUrl: '',
-  ),
   ChannelModel(
     countryCode: 'az',
     name: 'AZ News',
@@ -350,71 +271,14 @@ List<ChannelModel> channelList = [
     url: 'https://str.yodacdn.net/aztv/index.m3u8',
     imageUrl: '',
   ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'Azad TV',
-    url: 'http://85.132.81.184:8080/atv/index.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'Baku TV',
-    url: 'https://rtmp.baku.tv/live/bakutv_720p.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'az',
-    name: 'EL TV',
-    url: 'http://85.132.53.162:1935/live/eltv/playlist.m3u8',
-    imageUrl: '',
-  ),
 
   //Bahamas
-  ChannelModel(
-    countryCode: 'bs',
-    name: 'Island Luck TV',
-    url:
-        'https://cdn-edge1.streamcomedia.com/abr_islandluck-ott/abr-islandluck-ott_streams/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'bs',
-    name: 'ZNS TV',
-    url:
-        'https://cloud.streamcomedia.com/znstv/smil:znstv_streams.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
 
   //Bahrain
 
   //Bangladesh
   ChannelModel(
     countryCode: 'bd',
-    name: 'Asian TV',
-    url: 'https://mtlivestream.site/asian/ytlive/index.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'bd',
-    name: 'ATN Bangla',
-    url: 'http://103.81.104.118/hls/stream17.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'bd',
-    name: 'Channel S',
-    url:
-        'https://amigofx.com:1936/channelsreporter/channelsreporter/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'bd',
-    name: 'E Ten TV',
-    url: 'https://iptvbd.live/test/1080.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'af',
     name: 'Ekushey TV',
     url: 'https://ekusheyserver.com/etvlivesn.m3u8',
     imageUrl: '',
@@ -431,40 +295,13 @@ List<ChannelModel> channelList = [
   //Belarus
   ChannelModel(
     countryCode: 'by',
-    name: 'Беларусь 1',
-    url:
-        'https://edge60.dc.beltelecom.by/ngtrk/smil:belarus1.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'by',
-    name: 'Беларусь 2',
-    url:
-        'https://edge60.dc.beltelecom.by/ngtrk/smil:belarus2.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'by',
-    name: 'Беларусь 3',
-    url:
-        'https://edge60.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8',
+    name: 'СТБ',
+    url: 'https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8',
     imageUrl: '',
   ),
 
   //Belgium
-  ChannelModel(
-    countryCode: 'be',
-    name: 'ACTV',
-    url:
-        'https://tvlocales-live.freecaster.com/live/95d2f733-1bc2-4bd5-9b96-c53ed3fc450f/95d2f733-1bc2-4bd5-9b96-c53ed3fc450f.isml/master.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'be',
-    name: 'ATV',
-    url: 'https://live.zendzend.com/streams/29375_107244/playlist.m3u8',
-    imageUrl: '',
-  ),
+
   ChannelModel(
     countryCode: 'be',
     name: 'Bel RTL',
@@ -480,34 +317,35 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'be',
-    name: 'Belgian Federal Parliament',
-    url: 'http://livestream.parolis.be:1935/live/PLN_NL/playlist.m3u8',
+    name: 'LN24',
+    url: 'https://live-ln24.digiteka.com/1911668011/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'be',
-    name: 'Bouke',
+    name: 'Q-Music',
+    url: 'https://dpp-streamlive-plain.medialaancdn.be/qmusic/plain/hls.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'be',
+    name: 'Stêrk TV',
+    url: 'https://muzkurd.com/sterktv/sterk/playlist.m3u8',
+    imageUrl: '',
+  ),
+
+  ChannelModel(
+    countryCode: 'be',
+    name: 'VTM',
     url:
-        'https://tvlocales-live.freecaster.com/live/95d2f70d-9229-478b-9aed-bc4fa220316d/95d2f70d-9229-478b-9aed-bc4fa220316d.isml/master.m3u8',
+        'https://dpp-live-events.medialaancdn.be/events/hls/aes/webstream1.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'be',
-    name: 'BX1',
-    url: 'https://59959724487e3.streamlock.net/stream/live/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'be',
-    name: 'Canal Zoom',
+    name: 'VTM 2',
     url:
-        'https://tvlocales-live.freecaster.com/live/95d2e3af-5ab8-45a9-9dc9-f544d006b5d5/95d2e3af-5ab8-45a9-9dc9-f544d006b5d5.isml/master.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'City Music TV',
-    url: 'https://5592f056abba8.streamlock.net/citytv/citytv/playlist.m3u8',
+        'https://dpp-live-events.medialaancdn.be/events/hls/aes/webstream3.m3u8',
     imageUrl: '',
   ),
 
@@ -518,18 +356,6 @@ List<ChannelModel> channelList = [
     url: 'https://kalends.anl.bz/localchannels/channel7.stream/playlist.m3u8',
     imageUrl: '',
   ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'Krem TV',
-    url: 'https://kalends.anl.bz/localchannels/kremtel.stream/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'Love Television',
-    url: 'https://kalends.anl.bz/localchannels/lovetel.stream/playlist.m3u8',
-    imageUrl: '',
-  ),
 
   //Benin
   ChannelModel(
@@ -538,14 +364,9 @@ List<ChannelModel> channelList = [
     url: 'https://stream01.adotv-fm.bj/ado-tv-live/index.m3u8',
     imageUrl: '',
   ),
+
   ChannelModel(
-    countryCode: 'af',
-    name: 'BB 24',
-    url: 'https://edge15.vedge.infomaniak.com/livecast/ik:bb24-1/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'af',
+    countryCode: 'bj',
     name: 'Bénin Web TV',
     url: 'https://vdo.pro-fhi.net:3244/stream/play.m3u8',
     imageUrl: '',
@@ -858,12 +679,6 @@ List<ChannelModel> channelList = [
   ),
 
   //Albania
-  ChannelModel(
-    countryCode: 'af',
-    name: 'A2 CNN',
-    url: 'https://tv.a2news.com/live/smil:a2cnnweb.stream.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
   ChannelModel(
     countryCode: 'cl',
     name: '13 Entretención',
@@ -1792,7 +1607,8 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'lu',
     name: 'Chamber TV',
-    url: 'https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8',
+    url:
+        'https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -1818,7 +1634,8 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'lv',
     name: 'Re TV',
-    url: 'https://retv2132.cloudycdn.services/slive/_definst_/retv_retv_channel_5k7_42787_default_891_hls.smil/playlist.m3u8',
+    url:
+        'https://retv2132.cloudycdn.services/slive/_definst_/retv_retv_channel_5k7_42787_default_891_hls.smil/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -1832,7 +1649,8 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'ly',
     name: 'February Channel',
-    url: 'https://b01c02nl.mediatriple.net/videoonlylive/mtfknklgwrlive/broadcast_5dc818c793576.smil/playlist.m3u8',
+    url:
+        'https://b01c02nl.mediatriple.net/videoonlylive/mtfknklgwrlive/broadcast_5dc818c793576.smil/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -1846,7 +1664,8 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'ma',
     name: '2M Monde',
-    url: 'https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8',
+    url:
+        'https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -1858,7 +1677,8 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'ma',
     name: 'Télé Maroc',
-    url: 'https://api.new.livestream.com/accounts/27130247/events/9197096/live.m3u8',
+    url:
+        'https://api.new.livestream.com/accounts/27130247/events/9197096/live.m3u8',
     imageUrl: '',
   ),
 
@@ -1872,12 +1692,13 @@ List<ChannelModel> channelList = [
   ChannelModel(
     countryCode: 'mc',
     name: 'TV Monaco',
-    url: 'https://production-fast-mcrtv.content.okast.tv/channels/2116dc08-1959-465d-857f-3619daefb66b/b702b2b9-aebd-436c-be69-2118f56f3d86/2024/media.m3u8',
+    url:
+        'https://production-fast-mcrtv.content.okast.tv/channels/2116dc08-1959-465d-857f-3619daefb66b/b702b2b9-aebd-436c-be69-2118f56f3d86/2024/media.m3u8',
     imageUrl: '',
   ),
 
   ///Moldova md
-ChannelModel(
+  ChannelModel(
     countryCode: 'md',
     name: 'Acasa TV',
     url: 'http://hls.protv.md/acasatv/acasatv.m3u8',
@@ -1886,13 +1707,15 @@ ChannelModel(
   ChannelModel(
     countryCode: 'md',
     name: 'Dunia Sinema',
-    url: 'https://unifi-live05.secureswiftcontent.com/UnifiHD/live27-1080FHD.m3u8',
+    url:
+        'https://unifi-live05.secureswiftcontent.com/UnifiHD/live27-1080FHD.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'md',
     name: 'Moldova 1',
-    url: 'https://v0.trm.md/static/streaming-playlists/hls/a7784517-4451-4cea-a159-f42847a2aaf7/master.m3u8',
+    url:
+        'https://v0.trm.md/static/streaming-playlists/hls/a7784517-4451-4cea-a159-f42847a2aaf7/master.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -1902,12 +1725,12 @@ ChannelModel(
     imageUrl: '',
   ),
 
-
   ///Montenegro me
-ChannelModel(
+  ChannelModel(
     countryCode: 'me',
     name: 'Televizija TV7',
-    url: 'http://uk4.streamingpulse.com:1935/tehnikatv777/tehnikatv777/playlist.m3u8',
+    url:
+        'http://uk4.streamingpulse.com:1935/tehnikatv777/tehnikatv777/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -1916,8 +1739,6 @@ ChannelModel(
     url: 'https://teutastream.com/tvteuta/tracks-v1a1/mono.m3u8',
     imageUrl: '',
   ),
-
-
 
   ///North Macedonia mk
 
@@ -1975,10 +1796,10 @@ ChannelModel(
   ChannelModel(
     countryCode: 'ng',
     name: 'Dove TV',
-    url: 'https://webstreaming-7.viewmedia.tv/web_093/Stream/live93_3/high/playlist.m3u8',
+    url:
+        'https://webstreaming-7.viewmedia.tv/web_093/Stream/live93_3/high/playlist.m3u8',
     imageUrl: '',
   ),
-
 
   ///Norway no
   ChannelModel(
@@ -1994,7 +1815,6 @@ ChannelModel(
     imageUrl: '',
   ),
 
-
   ///Oman om
 
   ChannelModel(
@@ -2006,7 +1826,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'om',
     name: 'Oman Althakafia',
-    url: 'https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/chunklist.m3u8',
+    url:
+        'https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/chunklist.m3u8',
     imageUrl: '',
   ),
 
@@ -2081,7 +1902,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'qa',
     name: 'Al Jazeera English',
-    url: 'https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8',
+    url:
+        'https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -2090,6 +1912,7 @@ ChannelModel(
     url: 'https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8',
     imageUrl: '',
   ),
+
   ///Russia RU
   ChannelModel(
     countryCode: 'ru',
@@ -2112,7 +1935,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'ru',
     name: 'Ювелирочка ТВ',
-    url: 'https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8',
+    url:
+        'https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -2120,25 +1944,29 @@ ChannelModel(
   ChannelModel(
     countryCode: 'sa',
     name: 'Al Ekhbariya',
-    url: 'https://al-ekhbaria-prod-dub.shahid.net/out/v1/d443f3203b444032896e3233cb6eaa84/index.m3u8',
+    url:
+        'https://al-ekhbaria-prod-dub.shahid.net/out/v1/d443f3203b444032896e3233cb6eaa84/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'sa',
     name: 'Asharq Discovery',
-    url: 'https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8',
+    url:
+        'https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'sa',
     name: 'Asharq Documentary',
-    url: 'https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8',
+    url:
+        'https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'sa',
     name: 'Asharq News',
-    url: 'https://shls-asharq-prod-dub.shahid.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8',
+    url:
+        'https://shls-asharq-prod-dub.shahid.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8',
     imageUrl: '',
   ),
 
@@ -2146,7 +1974,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'sg',
     name: 'CNA International',
-    url: 'https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8',
+    url:
+        'https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -2160,13 +1989,15 @@ ChannelModel(
   ChannelModel(
     countryCode: 'so',
     name: 'Afriwood Series',
-    url: 'https://origin3.afxp.telemedia.co.za/PremiumFree/afriwoodseries/playlist.m3u8',
+    url:
+        'https://origin3.afxp.telemedia.co.za/PremiumFree/afriwoodseries/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'so',
     name: 'Cinema Hausa',
-    url: 'https://origin3.afxp.telemedia.co.za/PremiumFree/cinemahausa/playlist.m3u8',
+    url:
+        'https://origin3.afxp.telemedia.co.za/PremiumFree/cinemahausa/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
@@ -2178,7 +2009,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'so',
     name: 'Sports Connect',
-    url: 'https://origin3.afxp.telemedia.co.za/PremiumFree/sportsconnect/playlist.m3u8',
+    url:
+        'https://origin3.afxp.telemedia.co.za/PremiumFree/sportsconnect/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -2218,7 +2050,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'tz',
     name: 'Tanzania Safari Channel',
-    url: 'https://134630.global.ssl.fastly.net/5fe35eae8c53540cab83659a/live_0a6ef900ad0511ed8f65a940024f638d/index.m3u8',
+    url:
+        'https://134630.global.ssl.fastly.net/5fe35eae8c53540cab83659a/live_0a6ef900ad0511ed8f65a940024f638d/index.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2244,7 +2077,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'ua',
     name: '24 Канал',
-    url: 'https://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8',
+    url:
+        'https://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
 
@@ -2272,13 +2106,15 @@ ChannelModel(
   ChannelModel(
     countryCode: 'ug',
     name: 'Alpha Digital',
-    url: 'http://streamfi-alphadgtl1.zettawiseroutes.com:8080/hls/stream_src.m3u8',
+    url:
+        'http://streamfi-alphadgtl1.zettawiseroutes.com:8080/hls/stream_src.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'ug',
     name: 'BBS TV',
-    url: 'https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/BBSTV/5-hls/live-media.m3u8',
+    url:
+        'https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/BBSTV/5-hls/live-media.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2290,11 +2126,10 @@ ChannelModel(
   ChannelModel(
     countryCode: 'ug',
     name: 'KSTV Uganda',
-    url: 'https://readymedia.moderntv.cloud:8092/distribute/readymedia/KS_TV_stream_dc/5-20-hls/live.m3u8',
+    url:
+        'https://readymedia.moderntv.cloud:8092/distribute/readymedia/KS_TV_stream_dc/5-20-hls/live.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
-
-
 
   ///United Kingdom uk
 
@@ -2319,7 +2154,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'uk',
     name: 'GB News',
-    url: 'https://live-gbnews.simplestreamcdn.com/live5/gbnews/bitrate1.isml/manifest.m3u8',
+    url:
+        'https://live-gbnews.simplestreamcdn.com/live5/gbnews/bitrate1.isml/manifest.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2335,67 +2171,76 @@ ChannelModel(
     imageUrl: 'https://via.placeholder.com/150',
   ),
 
-
   ///United States us
 
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 1',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 2',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023561/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023561/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 3',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023562/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023562/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 4',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023563/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023563/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 5',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023564/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023564/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 6',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023565/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023565/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 7',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023566/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023566/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 8',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023567/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023567/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 9',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023568/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023568/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABC News Live 10',
-    url: 'https://abcnews-streams.akamaized.net/hls/live/2023569/abcnews1/master.m3u8',
+    url:
+        'https://abcnews-streams.akamaized.net/hls/live/2023569/abcnews1/master.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2431,7 +2276,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'us',
     name: 'Bloomberg TV+ UHD',
-    url: 'https://bloomberg-bloombergtv-1-us.samsung.wurl.tv/manifest/playlist.m3u8',
+    url:
+        'https://bloomberg-bloombergtv-1-us.samsung.wurl.tv/manifest/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2446,6 +2292,7 @@ ChannelModel(
     url: 'https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
+
   ///Uruguay uy
   ChannelModel(
     countryCode: 'uy',
@@ -2471,6 +2318,7 @@ ChannelModel(
     url: 'https://stream.vivotv.uy/hls/stream.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
+
   ///Uzbekistan uz
   ChannelModel(
     countryCode: 'uz',
@@ -2535,7 +2383,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'vn',
     name: 'Dhammasapha TV',
-    url: 'https://livefta.malimarcdn.com/ftaedge00/dhammasapha.stream/playlist.m3u8',
+    url:
+        'https://livefta.malimarcdn.com/ftaedge00/dhammasapha.stream/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2603,7 +2452,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'za',
     name: '1KZN TV',
-    url: 'https://cdn.freevisiontv.co.za/sttv/smil:1kzn.stream.smil/playlist.m3u8',
+    url:
+        'https://cdn.freevisiontv.co.za/sttv/smil:1kzn.stream.smil/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2615,7 +2465,8 @@ ChannelModel(
   ChannelModel(
     countryCode: 'za',
     name: 'Cape Town TV',
-    url: 'https://cdn.freevisiontv.co.za/sttv/smil:ctv.stream.smil/playlist.m3u8',
+    url:
+        'https://cdn.freevisiontv.co.za/sttv/smil:ctv.stream.smil/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2627,13 +2478,15 @@ ChannelModel(
   ChannelModel(
     countryCode: 'za',
     name: 'Soweto TV',
-    url: 'https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8',
+    url:
+        'https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'za',
     name: 'Tshwane TV',
-    url: 'https://cdn.freevisiontv.co.za/sttv/smil:tshwanetv.stream.smil/chunklist.m3u8',
+    url:
+        'https://cdn.freevisiontv.co.za/sttv/smil:tshwanetv.stream.smil/chunklist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2642,5 +2495,4 @@ ChannelModel(
     url: 'https://live.nixsat.com/play/rtm/index.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
-
 ];
