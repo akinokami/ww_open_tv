@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/screens/channels/channels_screen.dart';
+import 'package:ww_open_tv/screens/favorite/favorite_channel_screen.dart';
 import 'package:ww_open_tv/screens/search/search_screen.dart';
 import 'package:ww_open_tv/screens/settings/settings_screen.dart';
 import 'constants/color_const.dart';
@@ -30,17 +31,17 @@ class BottomNavigationMenu extends StatelessWidget {
             onTap: landingPageController.changeTabIndex,
             currentIndex: landingPageController.tabIndex.value,
             backgroundColor: primaryColor,
-            unselectedItemColor: Colors.white.withOpacity(0.5),
+            unselectedItemColor: Colors.grey.withOpacity(0.5),
             selectedItemColor: secondaryColor,
             unselectedLabelStyle: unselectedLabelStyle,
             selectedLabelStyle: selectedLabelStyle,
             items: [
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.newspaper,
+                  Icons.tv,
                   size: 18.w,
                 ),
-                label: 'news'.tr,
+                label: 'channel'.tr,
                 backgroundColor: primaryColor,
               ),
               BottomNavigationBarItem(
@@ -49,6 +50,14 @@ class BottomNavigationMenu extends StatelessWidget {
                   size: 18.w,
                 ),
                 label: 'search'.tr,
+                backgroundColor: primaryColor,
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite_border,
+                  size: 18.w,
+                ),
+                label: 'fav'.tr,
                 backgroundColor: primaryColor,
               ),
               BottomNavigationBarItem(
@@ -78,6 +87,7 @@ class BottomNavigationMenu extends StatelessWidget {
             children: const [
               ChannelScreen(),
               SearchScreen(),
+              FavoriteChannelScreen(),
               SettingsScreen(),
             ],
           )),

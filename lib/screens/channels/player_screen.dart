@@ -48,6 +48,9 @@ class _PlayerScreenState extends State<PlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        //title: const Text('Player'),
+      ),
       body: isLoading
           ? const Center(
               child: CircularProgressIndicator(),

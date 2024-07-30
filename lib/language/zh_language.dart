@@ -52,5 +52,6 @@ class ZhLanguage {
     'channel': '頻道',
     'no_data_found': '沒有找到數據',
     'no_channel_found': '未找到頻道',
+    'fav': '最喜欢的',
   };
 }
