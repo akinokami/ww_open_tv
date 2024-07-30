@@ -99,20 +99,21 @@ class ChannelScreen extends StatelessWidget {
                                                 //some code here
                                               },
                                               child: Icon(
-                                                channelController
-                                                    .selectedChannelList
-                                                    .contains(
+                                                channelController.selectedChannelList
+                                                    .any((item) =>
+                                                item.name ==
                                                     channelController
                                                         .filterList[
-                                                    index])
-                                                    ?  Icons.favorite:Icons.favorite_border,
-                                                color: channelController
-                                                        .selectedChannelList
-                                                        .contains(
-                                                            channelController
-                                                                    .filterList[
-                                                                index])
-                                                    ? Colors.red
+                                                    index].name)?  Icons.favorite:Icons.favorite_border,
+                                                color:
+                                                channelController.selectedChannelList
+                                                    .any((item) =>
+                                                item.name ==
+                                                    channelController
+                                                        .filterList[
+                                                    index].name)?
+
+                                                     Colors.red
                                                     : greyColor,
                                                 size: 15.w,
                                               ),
