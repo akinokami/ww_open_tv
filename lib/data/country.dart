@@ -1,4 +1,4 @@
- String countryJson ="""[
+String countryJson = """[
     {
         "name": "Afghanistan",
         "code": "AF",
@@ -26,53 +26,12 @@
         "flag": "🇩🇿"
     },
     {
-        "name": "American Samoa",
-        "code": "AS",
-        "languages": [
-            "eng",
-            "smo"
-        ],
-        "flag": "🇦🇸"
-    },
-    {
-        "name": "Andorra",
-        "code": "AD",
-        "languages": [
-            "cat"
-        ],
-        "flag": "🇦🇩"
-    },
-    {
         "name": "Angola",
         "code": "AO",
         "languages": [
             "por"
         ],
         "flag": "🇦🇴"
-    },
-    {
-        "name": "Anguilla",
-        "code": "AI",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇦🇮"
-    },
-    {
-        "name": "Antarctica",
-        "code": "AQ",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇦🇶"
-    },
-    {
-        "name": "Antigua and Barbuda",
-        "code": "AG",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇦🇬"
     },
     {
         "name": "Argentina",
@@ -126,22 +85,6 @@
         "flag": "🇦🇿"
     },
     {
-        "name": "Bahamas",
-        "code": "BS",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇧🇸"
-    },
-    {
-        "name": "Bahrain",
-        "code": "BH",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇧🇭"
-    },
-    {
         "name": "Bangladesh",
         "code": "BD",
         "languages": [
@@ -177,38 +120,12 @@
         "flag": "🇧🇪"
     },
     {
-        "name": "Belize",
-        "code": "BZ",
-        "languages": [
-            "bjz",
-            "eng",
-            "spa"
-        ],
-        "flag": "🇧🇿"
-    },
-    {
         "name": "Benin",
         "code": "BJ",
         "languages": [
             "fra"
         ],
         "flag": "🇧🇯"
-    },
-    {
-        "name": "Bermuda",
-        "code": "BM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇧🇲"
-    },
-    {
-        "name": "Bhutan",
-        "code": "BT",
-        "languages": [
-            "dzo"
-        ],
-        "flag": "🇧🇹"
     },
     {
         "name": "Bolivia",
@@ -242,23 +159,6 @@
         "flag": "🇧🇦"
     },
     {
-        "name": "Botswana",
-        "code": "BW",
-        "languages": [
-            "eng",
-            "tsn"
-        ],
-        "flag": "🇧🇼"
-    },
-    {
-        "name": "Bouvet Island",
-        "code": "BV",
-        "languages": [
-            "nor"
-        ],
-        "flag": "🇧🇻"
-    },
-    {
         "name": "Brazil",
         "code": "BR",
         "languages": [
@@ -267,28 +167,12 @@
         "flag": "🇧🇷"
     },
     {
-        "name": "British Indian Ocean Territory",
-        "code": "IO",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇮🇴"
-    },
-    {
         "name": "British Virgin Islands",
         "code": "VG",
         "languages": [
             "eng"
         ],
         "flag": "🇻🇬"
-    },
-    {
-        "name": "Brunei",
-        "code": "BN",
-        "languages": [
-            "msa"
-        ],
-        "flag": "🇧🇳"
     },
     {
         "name": "Bulgaria",
@@ -305,15 +189,6 @@
             "fra"
         ],
         "flag": "🇧🇫"
-    },
-    {
-        "name": "Burundi",
-        "code": "BI",
-        "languages": [
-            "fra",
-            "run"
-        ],
-        "flag": "🇧🇮"
     },
     {
         "name": "Cambodia",
@@ -350,23 +225,6 @@
         "flag": "🇨🇻"
     },
     {
-        "name": "Cayman Islands",
-        "code": "KY",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇰🇾"
-    },
-    {
-        "name": "Central African Republic",
-        "code": "CF",
-        "languages": [
-            "fra",
-            "sag"
-        ],
-        "flag": "🇨🇫"
-    },
-    {
         "name": "Chad",
         "code": "TD",
         "languages": [
@@ -392,47 +250,12 @@
         "flag": "🇨🇳"
     },
     {
-        "name": "Christmas Island",
-        "code": "CX",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇨🇽"
-    },
-    {
-        "name": "Cocos (Keeling) Islands",
-        "code": "CC",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇨🇨"
-    },
-    {
         "name": "Colombia",
         "code": "CO",
         "languages": [
             "spa"
         ],
         "flag": "🇨🇴"
-    },
-    {
-        "name": "Comoros",
-        "code": "KM",
-        "languages": [
-            "ara",
-            "fra",
-            "zdj"
-        ],
-        "flag": "🇰🇲"
-    },
-    {
-        "name": "Cook Islands",
-        "code": "CK",
-        "languages": [
-            "eng",
-            "rar"
-        ],
-        "flag": "🇨🇰"
     },
     {
         "name": "Costa Rica",
@@ -459,16 +282,6 @@
         "flag": "🇨🇺"
     },
     {
-        "name": "Curacao",
-        "code": "CW",
-        "languages": [
-            "eng",
-            "nld",
-            "pap"
-        ],
-        "flag": "🇨🇼"
-    },
-    {
         "name": "Cyprus",
         "code": "CY",
         "languages": [
@@ -487,18 +300,6 @@
         "flag": "🇨🇿"
     },
     {
-        "name": "Democratic Republic of the Congo",
-        "code": "CD",
-        "languages": [
-            "fra",
-            "kon",
-            "lin",
-            "lua",
-            "swa"
-        ],
-        "flag": "🇨🇩"
-    },
-    {
         "name": "Denmark",
         "code": "DK",
         "languages": [
@@ -507,38 +308,12 @@
         "flag": "🇩🇰"
     },
     {
-        "name": "Djibouti",
-        "code": "DJ",
-        "languages": [
-            "ara",
-            "fra"
-        ],
-        "flag": "🇩🇯"
-    },
-    {
-        "name": "Dominica",
-        "code": "DM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇩🇲"
-    },
-    {
         "name": "Dominican Republic",
         "code": "DO",
         "languages": [
             "spa"
         ],
         "flag": "🇩🇴"
-    },
-    {
-        "name": "East Timor",
-        "code": "TL",
-        "languages": [
-            "por",
-            "tet"
-        ],
-        "flag": "🇹🇱"
     },
     {
         "name": "Ecuador",
@@ -575,57 +350,12 @@
         "flag": "🇬🇶"
     },
     {
-        "name": "Eritrea",
-        "code": "ER",
-        "languages": [
-            "ara",
-            "eng",
-            "tir"
-        ],
-        "flag": "🇪🇷"
-    },
-    {
-        "name": "Estonia",
-        "code": "EE",
-        "languages": [
-            "est"
-        ],
-        "flag": "🇪🇪"
-    },
-    {
         "name": "Ethiopia",
         "code": "ET",
         "languages": [
             "amh"
         ],
         "flag": "🇪🇹"
-    },
-    {
-        "name": "Falkland Islands",
-        "code": "FK",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇫🇰"
-    },
-    {
-        "name": "Faroe Islands",
-        "code": "FO",
-        "languages": [
-            "dan",
-            "fao"
-        ],
-        "flag": "🇫🇴"
-    },
-    {
-        "name": "Fiji",
-        "code": "FJ",
-        "languages": [
-            "eng",
-            "fij",
-            "hif"
-        ],
-        "flag": "🇫🇯"
     },
     {
         "name": "Finland",
@@ -643,46 +373,6 @@
             "fra"
         ],
         "flag": "🇫🇷"
-    },
-    {
-        "name": "French Guiana",
-        "code": "GF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇬🇫"
-    },
-    {
-        "name": "French Polynesia",
-        "code": "PF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇵🇫"
-    },
-    {
-        "name": "French Southern Territories",
-        "code": "TF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇹🇫"
-    },
-    {
-        "name": "Gabon",
-        "code": "GA",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇬🇦"
-    },
-    {
-        "name": "Gambia",
-        "code": "GM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇲"
     },
     {
         "name": "Georgia",
@@ -709,36 +399,12 @@
         "flag": "🇬🇭"
     },
     {
-        "name": "Gibraltar",
-        "code": "GI",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇮"
-    },
-    {
         "name": "Greece",
         "code": "GR",
         "languages": [
             "ell"
         ],
         "flag": "🇬🇷"
-    },
-    {
-        "name": "Greenland",
-        "code": "GL",
-        "languages": [
-            "kal"
-        ],
-        "flag": "🇬🇱"
-    },
-    {
-        "name": "Grenada",
-        "code": "GD",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇩"
     },
     {
         "name": "Guadeloupe",
@@ -749,16 +415,6 @@
         "flag": "🇬🇵"
     },
     {
-        "name": "Guam",
-        "code": "GU",
-        "languages": [
-            "cha",
-            "eng",
-            "spa"
-        ],
-        "flag": "🇬🇺"
-    },
-    {
         "name": "Guatemala",
         "code": "GT",
         "languages": [
@@ -767,31 +423,12 @@
         "flag": "🇬🇹"
     },
     {
-        "name": "Guernsey",
-        "code": "GG",
-        "languages": [
-            "eng",
-            "fra",
-            "nfr"
-        ],
-        "flag": "🇬🇬"
-    },
-    {
         "name": "Guinea",
         "code": "GN",
         "languages": [
             "fra"
         ],
         "flag": "🇬🇳"
-    },
-    {
-        "name": "Guinea-Bissau",
-        "code": "GW",
-        "languages": [
-            "por",
-            "pov"
-        ],
-        "flag": "🇬🇼"
     },
     {
         "name": "Guyana",
@@ -809,14 +446,6 @@
             "hat"
         ],
         "flag": "🇭🇹"
-    },
-    {
-        "name": "Heard Island and McDonald Islands",
-        "code": "HM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇭🇲"
     },
     {
         "name": "Honduras",
@@ -897,15 +526,6 @@
         "flag": "🇮🇪"
     },
     {
-        "name": "Isle of Man",
-        "code": "IM",
-        "languages": [
-            "eng",
-            "glv"
-        ],
-        "flag": "🇮🇲"
-    },
-    {
         "name": "Israel",
         "code": "IL",
         "languages": [
@@ -948,16 +568,6 @@
         "flag": "🇯🇵"
     },
     {
-        "name": "Jersey",
-        "code": "JE",
-        "languages": [
-            "eng",
-            "fra",
-            "nrf"
-        ],
-        "flag": "🇯🇪"
-    },
-    {
         "name": "Jordan",
         "code": "JO",
         "languages": [
@@ -982,15 +592,6 @@
             "swa"
         ],
         "flag": "🇰🇪"
-    },
-    {
-        "name": "Kiribati",
-        "code": "KI",
-        "languages": [
-            "eng",
-            "gil"
-        ],
-        "flag": "🇰🇮"
     },
     {
         "name": "Kosovo",
@@ -2102,14 +1703,6 @@
         "flag": "🇻🇳"
     },
     {
-        "name": "Wallis and Futuna",
-        "code": "WF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇼🇫"
-    },
-    {
         "name": "Western Sahara",
         "code": "EH",
         "languages": [
@@ -2126,43 +1719,5 @@
             "ara"
         ],
         "flag": "🇾🇪"
-    },
-    {
-        "name": "Zambia",
-        "code": "ZM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇿🇲"
-    },
-    {
-        "name": "Zimbabwe",
-        "code": "ZW",
-        "languages": [
-            "bwg",
-            "eng",
-            "kck",
-            "hio",
-            "ndc",
-            "nde",
-            "nya",
-            "sna",
-            "sot",
-            "toi",
-            "tsn",
-            "tso",
-            "ven",
-            "xho",
-            "zib"
-        ],
-        "flag": "🇿🇼"
-    },
-    {
-        "name": "Åland",
-        "code": "AX",
-        "languages": [
-            "swe"
-        ],
-        "flag": "🇦🇽"
     }
 ]""";
