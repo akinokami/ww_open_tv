@@ -383,5 +383,85 @@ List<ChannelModel> channelList = [
   ),
 
   ///Yemen ye
-  
+  ChannelModel(
+    countryCode: 'ye',
+    name: 'Al Ghadye',
+    url: 'http://82.212.74.3:8000/live/hls/7512.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'ye',
+    name: 'Alghad Almushreq',
+    url: 'http://82.212.74.3:8000/live/7512.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'ye',
+    name: 'Suhail TV',
+    url: 'http://82.212.74.98:8000/live/hls/7726.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+
+  ///Zambia zm
+  ChannelModel(
+    countryCode: 'zm',
+    name: 'Healing Center TV',
+    url: 'https://dcunilive258-lh.akamaihd.net/i/dclive_1@348579/master.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+
+  ///Zimbabwe zw
+  ChannelModel(
+    countryCode: 'zw',
+    name: 'Yadah TV',
+    url: 'https://webstreaming-2.viewmedia.tv/web_018/Stream/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+
+  ///South Africa za
+  ChannelModel(
+    countryCode: 'za',
+    name: '1KZN TV',
+    url: 'https://cdn.freevisiontv.co.za/sttv/smil:1kzn.stream.smil/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Afrobeats TV',
+    url: 'https://stream.ecable.tv/afrobeats/index.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Cape Town TV',
+    url: 'https://cdn.freevisiontv.co.za/sttv/smil:ctv.stream.smil/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'SABC News',
+    url: 'http://185.59.221.131:8081/live/sabcnews/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Soweto TV',
+    url: 'https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Tshwane TV',
+    url: 'https://cdn.freevisiontv.co.za/sttv/smil:tshwanetv.stream.smil/chunklist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Redemption TV Ministry',
+    url: 'https://live.nixsat.com/play/rtm/index.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+
+
+
 ];
