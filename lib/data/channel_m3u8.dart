@@ -797,28 +797,10 @@ List<ChannelModel> channelList = [
   //Equatorial Guinea
   ChannelModel(
     countryCode: 'gq',
-    name: 'Asonga TV',
-    url:
-        'https://86060.global.ssl.fastly.net/5ec1843635bd933ad25fe22e/live_e887acc04f7f11edb82e9f05583e4727/index.fmp4.m3u8',
-    imageUrl: '',
-  ),
-
-  ChannelModel(
-    countryCode: 'gq',
     name: 'SolTV',
     url: 'https://stream.solmediaeg.com/soltv/soltv.m3u8',
     imageUrl: '',
   ),
-
-  ChannelModel(
-    countryCode: 'gq',
-    name: 'TVGE',
-    url: 'http://rtmp.ott.mx1.com/tvge1/tvge1multi.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
-
-  //Eritrea
-  //Estonia
 
   //Ethiopia
   ChannelModel(
@@ -827,37 +809,16 @@ List<ChannelModel> channelList = [
     url: 'https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8',
     imageUrl: '',
   ),
-
   ChannelModel(
     countryCode: 'et',
     name: 'EBS Cinema',
     url: 'https://rpn.bozztv.com/ebstv/ebscinema/index.m3u8',
     imageUrl: '',
   ),
-
   ChannelModel(
     countryCode: 'et',
     name: 'EBS HD',
     url: 'https://rpn.bozztv.com/ebstv/ebstv/index.m3u8',
-    imageUrl: '',
-  ),
-
-//Falkland Islands
-//Faroe Islands
-  ChannelModel(
-    countryCode: 'fo',
-    name: 'KVF',
-    url:
-        'https://w1.kringvarp.fo/uttanlands/smil:uttanlands.smil/playlist.m3u8',
-    imageUrl: '',
-  ),
-
-//Fiji
-  ChannelModel(
-    countryCode: 'fj',
-    name: 'Fiji TV',
-    url:
-        'https://api.new.livestream.com/accounts/19514369/events/6947821/live.m3u8',
     imageUrl: '',
   ),
 
@@ -889,81 +850,36 @@ List<ChannelModel> channelList = [
         'https://lives.digiteka.com/stream/86d3e867-a272-496b-8412-f59aa0104771/index.m3u8',
     imageUrl: '',
   ),
-
   ChannelModel(
     countryCode: 'fr',
     name: 'A12 TV',
     url: 'https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8',
     imageUrl: '',
   ),
-
   ChannelModel(
     countryCode: 'fr',
-    name: 'ADN TV+',
-    url:
-        'https://samsunguk-adn-samsung-fre-qfrlc.amagi.tv/playlist/samsunguk-adn-samsung-fre/playlist.m3u8',
-    imageUrl: '',
-  ),
-
-//French Guiana
-  ChannelModel(
-    countryCode: 'gf',
-    name: 'Yanahits TV',
-    url: 'https://rpn3.bozztv.com/ssh101/ssh101/clip/playlist.m3u8',
-    imageUrl: '',
-  ),
-
-//French Polynesia
-  ChannelModel(
-    countryCode: 'pf',
-    name: 'TNTV',
-    url:
-        'https://bcovlive-a.akamaihd.net/34b9e8a6345d4ee8acb351730d1dbe89/us-west-2/5816339219001/playlist.m3u8',
-    imageUrl: '',
-  ),
-
-//French Southern Territories
-
-//Gabon
-
-  ChannelModel(
-    countryCode: 'ga',
-    name: 'Gabon Premiére TV',
-    url: 'https://vps73918.serveur-vps.net/hls/ggtv.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'ga',
-    name: 'Label TV',
-    url: 'https://live3.acangroup.org:1929/publiclive/labeltv/chunks.m3u8',
-    imageUrl: '',
-  ),
-
-//Gambia
-  ChannelModel(
-    countryCode: 'gm',
-    name: 'QTV Gambia',
-    url: 'https://player.qtv.gm/hls/live.stream.m3u8',
+    name: 'Albi TV',
+    url: 'https://live.creacast.com/albi-tv-ch1/stream/playlist.m3u8',
     imageUrl: '',
   ),
 
   //Georgia
   ChannelModel(
     countryCode: 'ge',
-    name: '1TV',
-    url: 'https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'ge',
-    name: '2TV',
-    url: 'https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'ge',
     name: 'Abaza TV',
     url: 'https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'ge',
+    name: 'Formula',
+    url: 'https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'ge',
+    name: 'Imedi TV',
+    url: 'https://tv.cdn.xsg.ge/imedihd/index.m3u8',
     imageUrl: '',
   ),
 
@@ -976,84 +892,96 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'de',
-    name: '3sat',
-    url:
-        'https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8',
+    name: 'Anixe +',
+    url: 'https://ma.anixa.tv/clips/stream/anixesd/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'de',
-    name: 'ADRIA Music',
-    url: 'https://cdne.folxplay.tv/folx-trz/streams/ch-1/master.m3u8',
+    name: 'Anixe HD Serie',
+    url: 'https://ma.anixa.tv/clips/stream/anixehd/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'de',
+    name: 'ARD-alpha',
+    url: 'http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'de',
+    name: 'Aristo TV ',
+    url: 'https://ma.anixa.tv/clips/stream/aristo/index.m3u8',
     imageUrl: '',
   ),
 
   //Ghana
   ChannelModel(
     countryCode: 'gh',
-    name: 'ACTS TV',
-    url: 'https://mediagh.us:19360/deliverancetv/deliverancetv.m3u8',
+    name: 'ChannelOne TV',
+    url: 'https://2ctv.crystaltv.mobi:44095/tv877.167.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'gh',
+    name: 'GHtv Holland',
+    url: 'http://37.48.120.77:8080/hls/ghtvonline.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'gh',
+    name: 'Hope Channel Ghana',
+    url:
+        'https://videodelivery.net/dfbdca87f2a6291aa4fdc8fe3290769b/manifest/video.m3u8',
     imageUrl: '',
   ),
 
-  //Gibraltar
   //Greece
   ChannelModel(
     countryCode: 'gr',
-    name: '4E',
-    url: 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
+    name: 'ART TV',
+    url: 'https://til.pp.ua:3711/live/arttvgr70live.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'gr',
-    name: '10 Channel',
-    url: 'https://tv.mediacp.eu:8081/10channel/index.m3u8',
+    name: 'Baraza TV Deep House',
+    url:
+        'https://rtmp.streams.ovh:1936/barazarelax/barazazararelax/barazarelax/playlist.m3u8',
     imageUrl: '',
   ),
 
-  //Greenland
-  //Grenada
   //Guadeloupe
   ChannelModel(
     countryCode: 'gp',
-    name: 'ETV',
-    url: 'https://edge.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8',
+    name: 'Radio TV Basse-Terre',
+    url: 'https://vdo.ssl-stream.com:3412/stream/play.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'gp',
-    name: 'Madras FM TV',
+    name: 'RHT Guadeloupe',
     url:
-        'https://edge12.vedge.infomaniak.com/livecast/ik:madrasfmtv/manifest.m3u8',
-    imageUrl: '',
-  ),
-
-  //Guam
-  ChannelModel(
-    countryCode: 'gu',
-    name: 'Star 101 FM',
-    url: 'https://live2.tensila.com/knut-v-1.choice/hls/master.m3u8',
+        'https://edge12.vedge.infomaniak.com/livecast/ik:livehautetension/manifest.m3u8',
     imageUrl: '',
   ),
 
   //Guatemala
   ChannelModel(
     countryCode: 'gt',
-    name: 'A+ Guate',
-    url: 'https://ch2-tva.duin.dev/hls/stream.m3u8',
+    name: 'Aurora Media Films',
+    url: 'https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8',
     imageUrl: '',
   ),
 
-  //Guernsey
   //Guinea
   ChannelModel(
     countryCode: 'gn',
-    name: 'ATV',
-    url: 'https://guineetvdirect.online:3320/live/atvguineelive.m3u8',
+    name: 'Cavi TV',
+    url: 'https://helga.iptv2022.com/Cavi_TV/index.m3u8',
     imageUrl: '',
   ),
 
-  //Guinea-Bissau
   //Guyana
   ChannelModel(
     countryCode: 'gy',
@@ -1066,24 +994,22 @@ List<ChannelModel> channelList = [
   //Haiti
   ChannelModel(
     countryCode: 'ht',
-    name: 'Dega TV',
-    url:
-        'https://59d39900ebfb8.streamlock.net/saintlouisltv/saintlouisltv/playlist.m3u8',
-    imageUrl: '',
-  ),
-  ChannelModel(
-    countryCode: 'ht',
     name: 'Fidele TV',
     url: 'https://59d39900ebfb8.streamlock.net/FIDELETV/FIDELETV/playlist.m3u8',
     imageUrl: '',
   ),
+  ChannelModel(
+    countryCode: 'ht',
+    name: 'Radio Télé 4VEH',
+    url: 'https://uni01rtmp.tulix.tv/4vehtv/4vehtv-firetv/playlist.m3u8',
+    imageUrl: '',
+  ),
 
-  //Heard Island and McDonald Islands
   //Honduras
   ChannelModel(
     countryCode: 'hn',
-    name: '45 TV',
-    url: 'https://stream.alojamientowebgt.com:3656/live/tv45live.m3u8',
+    name: '504 TV',
+    url: 'https://mediacp.us:8081/504tvhn/index.m3u8',
     imageUrl: '',
   ),
 
@@ -1102,18 +1028,12 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'hk',
-    name: 'HOY Infotainment Channel',
-    url: 'https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8',
+    name: '凤凰资讯',
+    url: 'http://php.17186.eu.org/phtv/fhzx.m3u8',
     imageUrl: '',
   ),
 
   //Hungary
-  ChannelModel(
-    countryCode: 'hu',
-    name: '1Music Channel Hungary',
-    url: 'http://1music.hu/1music.m3u8',
-    imageUrl: '',
-  ),
   ChannelModel(
     countryCode: 'hu',
     name: '16tv Budapest',
@@ -1121,36 +1041,47 @@ List<ChannelModel> channelList = [
         'https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8',
     imageUrl: '',
   ),
+  ChannelModel(
+    countryCode: 'hu',
+    name: '1ESTV',
+    url:
+        'https://cloudfront44.lexanetwork.com:1344/relay01/HDE032.sdp/playlist.m3u8',
+    imageUrl: '',
+  ),
 
   //Iceland
   ChannelModel(
     countryCode: 'is',
-    name: 'Althingi',
-    url: 'https://althingi-live.secure.footprint.net/althingi/live/index.m3u8',
+    name: 'RÚV',
+    url: 'https://ruv-web-live.akamaized.net/streymi/ruverl/ruverl.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'is',
+    name: 'Vísir',
+    url: 'https://live.visir.is/hls-live/visir.smil/playlist.m3u8',
     imageUrl: '',
   ),
 
   //India
   ChannelModel(
     countryCode: 'in',
-    name: '7S Music',
-    url:
-        'http://103.199.161.254/Content/7smusic/Live/Channel(7smusic)/index.m3u8',
+    name: '9XM',
+    url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'in',
-    name: '9X Jalwa',
-    url:
-        'https://amg01281-9xmediapvtltd-9xjalwa-samsungin-goszf.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8',
+    name: 'Aaj Tak',
+    url: 'https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8',
     imageUrl: '',
   ),
 
   //Indonesia
   ChannelModel(
     countryCode: 'id',
-    name: 'ADiTV',
-    url: 'https://v2.siar.us/aditv/livestream/chunks.m3u8',
+    name: 'AKTV',
+    url: 'https://e.siar.us/live/aktv.m3u8',
     imageUrl: '',
   ),
 
@@ -1171,8 +1102,8 @@ List<ChannelModel> channelList = [
   //Iraq
   ChannelModel(
     countryCode: 'iq',
-    name: 'ABNsat',
-    url: 'http://rtmp1.abnsat.com/hls/arabic.m3u8',
+    name: 'Afaq TV',
+    url: 'http://63b03f7689049.streamlock.net:1935/live/1/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -1184,7 +1115,6 @@ List<ChannelModel> channelList = [
     imageUrl: '',
   ),
 
-  //Isle of Man
   //Israel
   ChannelModel(
     countryCode: 'il',
@@ -1196,24 +1126,24 @@ List<ChannelModel> channelList = [
   //Italy
   ChannelModel(
     countryCode: 'it',
-    name: '12 TV Parma',
+    name: 'Adnkronos',
     url:
-        'https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8',
+        'https://5e73cf528f404.streamlock.net/GR_sport/livestream/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'it',
-    name: '20 Mediaset',
+    name: 'Aurora Arte',
     url:
-        'https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8',
+        'https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8',
     imageUrl: '',
   ),
-//Ivory Coast
 
+//Ivory Coast
   ChannelModel(
     countryCode: 'ci',
-    name: 'A+ Ivoire',
-    url: 'http://69.64.57.208/atv/playlist.m3u8',
+    name: 'Alpha et Omega TV',
+    url: 'https://video1.getstreamhosting.com:1936/8318/8318/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -1247,51 +1177,139 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'jp',
-    name: 'CGNTV Japan',
-    url: 'http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8',
+    name: 'NTV News24',
+    url: 'https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8',
     imageUrl: '',
   ),
 
-  //Jersey
   //Jordan
   ChannelModel(
     countryCode: 'jo',
-    name: 'A One TV',
-    url: 'https://master.starmena-cloud.com/hls/a1jo.m3u8',
+    name: 'Haqiqa',
+    url: 'https://jmc-live.ercdn.net/alhaqiqa/alhaqiqa.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'jo',
+    name: 'Kaifa TV',
+    url: 'hhttp://82.212.74.2:8000/live/7311.m3u8',
     imageUrl: '',
   ),
 
   //Kazakhstan
   ChannelModel(
     countryCode: 'kz',
-    name: '24KZ',
-    url: 'http://serv30.vintera.tv:8081/habar/habar24/playlist.m3u8',
+    name: 'Abai TV',
+    url: 'https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kz',
+    name: 'Alau TV',
+    url: 'https://otv.wotom.net/alau/stream.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kz',
+    name: 'Balapan TV',
+    url:
+        'https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kz',
+    name: 'Ontústik',
+    url: 'https://stream.kaztrk.kz/regional/shymkenttv/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kz',
+    name: 'Semeı',
+    url: 'https://stream.kaztrk.kz/regional/semeytv/index.m3u8',
     imageUrl: '',
   ),
 
   //Kenya
   ChannelModel(
     countryCode: 'ke',
-    name: '3 Stones TV',
-    url: 'https://goliveafrica.media:9998/live/64d21e682fd26/index.m3u8',
+    name: 'Citizen Extra',
+    url:
+        'https://74937.global.ssl.fastly.net/5ea49827ff3b5d7b22708777/live_40c5808063f711ec89a87b62db2ecab5/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'ke',
+    name: 'Inooro TV',
+    url:
+        'https://74937-castr.akamaized.net/5ea49827ff3b5d7b22708777/live_cd93fa8063f411ecb28b5d4f40b51a46/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'ke',
+    name: 'Morning Cloud TV',
+    url: 'https://webstreaming.viewmedia.tv/web_026/Stream/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'ke',
+    name: 'Ramogi TV',
+    url:
+        'https://citizentv.castr.com/5ea49827ff3b5d7b22708777/live_9b761ff063f511eca12909b8ef1524b4/index.m3u8',
     imageUrl: '',
   ),
 
-  //Kiribati
   //Kosovo
   ChannelModel(
     countryCode: 'xk',
-    name: 'ATV Live',
-    url:
-        'https://ub1doy938d.gjirafa.net/live/oEZi1otQqIHglY0tzZidyCPWhxrS5WgO/zyq001.m3u8',
+    name: 'TV Arbëria 1',
+    url: 'https://yayin30.haber100.com/live/rtvarberia/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'xk',
+    name: 'Arbëria 2',
+    url: 'https://ssh101.bozztv.com/ssh101/rtvarberia2/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'xk',
+    name: 'TV Arbëria 3 Fëmijë',
+    url: 'https://ssh101.bozztv.com/ssh101/rtvarberia3/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'xk',
+    name: 'TV Arbëria 4 Muzikë',
+    url: 'https://ssh101.bozztv.com/ssh101/rtvarberia4/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'xk',
+    name: 'TV Arbëria 5',
+    url: 'https://ssh101.bozztv.com/ssh101/rtvarberia5/playlist.m3u8',
     imageUrl: '',
   ),
 
   //Kuwait
   ChannelModel(
     countryCode: 'kw',
-    name: 'Al Maali TV',
-    url: 'https://kali.vdopanel.com:3986/live/mbashalive.m3u8',
+    name: 'KTV 1',
+    url:
+        'https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kw',
+    name: 'KTV 2',
+    url:
+        'https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kw',
+    name: 'KTV Sport',
+    url:
+        'https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8',
     imageUrl: '',
   ),
 
@@ -1300,6 +1318,18 @@ List<ChannelModel> channelList = [
     countryCode: 'kg',
     name: '312 Кино',
     url: 'http://176.126.166.43:1935/live/312kino/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kg',
+    name: '312 TB',
+    url: 'http://176.126.166.43:1935/live/312musik/playlist.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kg',
+    name: 'TV1 KG',
+    url: 'http://212.2.225.30:1935/live/site.stream/playlist.m3u8',
     imageUrl: '',
   ),
 
@@ -2135,8 +2165,8 @@ List<ChannelModel> channelList = [
   ///Vietnam vn
   ChannelModel(
     countryCode: 'vn',
-    name: 'Da Nang TV1',
-    url: 'http://drtdnglive.e49a7c38.cdnviet.com/livedrt1/chunklist.m3u8',
+    name: 'Bac Ninh TV',
+    url: 'https://stream.thingnet.vn/live/smil:BTV.smil/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2154,8 +2184,8 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'vn',
-    name: 'HanoiTV1',
-    url: 'https://cecex9g5cpliv.vcdn.cloud/capture/smil:HN1.smil/playlist.m3u8',
+    name: 'Ha Tinh TV',
+    url: 'https://wse.hatinhtv.net/live/httv1/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
@@ -2172,44 +2202,22 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'vn',
-    name: 'VNews (TTXVN)',
-    url: 'https://zjizeoupprliv.vcdn.cloud/live/vnews/chunklist.m3u8',
+    name: 'Tien Giang',
+    url: 'http://thtg.vn:8001/thtg.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
 
   ///Yemen ye
   ChannelModel(
     countryCode: 'ye',
-    name: 'Al Ghadye',
-    url: 'http://82.212.74.3:8000/live/hls/7512.m3u8',
+    name: 'Almahriah TV',
+    url: 'https://master.starmena-cloud.com/hls/almahriah.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
   ChannelModel(
     countryCode: 'ye',
-    name: 'Alghad Almushreq',
-    url: 'http://82.212.74.3:8000/live/7512.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-  ChannelModel(
-    countryCode: 'ye',
-    name: 'Suhail TV',
-    url: 'http://82.212.74.98:8000/live/hls/7726.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-
-  ///Zambia zm
-  ChannelModel(
-    countryCode: 'zm',
-    name: 'Healing Center TV',
-    url: 'https://dcunilive258-lh.akamaihd.net/i/dclive_1@348579/master.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-
-  ///Zimbabwe zw
-  ChannelModel(
-    countryCode: 'zw',
-    name: 'Yadah TV',
-    url: 'https://webstreaming-2.viewmedia.tv/web_018/Stream/playlist.m3u8',
+    name: 'Yemen Today TV',
+    url: 'https://video.yementdy.tv/hls/yementoday.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
 
@@ -2236,6 +2244,19 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'za',
+    name: 'GOD TV Africa',
+    url: 'https://webstreaming.viewmedia.tv/web_006/Stream/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
+    name: 'Hilaal TV',
+    url:
+        'https://cdn5.iqsat.net/iq/aa89b15058a61b904359307cc0a5e80a.sdp/playlist.m3u8',
+    imageUrl: 'https://via.placeholder.com/150',
+  ),
+  ChannelModel(
+    countryCode: 'za',
     name: 'SABC News',
     url: 'http://185.59.221.131:8081/live/sabcnews/playlist.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
@@ -2245,19 +2266,6 @@ List<ChannelModel> channelList = [
     name: 'Soweto TV',
     url:
         'https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-  ChannelModel(
-    countryCode: 'za',
-    name: 'Tshwane TV',
-    url:
-        'https://cdn.freevisiontv.co.za/sttv/smil:tshwanetv.stream.smil/chunklist.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-  ChannelModel(
-    countryCode: 'za',
-    name: 'Redemption TV Ministry',
-    url: 'https://live.nixsat.com/play/rtm/index.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
 ];

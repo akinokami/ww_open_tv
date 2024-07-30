@@ -350,57 +350,12 @@ String countryJson = """[
         "flag": "🇬🇶"
     },
     {
-        "name": "Eritrea",
-        "code": "ER",
-        "languages": [
-            "ara",
-            "eng",
-            "tir"
-        ],
-        "flag": "🇪🇷"
-    },
-    {
-        "name": "Estonia",
-        "code": "EE",
-        "languages": [
-            "est"
-        ],
-        "flag": "🇪🇪"
-    },
-    {
         "name": "Ethiopia",
         "code": "ET",
         "languages": [
             "amh"
         ],
         "flag": "🇪🇹"
-    },
-    {
-        "name": "Falkland Islands",
-        "code": "FK",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇫🇰"
-    },
-    {
-        "name": "Faroe Islands",
-        "code": "FO",
-        "languages": [
-            "dan",
-            "fao"
-        ],
-        "flag": "🇫🇴"
-    },
-    {
-        "name": "Fiji",
-        "code": "FJ",
-        "languages": [
-            "eng",
-            "fij",
-            "hif"
-        ],
-        "flag": "🇫🇯"
     },
     {
         "name": "Finland",
@@ -418,46 +373,6 @@ String countryJson = """[
             "fra"
         ],
         "flag": "🇫🇷"
-    },
-    {
-        "name": "French Guiana",
-        "code": "GF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇬🇫"
-    },
-    {
-        "name": "French Polynesia",
-        "code": "PF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇵🇫"
-    },
-    {
-        "name": "French Southern Territories",
-        "code": "TF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇹🇫"
-    },
-    {
-        "name": "Gabon",
-        "code": "GA",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇬🇦"
-    },
-    {
-        "name": "Gambia",
-        "code": "GM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇲"
     },
     {
         "name": "Georgia",
@@ -484,36 +399,12 @@ String countryJson = """[
         "flag": "🇬🇭"
     },
     {
-        "name": "Gibraltar",
-        "code": "GI",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇮"
-    },
-    {
         "name": "Greece",
         "code": "GR",
         "languages": [
             "ell"
         ],
         "flag": "🇬🇷"
-    },
-    {
-        "name": "Greenland",
-        "code": "GL",
-        "languages": [
-            "kal"
-        ],
-        "flag": "🇬🇱"
-    },
-    {
-        "name": "Grenada",
-        "code": "GD",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇩"
     },
     {
         "name": "Guadeloupe",
@@ -524,16 +415,6 @@ String countryJson = """[
         "flag": "🇬🇵"
     },
     {
-        "name": "Guam",
-        "code": "GU",
-        "languages": [
-            "cha",
-            "eng",
-            "spa"
-        ],
-        "flag": "🇬🇺"
-    },
-    {
         "name": "Guatemala",
         "code": "GT",
         "languages": [
@@ -542,31 +423,12 @@ String countryJson = """[
         "flag": "🇬🇹"
     },
     {
-        "name": "Guernsey",
-        "code": "GG",
-        "languages": [
-            "eng",
-            "fra",
-            "nfr"
-        ],
-        "flag": "🇬🇬"
-    },
-    {
         "name": "Guinea",
         "code": "GN",
         "languages": [
             "fra"
         ],
         "flag": "🇬🇳"
-    },
-    {
-        "name": "Guinea-Bissau",
-        "code": "GW",
-        "languages": [
-            "por",
-            "pov"
-        ],
-        "flag": "🇬🇼"
     },
     {
         "name": "Guyana",
@@ -584,14 +446,6 @@ String countryJson = """[
             "hat"
         ],
         "flag": "🇭🇹"
-    },
-    {
-        "name": "Heard Island and McDonald Islands",
-        "code": "HM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇭🇲"
     },
     {
         "name": "Honduras",
@@ -672,15 +526,6 @@ String countryJson = """[
         "flag": "🇮🇪"
     },
     {
-        "name": "Isle of Man",
-        "code": "IM",
-        "languages": [
-            "eng",
-            "glv"
-        ],
-        "flag": "🇮🇲"
-    },
-    {
         "name": "Israel",
         "code": "IL",
         "languages": [
@@ -723,16 +568,6 @@ String countryJson = """[
         "flag": "🇯🇵"
     },
     {
-        "name": "Jersey",
-        "code": "JE",
-        "languages": [
-            "eng",
-            "fra",
-            "nrf"
-        ],
-        "flag": "🇯🇪"
-    },
-    {
         "name": "Jordan",
         "code": "JO",
         "languages": [
@@ -757,15 +592,6 @@ String countryJson = """[
             "swa"
         ],
         "flag": "🇰🇪"
-    },
-    {
-        "name": "Kiribati",
-        "code": "KI",
-        "languages": [
-            "eng",
-            "gil"
-        ],
-        "flag": "🇰🇮"
     },
     {
         "name": "Kosovo",
@@ -1877,14 +1703,6 @@ String countryJson = """[
         "flag": "🇻🇳"
     },
     {
-        "name": "Wallis and Futuna",
-        "code": "WF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇼🇫"
-    },
-    {
         "name": "Western Sahara",
         "code": "EH",
         "languages": [
@@ -1901,43 +1719,5 @@ String countryJson = """[
             "ara"
         ],
         "flag": "🇾🇪"
-    },
-    {
-        "name": "Zambia",
-        "code": "ZM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇿🇲"
-    },
-    {
-        "name": "Zimbabwe",
-        "code": "ZW",
-        "languages": [
-            "bwg",
-            "eng",
-            "kck",
-            "hio",
-            "ndc",
-            "nde",
-            "nya",
-            "sna",
-            "sot",
-            "toi",
-            "tsn",
-            "tso",
-            "ven",
-            "xho",
-            "zib"
-        ],
-        "flag": "🇿🇼"
-    },
-    {
-        "name": "Åland",
-        "code": "AX",
-        "languages": [
-            "swe"
-        ],
-        "flag": "🇦🇽"
     }
 ]""";
