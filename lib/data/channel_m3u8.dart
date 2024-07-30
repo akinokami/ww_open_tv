@@ -6,31 +6,31 @@ List<ChannelModel> channelList = [
     countryCode: 'af',
     name: 'AMC',
     url: 'https://amchls.wns.live/hls/stream.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/qRrOi3t.png',
   ),
   ChannelModel(
     countryCode: 'af',
     name: 'ATN International',
     url: 'https://d10rltuy0iweup.cloudfront.net/ATNINT/myStream/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/HIPeUDL.png',
   ),
   ChannelModel(
     countryCode: 'af',
     name: 'ATN National',
     url: 'https://d10rltuy0iweup.cloudfront.net/ATNNAT/myStream/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/HIPeUDL.png',
   ),
   ChannelModel(
     countryCode: 'af',
     name: 'ATN News',
     url: 'https://d10rltuy0iweup.cloudfront.net/ATNNEWS/myStream/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/gaGpLPV.png',
   ),
   ChannelModel(
     countryCode: 'af',
     name: 'Dunya Naw TV',
     url: 'https://dunyanhls.wns.live/hls/stream.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.ibb.co/nQkLgyn/dunya-naw-tv.png',
   ),
 
   //Albania
@@ -38,19 +38,19 @@ List<ChannelModel> channelList = [
     countryCode: 'al',
     name: 'AlbKanale Music TV',
     url: 'https://albportal.net/albkanalemusic.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/JdKxscs.png',
   ),
   ChannelModel(
     countryCode: 'al',
     name: 'Kanali 7',
     url: 'https://fe.tring.al/delta/105/out/u/1200_1.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/rL2v9pM.png',
   ),
   ChannelModel(
     countryCode: 'al',
     name: 'News 24',
     url: 'https://tv.balkanweb.com/news24/livestream/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/zDwIsO3.png',
   ),
 
   //Algeria
@@ -58,7 +58,7 @@ List<ChannelModel> channelList = [
     countryCode: 'dz',
     name: 'Canal Algérie',
     url: 'https://bozztv.com/inim03/live1/giniko_canalalgerie/chunks.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/VEb631f.png',
   ),
 
   //Angola
@@ -66,14 +66,14 @@ List<ChannelModel> channelList = [
     countryCode: 'ao',
     name: 'KK TV',
     url: 'https://w1.manasat.com/ktv-angola/smil:ktv-angola.smil/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/gTabgkN.jpg',
   ),
   ChannelModel(
     countryCode: 'ao',
     name: 'Muzangala TV',
     url:
         'https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/fBeaJoS.png',
   ),
 
   //Argentina
@@ -82,7 +82,7 @@ List<ChannelModel> channelList = [
     name: 'Aire de Santa Fe',
     url:
         'https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/60vSWW0.png',
   ),
   ChannelModel(
     countryCode: 'ar',

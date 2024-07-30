@@ -131,14 +131,26 @@ class ChannelScreen extends StatelessWidget {
                                       //       "",
                                       // )),
                                       Center(
-                                        child: CustomText(
-                                          text: channelController
-                                                  .filterList[index].name ??
-                                              '',
-                                          color: blackTextColor,
-                                          fontSize: 14.sp,
-                                          fontWeight: FontWeight.bold,
-                                          maxLines: 3,
+                                        child: Column(
+                                          children: [
+                                            Image.network(
+                                              channelController
+                                                      .filterList[index]
+                                                      .imageUrl ??
+                                                  '',
+                                              width: 50.w,
+                                              height: 50.h,
+                                            ),
+                                            CustomText(
+                                              text: channelController
+                                                      .filterList[index].name ??
+                                                  '',
+                                              color: blackTextColor,
+                                              fontSize: 14.sp,
+                                              fontWeight: FontWeight.bold,
+                                              maxLines: 3,
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ],
