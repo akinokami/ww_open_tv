@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../data/channel_list.dart';
+import '../data/channel_m3u8.dart';
 import '../models/channel_model.dart';
 
 class SearchChannelController extends GetxController {
