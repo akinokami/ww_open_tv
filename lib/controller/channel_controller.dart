@@ -26,14 +26,15 @@ class ChannelController extends GetxController {
     filterChannel(selectedCountry.value.code ?? '');
     super.onInit();
   }
+
   void getCarts() {
     fav.value = box.read('fav') ?? '[]';
     selectedChannelList.clear();
     selectedChannelList.addAll(jsonDecode(fav.value).map<ChannelModel>((item) {
       return ChannelModel.fromJson(item);
     }));
-    print("fav list ${selectedChannelList[0].name}");
   }
+
   getCountryList() {
     List<dynamic> list = jsonDecode(countryJson);
     countryList.value =
@@ -46,20 +47,17 @@ class ChannelController extends GetxController {
             element.countryCode?.toLowerCase() == countryCode.toLowerCase())
         .toList();
   }
-void addToFavorite(ChannelModel channel) {
-    if(selectedChannelList.contains(channel)){
+
+  void addToFavorite(ChannelModel channel) {
+    if (selectedChannelList.contains(channel)) {
       selectedChannelList.remove(channel);
       return;
-    }else{
+    } else {
       selectedChannelList.add(channel);
     }
     box.remove('fav');
     box.write('fav', jsonEncode(selectedChannelList));
     print("Add to fav $selectedChannelList");
     print("box read ${box.read('fav')}");
-
   }
-
-
-
 }

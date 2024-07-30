@@ -1,5 +1,4 @@
 import 'package:ww_open_tv/models/channel_model.dart';
-import 'package:ww_open_tv/models/country_model.dart';
 
 List<ChannelModel> channelList = [
   //Afghanistan af
@@ -1774,14 +1773,6 @@ List<ChannelModel> channelList = [
     countryCode: 'tz',
     name: 'Abood TV',
     url: 'https://goliveafrica.media:9998/live/644db46d1b776/index.m3u8',
-    imageUrl: 'https://via.placeholder.com/150',
-  ),
-
-  ///Vatican City va
-  ChannelModel(
-    countryCode: 'va',
-    name: 'TV2000',
-    url: 'http://cld01ibi16.wz.tv2000.it/tv2000_alfa.m3u8',
     imageUrl: 'https://via.placeholder.com/150',
   ),
 

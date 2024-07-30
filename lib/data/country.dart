@@ -1405,208 +1405,12 @@ String countryJson = """[
         "flag": "🇪🇸"
     },
     {
-        "name": "Sri Lanka",
-        "code": "LK",
-        "languages": [
-            "sin",
-            "tam"
-        ],
-        "flag": "🇱🇰"
-    },
-    {
-        "name": "Sudan",
-        "code": "SD",
-        "languages": [
-            "ara",
-            "eng"
-        ],
-        "flag": "🇸🇩"
-    },
-    {
-        "name": "Suriname",
-        "code": "SR",
-        "languages": [
-            "nld"
-        ],
-        "flag": "🇸🇷"
-    },
-    {
-        "name": "Svalbard and Jan Mayen",
-        "code": "SJ",
-        "languages": [
-            "nor"
-        ],
-        "flag": "🇸🇯"
-    },
-    {
-        "name": "Swaziland",
-        "code": "SZ",
-        "languages": [
-            "eng",
-            "ssw"
-        ],
-        "flag": "🇸🇿"
-    },
-    {
-        "name": "Sweden",
-        "code": "SE",
-        "languages": [
-            "swe"
-        ],
-        "flag": "🇸🇪"
-    },
-    {
-        "name": "Switzerland",
-        "code": "CH",
-        "languages": [
-            "deu",
-            "fra",
-            "ita"
-        ],
-        "flag": "🇨🇭"
-    },
-    {
-        "name": "Syria",
-        "code": "SY",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇸🇾"
-    },
-    {
-        "name": "São Tomé and Príncipe",
-        "code": "ST",
-        "languages": [
-            "por"
-        ],
-        "flag": "🇸🇹"
-    },
-    {
         "name": "Taiwan",
         "code": "TW",
         "languages": [
             "zho"
         ],
         "flag": "🇹🇼"
-    },
-    {
-        "name": "Tajikistan",
-        "code": "TJ",
-        "languages": [
-            "rus",
-            "tgk"
-        ],
-        "flag": "🇹🇯"
-    },
-    {
-        "name": "Tanzania",
-        "code": "TZ",
-        "languages": [
-            "eng",
-            "swa"
-        ],
-        "flag": "🇹🇿"
-    },
-    {
-        "name": "Thailand",
-        "code": "TH",
-        "languages": [
-            "tha"
-        ],
-        "flag": "🇹🇭"
-    },
-    {
-        "name": "Togo",
-        "code": "TG",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇹🇬"
-    },
-    {
-        "name": "Tokelau",
-        "code": "TK",
-        "languages": [
-            "eng",
-            "smo",
-            "tkl"
-        ],
-        "flag": "🇹🇰"
-    },
-    {
-        "name": "Tonga",
-        "code": "TO",
-        "languages": [
-            "eng",
-            "ton"
-        ],
-        "flag": "🇹🇴"
-    },
-    {
-        "name": "Trinidad and Tobago",
-        "code": "TT",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇹🇹"
-    },
-    {
-        "name": "Tunisia",
-        "code": "TN",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇹🇳"
-    },
-    {
-        "name": "Turkey",
-        "code": "TR",
-        "languages": [
-            "tur"
-        ],
-        "flag": "🇹🇷"
-    },
-    {
-        "name": "Turkmenistan",
-        "code": "TM",
-        "languages": [
-            "rus",
-            "tuk"
-        ],
-        "flag": "🇹🇲"
-    },
-    {
-        "name": "Turks and Caicos Islands",
-        "code": "TC",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇹🇨"
-    },
-    {
-        "name": "Tuvalu",
-        "code": "TV",
-        "languages": [
-            "eng",
-            "tvl"
-        ],
-        "flag": "🇹🇻"
-    },
-    {
-        "name": "U.S. Minor Outlying Islands",
-        "code": "UM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇺🇲"
-    },
-    {
-        "name": "U.S. Virgin Islands",
-        "code": "VI",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇻🇮"
     },
     {
         "name": "Uganda",
@@ -1624,14 +1428,6 @@ String countryJson = """[
             "ukr"
         ],
         "flag": "🇺🇦"
-    },
-    {
-        "name": "United Arab Emirates",
-        "code": "AE",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇦🇪"
     },
     {
         "name": "United Kingdom",
@@ -1659,15 +1455,6 @@ String countryJson = """[
         "flag": "🇺🇾"
     },
     {
-        "name": "Uzbekistan",
-        "code": "UZ",
-        "languages": [
-            "rus",
-            "uzb"
-        ],
-        "flag": "🇺🇿"
-    },
-    {
         "name": "Vanuatu",
         "code": "VU",
         "languages": [
@@ -1676,15 +1463,6 @@ String countryJson = """[
             "fra"
         ],
         "flag": "🇻🇺"
-    },
-    {
-        "name": "Vatican City",
-        "code": "VA",
-        "languages": [
-            "ita",
-            "lat"
-        ],
-        "flag": "🇻🇦"
     },
     {
         "name": "Venezuela",
@@ -1701,16 +1479,6 @@ String countryJson = """[
             "vie"
         ],
         "flag": "🇻🇳"
-    },
-    {
-        "name": "Western Sahara",
-        "code": "EH",
-        "languages": [
-            "zgh",
-            "mey",
-            "spa"
-        ],
-        "flag": "🇪🇭"
     },
     {
         "name": "Yemen",

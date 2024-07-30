@@ -1,4 +1,3 @@
-import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -99,21 +98,25 @@ class ChannelScreen extends StatelessWidget {
                                                 //some code here
                                               },
                                               child: Icon(
-                                                channelController.selectedChannelList
-                                                    .any((item) =>
-                                                item.name ==
-                                                    channelController
-                                                        .filterList[
-                                                    index].name)?  Icons.favorite:Icons.favorite_border,
-                                                color:
-                                                channelController.selectedChannelList
-                                                    .any((item) =>
-                                                item.name ==
-                                                    channelController
-                                                        .filterList[
-                                                    index].name)?
-
-                                                     Colors.red
+                                                channelController
+                                                        .selectedChannelList
+                                                        .any((item) =>
+                                                            item.name ==
+                                                            channelController
+                                                                .filterList[
+                                                                    index]
+                                                                .name)
+                                                    ? Icons.favorite
+                                                    : Icons.favorite_border,
+                                                color: channelController
+                                                        .selectedChannelList
+                                                        .any((item) =>
+                                                            item.name ==
+                                                            channelController
+                                                                .filterList[
+                                                                    index]
+                                                                .name)
+                                                    ? Colors.red
                                                     : greyColor,
                                                 size: 15.w,
                                               ),
