@@ -1,3 +1,4 @@
+import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -23,42 +24,33 @@ class ChannelScreen extends StatelessWidget {
                 height: 10.h,
               ),
               Obx(
-                () => SizedBox(
-                  height: 29.h,
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: channelController.countryList.length,
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Obx(
-                        () => GestureDetector(
-                          onTap: () {
-                            channelController.selectedIndex.value = index;
-                            channelController.selectedCountry.value =
-                                channelController.countryList[index];
-                            channelController.filterChannel(
-                                channelController.countryList[index].code ?? '');
-                          },
-                          child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 5.w),
-                            padding: EdgeInsets.only(left: 10.w, right: 10.w),
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                color:
-                                    channelController.selectedIndex.value == index
-                                        ? secondaryColor
-                                        : whiteColor,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20.r))),
-                            child: CustomText(
-                              text:
-                                  "${channelController.countryList[index].flag ?? ''} ${channelController.countryList[index].name ?? ''}",
-                              color:channelController.selectedIndex.value == index?whiteColor: blackTextColor,
-                            ),
-                          ),
-                        ),
+                () => Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20.w),
+                  decoration: BoxDecoration(
+                      color: whiteColor,
+                      borderRadius: BorderRadius.circular(10.r)),
+                  child: DropdownButton<String>(
+                    underline: Container(),
+                    borderRadius: BorderRadius.circular(10.r),
+                    value: channelController.selectedCountry.value.code,
+                    items: channelController.countryList.map((country) {
+                      return DropdownMenuItem<String>(
+                        value: country.code,
+                        child:
+                            Text("${country.flag ?? ''} ${country.name ?? ''}"),
                       );
+                    }).toList(),
+                    onChanged: (newValue) {
+                      if (newValue != null) {
+                        final selectedCountry = channelController.countryList
+                            .firstWhere((country) => country.code == newValue);
+                        channelController.selectedCountry.value =
+                            selectedCountry;
+                        channelController.filterChannel(newValue);
+                      }
                     },
+                    dropdownColor: whiteColor,
+                    style: TextStyle(color: blackTextColor),
                   ),
                 ),
               ),
@@ -69,49 +61,71 @@ class ChannelScreen extends StatelessWidget {
                 child: Obx(
                   () => channelController.filterList.isNotEmpty
                       ? GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 0.w,
-                              mainAxisSpacing: 0.h,
-                              childAspectRatio: 1.5),
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                  crossAxisSpacing: 0.w,
+                                  mainAxisSpacing: 0.h,
+                                  childAspectRatio: 1.5),
                           itemCount: channelController.filterList.length,
                           itemBuilder: (context, index) {
                             return GestureDetector(
                               onTap: () {
                                 //some code here
                                 Get.to(() => PlayerScreen(
-                                    streammingUrl:
-                                        channelController.filterList[index].url ??
-                                            ""));
+                                    streammingUrl: channelController
+                                            .filterList[index].url ??
+                                        ""));
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
-
                                   padding: EdgeInsets.all(10.w),
                                   decoration: BoxDecoration(
                                       color: Colors.white,
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(10.r))),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(10.r))),
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        top: 0.h,
+                                          top: 0.h,
                                           right: 0.w,
-                                          child:GestureDetector(
-                                            onTap: (){
-                                              //some code here
-                                            },
-                                            child: Container(
-                                                padding: EdgeInsets.all(5.w),
-                                                decoration: BoxDecoration(
-                                                  shape: BoxShape.circle,
-                                                  color: secondaryColor,
-                                                ),
-                                                child: Icon(Icons.favorite,color: whiteColor,size: 15.w,)),
-                                          )
-
-                                      ),
+                                          child: Obx(
+                                            () => GestureDetector(
+                                              onTap: () {
+                                                channelController.addToFavorite(
+                                                    channelController
+                                                        .filterList[index]);
+                                                //some code here
+                                              },
+                                              child: Icon(
+                                                channelController
+                                                    .selectedChannelList
+                                                    .contains(
+                                                    channelController
+                                                        .filterList[
+                                                    index])
+                                                    ?  Icons.favorite:Icons.favorite_border,
+                                                color: channelController
+                                                        .selectedChannelList
+                                                        .contains(
+                                                            channelController
+                                                                    .filterList[
+                                                                index])
+                                                    ? Colors.red
+                                                    : greyColor,
+                                                size: 15.w,
+                                              ),
+                                            ),
+                                          )),
+                                      // Positioned(
+                                      //     top: 0.h,
+                                      //     left: 0.w,
+                                      //     child: CustomText(
+                                      //   text: channelController
+                                      //           .selectedCountry.value.flag ??
+                                      //       "",
+                                      // )),
                                       Center(
                                         child: CustomText(
                                           text: channelController
@@ -120,6 +134,7 @@ class ChannelScreen extends StatelessWidget {
                                           color: blackTextColor,
                                           fontSize: 14.sp,
                                           fontWeight: FontWeight.bold,
+                                          maxLines: 3,
                                         ),
                                       ),
                                     ],
