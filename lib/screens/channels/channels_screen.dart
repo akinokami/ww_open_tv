@@ -13,6 +13,7 @@ class ChannelScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
+
     return Scaffold(
         backgroundColor: primaryColor,
         body: Padding(
@@ -24,11 +25,14 @@ class ChannelScreen extends StatelessWidget {
               ),
               Obx(
                 () => Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20.w),
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
                   decoration: BoxDecoration(
                       color: whiteColor,
                       borderRadius: BorderRadius.circular(10.r)),
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.symmetric(horizontal: 10.w),
                   child: DropdownButton<String>(
+                    isExpanded: true,
                     underline: Container(),
                     borderRadius: BorderRadius.circular(10.r),
                     value: channelController.selectedCountry.value.code,
@@ -36,7 +40,7 @@ class ChannelScreen extends StatelessWidget {
                       return DropdownMenuItem<String>(
                         value: country.code,
                         child:
-                            Text("${country.flag ?? ''} ${country.name ?? ''}"),
+                        Text("${country.flag ?? ''}   ${country.name ?? ''}"),
                       );
                     }).toList(),
                     onChanged: (newValue) {
@@ -51,7 +55,7 @@ class ChannelScreen extends StatelessWidget {
                     dropdownColor: whiteColor,
                     style: TextStyle(color: blackTextColor),
                   ),
-                ),
+                )
               ),
               SizedBox(
                 height: 10.h,
