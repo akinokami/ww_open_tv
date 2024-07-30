@@ -50,8 +50,9 @@ class EnLanguage {
     'address': 'Address :',
     'trophies': 'Trophies',
     'club_records': 'Club Records',
-    'channel': 'channel',
+    'channel': 'Channel',
     'no_data_found': 'No Data Found',
     'no_channel_found': 'No Channel Found',
+    'fav': 'Favorite',
   };
 }

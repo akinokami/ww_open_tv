@@ -15,7 +15,7 @@ class ChangeLanguageScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: primaryColor,
       appBar: AppBar(
-          iconTheme: IconThemeData(color: lightWhiteColor),
+         // iconTheme: IconThemeData(color: lightWhiteColor),
           centerTitle: true,
           backgroundColor: primaryColor,
           title: CustomText(
@@ -45,7 +45,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                         ),
                         title: CustomText(
                           text: "English",
-                          color: lightWhiteColor,
+                          //color: lightWhiteColor,
                         ),
                         trailing: Icon(
                           languageController.language.value == "en"
@@ -53,7 +53,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                               : Icons.check_circle_outline,
                           color: languageController.language.value == "en"
                               ? secondaryColor
-                              : lightWhiteColor,
+                              : greyColor,
                         ),
                       ),
                     ),
@@ -74,7 +74,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                         ),
                         title: CustomText(
                           text: "中国人",
-                          color: lightWhiteColor,
+                          //color: lightWhiteColor,
                         ),
                         trailing: Icon(
                           languageController.language.value == "zh"
@@ -82,7 +82,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                               : Icons.check_circle_outline,
                           color: languageController.language.value == "zh"
                               ? secondaryColor
-                              : lightWhiteColor,
+                              : greyColor,
                         ),
                       ),
                     ),

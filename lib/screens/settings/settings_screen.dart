@@ -42,7 +42,7 @@ class SettingsScreen extends StatelessWidget {
                   Get.to(const ChangeLanguageScreen());
                 },
                 child: Card(
-                    color: cardColor,
+                    color: whiteColor,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -73,13 +73,13 @@ class SettingsScreen extends StatelessWidget {
                                       ? 'vietnam'.tr
                                       : 'chinese'.tr,
                               fontSize: 12.sp,
-                              color: lightWhiteColor,
+
                             ),
                             Padding(
                               padding: EdgeInsets.all(8.w),
                               child: Icon(
                                 Icons.arrow_forward_ios,
-                                color: lightWhiteColor,
+
                                 size: 18.w,
                               ),
                             ),
@@ -102,7 +102,7 @@ class SettingsScreen extends StatelessWidget {
                   Get.to(const PrivacyPolicyScreen());
                 },
                 child: Card(
-                    color: cardColor,
+                    color: whiteColor,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -112,13 +112,13 @@ class SettingsScreen extends StatelessWidget {
                             children: [
                               Icon(
                                 Icons.privacy_tip_outlined,
-                                color: lightWhiteColor,
+
                                 size: 18.w,
                               ),
                               kSizedBoxW10,
                               Text('policy'.tr,
                                   style: TextStyle(
-                                      color: lightWhiteColor, fontSize: 12.sp)),
+                                      fontSize: 12.sp)),
                             ],
                           ),
                         ),
@@ -126,7 +126,7 @@ class SettingsScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
-                            color: lightWhiteColor,
+
                             size: 20.w,
                           ),
                         ),
@@ -135,7 +135,7 @@ class SettingsScreen extends StatelessWidget {
               ),
               kSizedBoxH10,
               Card(
-                  color: cardColor,
+                  color: whiteColor,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -145,22 +145,22 @@ class SettingsScreen extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.info_outlined,
-                              color: lightWhiteColor,
+                              //color: lightWhiteColor,
                               size: 18.w,
                             ),
                             kSizedBoxW10,
                             Text('version'.tr,
                                 style: TextStyle(
-                                    color: lightWhiteColor, fontSize: 12.sp)),
+                                    fontSize: 12.sp)),
                           ],
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10.0, vertical: 15),
+                        padding:  EdgeInsets.symmetric(
+                            horizontal: 10.w, vertical: 10.h),
                         child: Text("1.0.0",
                             style: TextStyle(
-                                color: lightWhiteColor, fontSize: 12.sp)),
+                                 fontSize: 12.sp)),
                       ),
                     ],
                   )),
