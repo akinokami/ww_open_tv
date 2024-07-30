@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
 
+import '../../controller/channel_controller.dart';
 import '../../controller/search_controller.dart';
 import '../../custom_widgets/custom_text.dart';
 import '../channels/player_screen.dart';
@@ -13,6 +14,7 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scController = Get.put(SearchChannelController());
+    final channelController = Get.put(ChannelController());
     return Scaffold(
       backgroundColor: primaryColor,
       appBar: AppBar(
@@ -110,13 +112,28 @@ class SearchScreen extends StatelessWidget {
                                               onTap: (){
                                                 //some code here
                                               },
-                                              child: Container(
-                                                  padding: EdgeInsets.all(3.w),
-                                                  decoration: BoxDecoration(
-                                                    shape: BoxShape.circle,
-                                                    color: secondaryColor,
-                                                  ),
-                                                  child: Icon(Icons.favorite,color: whiteColor,size: 15.w,)),
+                                              child: Icon(
+                                                channelController
+                                                    .selectedChannelList
+                                                    .any((item) =>
+                                                item.name ==
+                                                    scController
+                                                        .cList[
+                                                    index]
+                                                        .name)
+                                                    ? Icons.favorite
+                                                    : Icons.favorite_border,
+                                                color: channelController
+                                                    .selectedChannelList
+                                                    .any((item) =>
+                                                item.name ==
+                                                    scController
+                                                        .cList[
+                                                    index]
+                                                        .name)
+                                                    ? Colors.red
+                                                    : greyColor,
+                                                size: 15.w,),
                                             )
 
                                         ),
