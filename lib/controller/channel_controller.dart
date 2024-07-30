@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:ww_open_tv/data/country.dart';
 import 'package:ww_open_tv/models/channel_model.dart';
 import 'package:ww_open_tv/models/country_model.dart';
@@ -8,6 +9,9 @@ import 'package:ww_open_tv/models/country_model.dart';
 import '../data/channel_m3u8.dart';
 
 class ChannelController extends GetxController {
+  final box = GetStorage();
+  RxList<ChannelModel> favList = <ChannelModel>[].obs;
+  final fav = ''.obs;
   final selectedIndex = 0.obs;
   final selectedChannelList = <ChannelModel>[].obs;
   RxList<CountryModel> countryList = <CountryModel>[].obs;
@@ -18,10 +22,18 @@ class ChannelController extends GetxController {
   @override
   void onInit() {
     getCountryList();
+    getCarts();
     filterChannel(selectedCountry.value.code ?? '');
     super.onInit();
   }
-
+  void getCarts() {
+    fav.value = box.read('fav') ?? '[]';
+    selectedChannelList.clear();
+    selectedChannelList.addAll(jsonDecode(fav.value).map<ChannelModel>((item) {
+      return ChannelModel.fromJson(item);
+    }));
+    print("fav list ${selectedChannelList[0].name}");
+  }
   getCountryList() {
     List<dynamic> list = jsonDecode(countryJson);
     countryList.value =
@@ -41,6 +53,10 @@ void addToFavorite(ChannelModel channel) {
     }else{
       selectedChannelList.add(channel);
     }
+    box.remove('fav');
+    box.write('fav', jsonEncode(selectedChannelList));
+    print("Add to fav $selectedChannelList");
+    print("box read ${box.read('fav')}");
 
   }
 

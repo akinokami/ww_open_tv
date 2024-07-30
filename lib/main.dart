@@ -7,6 +7,7 @@ import 'package:ww_open_tv/splash_screen.dart';
 import 'package:ww_open_tv/utils/global.dart';
 
 void main() {
+  GetStorage.init();
   runApp(const MyApp());
 }
 
