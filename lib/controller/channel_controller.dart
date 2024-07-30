@@ -22,6 +22,7 @@ class ChannelController extends GetxController {
   @override
   void onInit() {
     getCountryList();
+
     getCarts();
     filterChannel(selectedCountry.value.code ?? '');
     super.onInit();

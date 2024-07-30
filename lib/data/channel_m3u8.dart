@@ -1717,6 +1717,26 @@ List<ChannelModel> channelList = [
     url: 'https://cdn4.skygo.mn/live/disk1/Zoomoo/HLSv3-FTA/Zoomoo.m3u8',
     imageUrl: '',
   ),
+///South Korea kr
+  ChannelModel(
+    countryCode: 'kr',
+    name: 'ABN TV',
+    url: 'https://vod2.abn.co.kr/IPHONE/abn.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kr',
+    name: 'CGNTV',
+    url: 'https://cgntvliveweb-998.acs.wecandeo.com/ms/2850/998/index.m3u8',
+    imageUrl: '',
+  ),
+  ChannelModel(
+    countryCode: 'kr',
+    name: 'CTS기독교TV',
+    url: 'https://d34t5yjz1ooymj.cloudfront.net/out/v1/875039d5eba0478fa8375a06b3aa5a37/index.m3u8',
+    imageUrl: '',
+  ),
+
 
   ///Somalia so
   ChannelModel(
@@ -1730,7 +1750,7 @@ List<ChannelModel> channelList = [
     countryCode: 'so',
     name: 'Cinema Hausa',
     url:
-        'https://origin3.afxp.telemedia.co.za/PremiumFree/cinemahausa/playlist.m3u8',
+        'https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8',
     imageUrl: '',
   ),
   ChannelModel(

@@ -653,14 +653,7 @@ String countryJson = """[
         ],
         "flag": "🇱🇸"
     },
-    {
-        "name": "Liberia",
-        "code": "LR",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇱🇷"
-    },
+   
     {
         "name": "Libya",
         "code": "LY",
@@ -669,14 +662,7 @@ String countryJson = """[
         ],
         "flag": "🇱🇾"
     },
-    {
-        "name": "Liechtenstein",
-        "code": "LI",
-        "languages": [
-            "deu"
-        ],
-        "flag": "🇱🇮"
-    },
+   
     {
         "name": "Lithuania",
         "code": "LT",
@@ -695,134 +681,16 @@ String countryJson = """[
         ],
         "flag": "🇱🇺"
     },
-    {
-        "name": "Macao",
-        "code": "MO",
-        "languages": [
-            "por",
-            "zho"
-        ],
-        "flag": "🇲🇴"
-    },
-    {
-        "name": "Madagascar",
-        "code": "MG",
-        "languages": [
-            "fra",
-            "mlg"
-        ],
-        "flag": "🇲🇬"
-    },
-    {
-        "name": "Malawi",
-        "code": "MW",
-        "languages": [
-            "eng",
-            "nya"
-        ],
-        "flag": "🇲🇼"
-    },
-    {
-        "name": "Malaysia",
-        "code": "MY",
-        "languages": [
-            "eng",
-            "msa"
-        ],
-        "flag": "🇲🇾"
-    },
-    {
-        "name": "Maldives",
-        "code": "MV",
-        "languages": [
-            "div"
-        ],
-        "flag": "🇲🇻"
-    },
-    {
-        "name": "Mali",
-        "code": "ML",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇲🇱"
-    },
-    {
-        "name": "Malta",
-        "code": "MT",
-        "languages": [
-            "eng",
-            "mlt"
-        ],
-        "flag": "🇲🇹"
-    },
-    {
-        "name": "Marshall Islands",
-        "code": "MH",
-        "languages": [
-            "eng",
-            "mah"
-        ],
-        "flag": "🇲🇭"
-    },
-    {
-        "name": "Martinique",
-        "code": "MQ",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇲🇶"
-    },
-    {
-        "name": "Mauritania",
-        "code": "MR",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇲🇷"
-    },
-    {
-        "name": "Mauritius",
-        "code": "MU",
-        "languages": [
-            "eng",
-            "fra",
-            "mfe"
-        ],
-        "flag": "🇲🇺"
-    },
-    {
-        "name": "Mayotte",
-        "code": "YT",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇾🇹"
-    },
-    {
-        "name": "Mexico",
-        "code": "MX",
-        "languages": [
-            "spa"
-        ],
-        "flag": "🇲🇽"
-    },
-    {
-        "name": "Micronesia",
-        "code": "FM",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇫🇲"
-    },
-    {
-        "name": "Moldova",
-        "code": "MD",
-        "languages": [
-            "ron"
-        ],
-        "flag": "🇲🇩"
-    },
+   
+  
+  
+  
+   
+   
+  
+  
+  
+  
     {
         "name": "Monaco",
         "code": "MC",
@@ -831,14 +699,7 @@ String countryJson = """[
         ],
         "flag": "🇲🇨"
     },
-    {
-        "name": "Mongolia",
-        "code": "MN",
-        "languages": [
-            "mon"
-        ],
-        "flag": "🇲🇳"
-    },
+    
     {
         "name": "Montenegro",
         "code": "ME",
@@ -851,14 +712,7 @@ String countryJson = """[
         ],
         "flag": "🇲🇪"
     },
-    {
-        "name": "Montserrat",
-        "code": "MS",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇲🇸"
-    },
+   
     {
         "name": "Morocco",
         "code": "MA",
@@ -868,14 +722,7 @@ String countryJson = """[
         ],
         "flag": "🇲🇦"
     },
-    {
-        "name": "Mozambique",
-        "code": "MZ",
-        "languages": [
-            "por"
-        ],
-        "flag": "🇲🇿"
-    },
+   
     {
         "name": "Myanmar (Burma)",
         "code": "MM",
@@ -884,81 +731,13 @@ String countryJson = """[
         ],
         "flag": "🇲🇲"
     },
-    {
-        "name": "Namibia",
-        "code": "NA",
-        "languages": [
-            "afr",
-            "deu",
-            "eng",
-            "her",
-            "hgm",
-            "kwn",
-            "loz",
-            "ndo",
-            "tsn"
-        ],
-        "flag": "🇳🇦"
-    },
-    {
-        "name": "Nauru",
-        "code": "NR",
-        "languages": [
-            "eng",
-            "nau"
-        ],
-        "flag": "🇳🇷"
-    },
-    {
-        "name": "Nepal",
-        "code": "NP",
-        "languages": [
-            "nep"
-        ],
-        "flag": "🇳🇵"
-    },
-    {
-        "name": "Netherlands",
-        "code": "NL",
-        "languages": [
-            "nld"
-        ],
-        "flag": "🇳🇱"
-    },
-    {
-        "name": "New Caledonia",
-        "code": "NC",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇳🇨"
-    },
-    {
-        "name": "New Zealand",
-        "code": "NZ",
-        "languages": [
-            "eng",
-            "mri",
-            "nzs"
-        ],
-        "flag": "🇳🇿"
-    },
-    {
-        "name": "Nicaragua",
-        "code": "NI",
-        "languages": [
-            "spa"
-        ],
-        "flag": "🇳🇮"
-    },
-    {
-        "name": "Niger",
-        "code": "NE",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇳🇪"
-    },
+   
+   
+  
+  
+ 
+   
+  
     {
         "name": "Nigeria",
         "code": "NG",
@@ -967,32 +746,9 @@ String countryJson = """[
         ],
         "flag": "🇳🇬"
     },
-    {
-        "name": "Niue",
-        "code": "NU",
-        "languages": [
-            "eng",
-            "niu"
-        ],
-        "flag": "🇳🇺"
-    },
-    {
-        "name": "Norfolk Island",
-        "code": "NF",
-        "languages": [
-            "eng",
-            "pih"
-        ],
-        "flag": "🇳🇫"
-    },
-    {
-        "name": "North Korea",
-        "code": "KP",
-        "languages": [
-            "kor"
-        ],
-        "flag": "🇰🇵"
-    },
+   
+  
+
     {
         "name": "North Macedonia",
         "code": "MK",
@@ -1001,16 +757,7 @@ String countryJson = """[
         ],
         "flag": "🇲🇰"
     },
-    {
-        "name": "Northern Mariana Islands",
-        "code": "MP",
-        "languages": [
-            "cal",
-            "cha",
-            "eng"
-        ],
-        "flag": "🇲🇵"
-    },
+   
     {
         "name": "Norway",
         "code": "NO",
@@ -1036,85 +783,14 @@ String countryJson = """[
         ],
         "flag": "🇵🇰"
     },
-    {
-        "name": "Palau",
-        "code": "PW",
-        "languages": [
-            "eng",
-            "pau"
-        ],
-        "flag": "🇵🇼"
-    },
-    {
-        "name": "Palestine",
-        "code": "PS",
-        "languages": [
-            "ara"
-        ],
-        "flag": "🇵🇸"
-    },
-    {
-        "name": "Panama",
-        "code": "PA",
-        "languages": [
-            "spa"
-        ],
-        "flag": "🇵🇦"
-    },
-    {
-        "name": "Papua New Guinea",
-        "code": "PG",
-        "languages": [
-            "eng",
-            "hmo",
-            "tpi"
-        ],
-        "flag": "🇵🇬"
-    },
-    {
-        "name": "Paraguay",
-        "code": "PY",
-        "languages": [
-            "grn",
-            "spa"
-        ],
-        "flag": "🇵🇾"
-    },
-    {
-        "name": "Peru",
-        "code": "PE",
-        "languages": [
-            "aym",
-            "que",
-            "spa"
-        ],
-        "flag": "🇵🇪"
-    },
-    {
-        "name": "Philippines",
-        "code": "PH",
-        "languages": [
-            "eng",
-            "fil"
-        ],
-        "flag": "🇵🇭"
-    },
-    {
-        "name": "Pitcairn Islands",
-        "code": "PN",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇵🇳"
-    },
-    {
-        "name": "Poland",
-        "code": "PL",
-        "languages": [
-            "pol"
-        ],
-        "flag": "🇵🇱"
-    },
+   
+  
+   
+  
+   
+ 
+ 
+   
     {
         "name": "Portugal",
         "code": "PT",
@@ -1123,15 +799,7 @@ String countryJson = """[
         ],
         "flag": "🇵🇹"
     },
-    {
-        "name": "Puerto Rico",
-        "code": "PR",
-        "languages": [
-            "eng",
-            "spa"
-        ],
-        "flag": "🇵🇷"
-    },
+   
     {
         "name": "Qatar",
         "code": "QA",
@@ -1140,24 +808,8 @@ String countryJson = """[
         ],
         "flag": "🇶🇦"
     },
-    {
-        "name": "Republic of the Congo",
-        "code": "CG",
-        "languages": [
-            "fra",
-            "kon",
-            "lin"
-        ],
-        "flag": "🇨🇬"
-    },
-    {
-        "name": "Romania",
-        "code": "RO",
-        "languages": [
-            "ron"
-        ],
-        "flag": "🇷🇴"
-    },
+   
+  
     {
         "name": "Russia",
         "code": "RU",
@@ -1166,97 +818,14 @@ String countryJson = """[
         ],
         "flag": "🇷🇺"
     },
-    {
-        "name": "Rwanda",
-        "code": "RW",
-        "languages": [
-            "eng",
-            "fra",
-            "kin"
-        ],
-        "flag": "🇷🇼"
-    },
-    {
-        "name": "Réunion",
-        "code": "RE",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇷🇪"
-    },
-    {
-        "name": "Saint Barthélemy",
-        "code": "BL",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇧🇱"
-    },
-    {
-        "name": "Saint Helena",
-        "code": "SH",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇸🇭"
-    },
-    {
-        "name": "Saint Kitts and Nevis",
-        "code": "KN",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇰🇳"
-    },
-    {
-        "name": "Saint Lucia",
-        "code": "LC",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇱🇨"
-    },
-    {
-        "name": "Saint Martin",
-        "code": "MF",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇲🇫"
-    },
-    {
-        "name": "Saint Pierre and Miquelon",
-        "code": "PM",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇵🇲"
-    },
-    {
-        "name": "Saint Vincent and the Grenadines",
-        "code": "VC",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇻🇨"
-    },
-    {
-        "name": "Samoa",
-        "code": "WS",
-        "languages": [
-            "eng",
-            "smo"
-        ],
-        "flag": "🇼🇸"
-    },
-    {
-        "name": "San Marino",
-        "code": "SM",
-        "languages": [
-            "ita"
-        ],
-        "flag": "🇸🇲"
-    },
+   
+  
+  
+  
+  
+  
+   
+  
     {
         "name": "Saudi Arabia",
         "code": "SA",
@@ -1265,40 +834,10 @@ String countryJson = """[
         ],
         "flag": "🇸🇦"
     },
-    {
-        "name": "Senegal",
-        "code": "SN",
-        "languages": [
-            "fra"
-        ],
-        "flag": "🇸🇳"
-    },
-    {
-        "name": "Serbia",
-        "code": "RS",
-        "languages": [
-            "srp"
-        ],
-        "flag": "🇷🇸"
-    },
-    {
-        "name": "Seychelles",
-        "code": "SC",
-        "languages": [
-            "crs",
-            "eng",
-            "fra"
-        ],
-        "flag": "🇸🇨"
-    },
-    {
-        "name": "Sierra Leone",
-        "code": "SL",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇸🇱"
-    },
+   
+   
+  
+  
     {
         "name": "Singapore",
         "code": "SG",
@@ -1310,41 +849,10 @@ String countryJson = """[
         ],
         "flag": "🇸🇬"
     },
-    {
-        "name": "Sint Maarten",
-        "code": "SX",
-        "languages": [
-            "eng",
-            "fra",
-            "nld"
-        ],
-        "flag": "🇸🇽"
-    },
-    {
-        "name": "Slovakia",
-        "code": "SK",
-        "languages": [
-            "slk",
-            "ces"
-        ],
-        "flag": "🇸🇰"
-    },
-    {
-        "name": "Slovenia",
-        "code": "SI",
-        "languages": [
-            "slv"
-        ],
-        "flag": "🇸🇮"
-    },
-    {
-        "name": "Solomon Islands",
-        "code": "SB",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇸🇧"
-    },
+ 
+ 
+   
+    
     {
         "name": "Somalia",
         "code": "SO",
@@ -1372,14 +880,7 @@ String countryJson = """[
         ],
         "flag": "🇿🇦"
     },
-    {
-        "name": "South Georgia and the South Sandwich Islands",
-        "code": "GS",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇬🇸"
-    },
+  
     {
         "name": "South Korea",
         "code": "KR",
@@ -1388,22 +889,8 @@ String countryJson = """[
         ],
         "flag": "🇰🇷"
     },
-    {
-        "name": "South Sudan",
-        "code": "SS",
-        "languages": [
-            "eng"
-        ],
-        "flag": "🇸🇸"
-    },
-    {
-        "name": "Spain",
-        "code": "ES",
-        "languages": [
-            "spa"
-        ],
-        "flag": "🇪🇸"
-    },
+   
+  
     {
         "name": "Taiwan",
         "code": "TW",
@@ -1454,16 +941,7 @@ String countryJson = """[
         ],
         "flag": "🇺🇾"
     },
-    {
-        "name": "Vanuatu",
-        "code": "VU",
-        "languages": [
-            "bis",
-            "eng",
-            "fra"
-        ],
-        "flag": "🇻🇺"
-    },
+   
     {
         "name": "Venezuela",
         "code": "VE",
