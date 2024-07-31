@@ -877,7 +877,7 @@ List<ChannelModel> channelList = [
     countryCode: 'ge',
     name: 'Formula',
     url: 'https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8',
-    imageUrl: 'https://i.imgur.com/fsqBn8G.png',
+    imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'ge',
@@ -1160,7 +1160,7 @@ List<ChannelModel> channelList = [
     name: 'Caribbean Gospel TV',
     url:
         'https://5a1178b42cc03.streamlock.net:443/CGTV2024/CGTV2024/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/mVQ8J4k.png',
+    imageUrl: '', //'https://i.imgur.com/mVQ8J4k.png',
   ),
   ChannelModel(
     countryCode: 'jm',
@@ -1180,13 +1180,14 @@ List<ChannelModel> channelList = [
     countryCode: 'jp',
     name: 'CGNTV Japan',
     url: 'https://cgntvliveweb-944.acs.wecandeo.com/ms/2850/944/index.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/5LNZeVq.png',
   ),
   ChannelModel(
     countryCode: 'jp',
     name: 'NTV News24',
     url: 'https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8',
-    imageUrl: 'https://i.imgur.com/5LNZeVq.png',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/News24.svg/512px-News24.svg.png',
   ),
 
   //Jordan
@@ -1337,7 +1338,7 @@ List<ChannelModel> channelList = [
     countryCode: 'kg',
     name: 'TV1 KG',
     url: 'http://212.2.225.30:1935/live/site.stream/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/Mti9t9C.png',
+    imageUrl: '', //'https://i.imgur.com/Mti9t9C.png',
   ),
 
   //Laos
@@ -1599,12 +1600,12 @@ List<ChannelModel> channelList = [
     imageUrl: 'https://i.imgur.com/xdAW0D5.png',
   ),
   ChannelModel(
-    countryCode: 'pt',
-    name: 'ON FM',
-    url: 'https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8',
-    imageUrl:
-        'https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png',
-  ),
+      countryCode: 'pt',
+      name: 'ON FM',
+      url: 'https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8',
+      imageUrl: ''
+      // 'https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png',
+      ),
   ChannelModel(
     countryCode: 'pt',
     name: 'RTP International Asia',
