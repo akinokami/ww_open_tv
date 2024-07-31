@@ -659,7 +659,7 @@ List<ChannelModel> channelList = [
     countryCode: 'cu',
     name: 'Prensa Latina TV',
     url: 'https://eu1.servers10.com:8081/8192/index.m3u8',
-    imageUrl: 'https://i.imgur.com/VcNrY0m.png',
+    imageUrl: 'https://i.imgur.com/jbm2S9O.jpg',
   ),
   ChannelModel(
     countryCode: 'cu',
