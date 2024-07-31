@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/controller/channel_controller.dart';
@@ -8,9 +9,25 @@ import '../../constants/color_const.dart';
 import '../../custom_widgets/custom_cache_network_image.dart';
 import '../../custom_widgets/custom_text.dart';
 
-class FavoriteChannelScreen extends StatelessWidget {
+class FavoriteChannelScreen extends StatefulWidget {
   const FavoriteChannelScreen({super.key});
 
+  @override
+  State<FavoriteChannelScreen> createState() => _FavoriteChannelScreenState();
+}
+
+class _FavoriteChannelScreenState extends State<FavoriteChannelScreen> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+
+    ]);
+  }
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
