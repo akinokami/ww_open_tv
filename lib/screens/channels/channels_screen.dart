@@ -41,8 +41,8 @@ class _ChannelScreenState extends State<ChannelScreen> {
                 return AlertDialog(
                   surfaceTintColor: whiteColor,
                   backgroundColor: whiteColor,
-                  title: const CustomText(
-                    text: 'Privacy Policy',
+                  title: CustomText(
+                    text: 'policy'.tr,
                     fontWeight: FontWeight.w500,
                   ),
                   content: SizedBox(
@@ -54,7 +54,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                             languageController.language.value == "en"
                                 ? Global.policyEn
                                 : Global.policyCn,
-                            style: TextStyle(fontSize: 12)),
+                            style: TextStyle(fontSize: 12.sp)),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -79,7 +79,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                               },
                             ),
                             CustomText(
-                              text: 'I agreed to the Privacy Policy.',
+                              text: 'agree'.tr,
                               fontSize: 12.sp,
                             )
                           ],
@@ -95,7 +95,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                 }
                               : null,
                           child: CustomText(
-                            text: 'Accept',
+                            text: 'accept'.tr,
                             fontSize: 14.sp,
                             color: Colors.white,
                           ),
@@ -233,7 +233,6 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                                   ),
                                                 ),
                                               )),
-
                                           Center(
                                             child: Column(
                                               mainAxisAlignment:

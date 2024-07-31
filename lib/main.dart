@@ -7,11 +7,13 @@ import 'package:ww_open_tv/language/languages.dart';
 import 'package:ww_open_tv/splash_screen.dart';
 import 'package:ww_open_tv/utils/global.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await FastCachedImageConfig.init(clearCacheAfter: const Duration(days: 3), );
-  GetStorage.init();
+  await FastCachedImageConfig.init(
+    clearCacheAfter: const Duration(days: 3),
+  );
+  await GetStorage.init();
   runApp(const MyApp());
 }
 

@@ -30,8 +30,8 @@ class CustomFastCacheNetworkImage extends StatelessWidget {
             fit: BoxFit.contain, width: width.w, height: height.h);
       },
       loadingBuilder: (context, progress) {
-        debugPrint(
-            'Progress: ${progress.isDownloading} ${progress.downloadedBytes} / ${progress.totalBytes}');
+        // debugPrint(
+        //     'Progress: ${progress.isDownloading} ${progress.downloadedBytes} / ${progress.totalBytes}');
         return SizedBox(
           width: width.w,
           height: height.h,
