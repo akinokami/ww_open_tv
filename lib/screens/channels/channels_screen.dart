@@ -233,14 +233,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                                   ),
                                                 ),
                                               )),
-                                          // Positioned(
-                                          //     top: 0.h,
-                                          //     left: 0.w,
-                                          //     child: CustomText(
-                                          //   text: channelController
-                                          //           .selectedCountry.value.flag ??
-                                          //       "",
-                                          // )),
+
                                           Center(
                                             child: Column(
                                               mainAxisAlignment:
@@ -260,7 +253,8 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                                           .name ??
                                                       '',
                                                   color: blackTextColor,
-                                                  fontSize: 12.sp,
+                                                  fontSize: 10.sp,
+                                                  fontWeight: FontWeight.w500,
                                                   maxLines: 3,
                                                 ),
                                               ],
