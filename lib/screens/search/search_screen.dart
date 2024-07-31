@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
+import 'package:ww_open_tv/constants/dimen_const.dart';
 
 import '../../controller/channel_controller.dart';
 import '../../controller/search_controller.dart';
@@ -73,6 +74,7 @@ class SearchScreen extends StatelessWidget {
                 ),
               ),
             ),
+            kSizedBoxH10,
             Expanded(
               child: Obx(
                 () => scController.isLoading.value
@@ -101,7 +103,7 @@ class SearchScreen extends StatelessWidget {
                                   child: Container(
                                     padding: EdgeInsets.all(10.w),
                                     decoration: BoxDecoration(
-                                        color: whiteColor,
+                                        color: cardColor,
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(10.r))),
                                     child: Stack(

@@ -63,7 +63,7 @@ class FavoriteChannelScreen extends StatelessWidget {
                                 child: Container(
                                   padding: EdgeInsets.all(10.w),
                                   decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: cardColor,
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(10.r))),
                                   child: Stack(
