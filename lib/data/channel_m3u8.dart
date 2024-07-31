@@ -1193,7 +1193,7 @@ List<ChannelModel> channelList = [
     url:
         'https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/04fCzHl.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'hu',
@@ -1201,7 +1201,7 @@ List<ChannelModel> channelList = [
     url:
         'https://cloudfront44.lexanetwork.com:1344/relay01/HDE032.sdp/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/OCZ8CfK.png',
-    category: '',
+    category: 'general',
   ),
 
   //Iceland
@@ -1211,14 +1211,14 @@ List<ChannelModel> channelList = [
     url: 'https://ruv-web-live.akamaized.net/streymi/ruverl/ruverl.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/R%C3%9AV_ohf_2019_logo.svg/512px-R%C3%9AV_ohf_2019_logo.svg.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'is',
     name: 'Vísir',
     url: 'https://live.visir.is/hls-live/visir.smil/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/07Vlt6i.jpg',
-    category: '',
+    category: 'news',
   ),
 
   //India
@@ -1227,14 +1227,14 @@ List<ChannelModel> channelList = [
     name: '9XM',
     url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8',
     imageUrl: 'https://i.imgur.com/F17QtN2.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'in',
     name: 'Aaj Tak',
     url: 'https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8',
     imageUrl: 'https://i.imgur.com/RpIdCB3.png',
-    category: '',
+    category: 'news',
   ),
 
   //Indonesia
@@ -1243,7 +1243,7 @@ List<ChannelModel> channelList = [
     name: 'AKTV',
     url: 'https://e.siar.us/live/aktv.m3u8',
     imageUrl: 'https://i.imgur.com/DUY5WXf.png',
-    category: '',
+    category: 'general',
   ),
 
   //Iran
@@ -1252,14 +1252,14 @@ List<ChannelModel> channelList = [
     name: 'Alborz TV',
     url: 'https://hls.247box.live/hls/stream.m3u8',
     imageUrl: 'https://i.imgur.com/tiHdLlK.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'ir',
     name: 'Abalfadhl TV',
     url: 'https://t.northtelecom.org/ABALFADHLTV.m3u8',
     imageUrl: 'https://i.ibb.co/cCmjqtQ/logo-2.png',
-    category: '',
+    category: 'religious',
   ),
 
   //Iraq
@@ -1268,7 +1268,7 @@ List<ChannelModel> channelList = [
     name: 'Afaq TV',
     url: 'http://63b03f7689049.streamlock.net:1935/live/1/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/t7CaTu3.png',
-    category: '',
+    category: 'general',
   ),
 
   //Ireland
@@ -1278,7 +1278,7 @@ List<ChannelModel> channelList = [
     url: 'https://d3eq0jseza7fm5.cloudfront.net/tg4_vod_3.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cula4_Purple_2022_%281%29.svg/512px-Cula4_Purple_2022_%281%29.svg.png',
-    category: '',
+    category: 'kids',
   ),
 
   //Israel
@@ -1288,7 +1288,7 @@ List<ChannelModel> channelList = [
     url: 'https://shoppingil-rewriter.vidnt.com/index.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/he/b/b9/%D7%A1%D7%9E%D7%9C%D7%99%D7%9C_%D7%A2%D7%A8%D7%95%D7%A5_%D7%94%D7%A7%D7%A0%D7%99%D7%95%D7%AA.jpg',
-    category: '',
+    category: 'shop',
   ),
 
   //Italy
@@ -1298,7 +1298,7 @@ List<ChannelModel> channelList = [
     url:
         'https://5e73cf528f404.streamlock.net/GR_sport/livestream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/mEoDAf1.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'it',
@@ -1306,7 +1306,7 @@ List<ChannelModel> channelList = [
     url:
         'https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/Y1Yq3iV.png',
-    category: '',
+    category: 'culture',
   ),
 
 //Ivory Coast
@@ -1315,7 +1315,7 @@ List<ChannelModel> channelList = [
     name: 'Alpha et Omega TV',
     url: 'https://video1.getstreamhosting.com:1936/8318/8318/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/s9EgQQI.jpg',
-    category: '',
+    category: 'religious',
   ),
 
   //Jamaica
@@ -1325,14 +1325,14 @@ List<ChannelModel> channelList = [
     url:
         'https://5a1178b42cc03.streamlock.net:443/CGTV2024/CGTV2024/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/mVQ8J4k.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'jm',
     name: 'Fame95 FM',
     url: 'https://rjr-fame.akamaized.net/hls/live/2033820/RJR_FAME/master.m3u8',
     imageUrl: 'https://i.imgur.com/fvtF0qM.png',
-    category: '',
+    category: 'music',
   ),
 
   //Japan
@@ -1341,14 +1341,14 @@ List<ChannelModel> channelList = [
     name: 'AT-X',
     url: 'https://neetball.net/live/neet3.m3u8',
     imageUrl: 'https://i.imgur.com/turWday.png',
-    category: '',
+    category: 'animation',
   ),
   ChannelModel(
     countryCode: 'jp',
     name: 'CGNTV Japan',
     url: 'https://cgntvliveweb-944.acs.wecandeo.com/ms/2850/944/index.m3u8',
     imageUrl: 'https://i.imgur.com/5LNZeVq.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'jp',
@@ -1356,7 +1356,7 @@ List<ChannelModel> channelList = [
     url: 'https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/News24.svg/512px-News24.svg.png',
-    category: '',
+    category: 'news',
   ),
 
   //Jordan
@@ -1365,7 +1365,7 @@ List<ChannelModel> channelList = [
     name: 'Haqiqa',
     url: 'https://jmc-live.ercdn.net/alhaqiqa/alhaqiqa.m3u8',
     imageUrl: 'https://i.imgur.com/I9SJ2kr.jpg',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'jo',
@@ -1381,7 +1381,7 @@ List<ChannelModel> channelList = [
     name: 'Abai TV',
     url: 'https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/Nw2R7Dq.png',
-    category: '',
+    category: 'culture',
   ),
   ChannelModel(
     countryCode: 'kz',
@@ -1396,7 +1396,7 @@ List<ChannelModel> channelList = [
     url:
         'https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/2o5T0gi.png',
-    category: '',
+    category: 'kids',
   ),
   ChannelModel(
     countryCode: 'kz',
@@ -1410,7 +1410,7 @@ List<ChannelModel> channelList = [
     name: 'Semeı',
     url: 'https://stream.kaztrk.kz/regional/semeytv/index.m3u8',
     imageUrl: 'https://i.ibb.co/P9V0532/Captura.png',
-    category: '',
+    category: 'general',
   ),
 
   //Kenya
@@ -1420,7 +1420,7 @@ List<ChannelModel> channelList = [
     url:
         'https://74937.global.ssl.fastly.net/5ea49827ff3b5d7b22708777/live_40c5808063f711ec89a87b62db2ecab5/index.m3u8',
     imageUrl: 'https://i.imgur.com/16d8NJd.jpg',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'ke',
@@ -1443,7 +1443,7 @@ List<ChannelModel> channelList = [
     url:
         'https://citizentv.castr.com/5ea49827ff3b5d7b22708777/live_9b761ff063f511eca12909b8ef1524b4/index.m3u8',
     imageUrl: 'https://i.imgur.com/N2Uz9mc.jpg',
-    category: '',
+    category: 'general',
   ),
 
   //Kosovo
@@ -1452,7 +1452,7 @@ List<ChannelModel> channelList = [
     name: 'TV Arbëria 1',
     url: 'https://yayin30.haber100.com/live/rtvarberia/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zLRzyVS.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'xk',
@@ -1466,21 +1466,21 @@ List<ChannelModel> channelList = [
     name: 'TV Arbëria 3 Fëmijë',
     url: 'https://ssh101.bozztv.com/ssh101/rtvarberia3/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zLRzyVS.png',
-    category: '',
+    category: 'kids',
   ),
   ChannelModel(
     countryCode: 'xk',
     name: 'TV Arbëria 4 Muzikë',
     url: 'https://ssh101.bozztv.com/ssh101/rtvarberia4/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zLRzyVS.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'xk',
     name: 'TV Arbëria 5',
     url: 'https://ssh101.bozztv.com/ssh101/rtvarberia5/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zLRzyVS.png',
-    category: '',
+    category: 'entertainment',
   ),
 
   //Kuwait
@@ -1506,7 +1506,7 @@ List<ChannelModel> channelList = [
     url:
         'https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8',
     imageUrl: 'https://i.imgur.com/R1hGX1d.png',
-    category: '',
+    category: 'sports',
   ),
 
   //Kyrgyzstan
@@ -1515,14 +1515,14 @@ List<ChannelModel> channelList = [
     name: '312 Кино',
     url: 'http://176.126.166.43:1935/live/312kino/playlist.m3u8',
     imageUrl: 'https://i.ibb.co/3m9LrLj/k7gIibH.png',
-    category: '',
+    category: 'movies',
   ),
   ChannelModel(
     countryCode: 'kg',
     name: '312 TB',
     url: 'http://176.126.166.43:1935/live/312musik/playlist.m3u8',
     imageUrl: 'https://i.ibb.co/9HMNzMz/JPqHwaC.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'kg',
@@ -1538,7 +1538,7 @@ List<ChannelModel> channelList = [
     name: 'Brian TV',
     url: 'https://livefta.malimarcdn.com/ftaedge00/briantv.sdp/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zG1WNgU.jpg',
-    category: '',
+    category: 'news',
   ),
 
   //Lebanon
@@ -1548,7 +1548,7 @@ List<ChannelModel> channelList = [
     url:
         'https://586a9edea75f1.streamlock.net/caribbeanhot7tv/ch7-1.stream/playlist.m3u8',
     imageUrl: 'https://i.ibb.co/sjTS4xD/logo116x90-2.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'lb',
@@ -1563,7 +1563,7 @@ List<ChannelModel> channelList = [
     name: 'ALWifak News TV',
     url: 'http://stream.spilebanon.com:1935/live/myStream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/jrQ4w0m.png',
-    category: '',
+    category: 'news',
   ),
 
   //Lesotho
@@ -1573,7 +1573,7 @@ List<ChannelModel> channelList = [
     name: 'LNTV',
     url: 'http://185.59.221.131:8081/live/lntv/playlist.m3u8',
     imageUrl: 'https://i.ibb.co/5TdbQH4/LNTV-Liberia-Logo.png',
-    category: '',
+    category: 'general',
   ),
 
   //Libya`
@@ -1583,7 +1583,7 @@ List<ChannelModel> channelList = [
     url: 'https://master.starmena-cloud.com/hls/almasar.m3u8',
     imageUrl:
         'https://play-lh.googleusercontent.com/FHPrsr391mPFqKfTq6ZdvWPZNVfsZeTAVQ8rjQF-NosnRdNipUy5xa43RWkiF4tGcQ',
-    category: '',
+    category: 'news',
   ),
 
   //Lithuania
@@ -1602,7 +1602,7 @@ List<ChannelModel> channelList = [
     url:
         'https://2-fss-2.streamhoster.com/pl_124/206820-4338160-1/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/IBcMIcZ.png',
-    category: '',
+    category: 'lifestyle',
   ),
   ChannelModel(
     countryCode: 'lu',
@@ -1610,7 +1610,7 @@ List<ChannelModel> channelList = [
     url:
         'https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/YldMnap.jpg',
-    category: '',
+    category: 'legislative',
   ),
 
   ///Latvia lv
@@ -1638,7 +1638,7 @@ List<ChannelModel> channelList = [
     url: 'https://master.starmena-cloud.com/hls/almasar.m3u8',
     imageUrl:
         'https://play-lh.googleusercontent.com/FHPrsr391mPFqKfTq6ZdvWPZNVfsZeTAVQ8rjQF-NosnRdNipUy5xa43RWkiF4tGcQU',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'ly',
@@ -1656,14 +1656,14 @@ List<ChannelModel> channelList = [
     url:
         'https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8',
     imageUrl: 'https://i.imgur.com/MvpntzA.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'ma',
     name: 'Chada TV',
     url: 'https://chadatv.vedge.infomaniak.com/livecast/chadatv/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/inJyJBN.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'ma',
@@ -1672,7 +1672,7 @@ List<ChannelModel> channelList = [
         'https://api.new.livestream.com/accounts/27130247/events/9197096/live.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/8/8f/Logotelemaroc.jpeg',
-    category: '',
+    category: 'culture',
   ),
 
   ///Monaco mc
@@ -1681,7 +1681,7 @@ List<ChannelModel> channelList = [
     name: 'Superyacht TV',
     url: 'https://sy.wns.live/hls/stream.m3u8',
     imageUrl: 'https://i.imgur.com/cgjgjE1.png',
-    category: '',
+    category: 'lifestyle',
   ),
 
   ///Montenegro me
@@ -1691,7 +1691,7 @@ List<ChannelModel> channelList = [
     name: 'TV Teuta',
     url: 'https://teutastream.com/tvteuta/tracks-v1a1/mono.m3u8',
     imageUrl: 'https://i.imgur.com/sWVqBuW.png',
-    category: '',
+    category: 'general',
   ),
 
   ///North Macedonia mk
@@ -1700,14 +1700,14 @@ List<ChannelModel> channelList = [
     name: 'Folk Klub',
     url: 'http://tv1.intv.mk:1935/live2/folkklub/index.m3u8',
     imageUrl: 'https://i.imgur.com/Seq7Od7.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'mk',
     name: 'INTV Australia',
     url: 'http://tv1.intv.mk:1935/live/intv/index.m3u8',
     imageUrl: 'https://i.imgur.com/1nJl0Pv.png',
-    category: '',
+    category: 'music',
   ),
 
   //Myanmar
@@ -1716,28 +1716,28 @@ List<ChannelModel> channelList = [
     name: 'Channel K',
     url: 'https://l1-xl1.myanmarnet.com/relay/channelk/ch1/stream.m3u8',
     imageUrl: 'https://i.imgur.com/6PqxuhF.png',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'mm',
     name: 'Mahar',
     url: 'https://tv.mahar.live/mahar/website.stream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/ig0QECf.png',
-    category: '',
+    category: 'movies',
   ),
   ChannelModel(
     countryCode: 'mm',
     name: 'MCS',
     url: 'https://l1-xl1.myanmarnet.com/relay2/mcs/ch1/stream.m3u8',
     imageUrl: '',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'mm',
     name: 'MNTV',
     url: 'https://l1-xl1.myanmarnet.com/relay/mntv/ch1/stream.m3u8',
     imageUrl: 'https://i.imgur.com/nssm7QK.png',
-    category: '',
+    category: 'entertainment',
   ),
 
   ///Nigeria ng
@@ -1747,14 +1747,14 @@ List<ChannelModel> channelList = [
     url: 'https://newproxy3.vidivu.tv/vidivu_afrosport/index.m3u8',
     imageUrl:
         'https://pbs.twimg.com/profile_images/1451668129042599936/Uh-Z6Sh1_400x400.jpg',
-    category: '',
+    category: 'sports',
   ),
   ChannelModel(
     countryCode: 'ng',
     name: 'AMusic Channel',
     url: 'http://mn-nl.mncdn.com/amusictv/amusicsrt.stream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/06zuf64.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'ng',
@@ -1771,14 +1771,14 @@ List<ChannelModel> channelList = [
     name: 'Canal Motor',
     url: 'https://digicom.hls.iptvdc.com/canalmotor/index.m3u8',
     imageUrl: 'https://i.imgur.com/nCAt3QN.png',
-    category: '',
+    category: 'auto',
   ),
   ChannelModel(
     countryCode: 'no',
     name: 'TV Modum',
     url: 'https://cdn010.panaccess.com/5677_streams/TVMODUM/index.m3u8',
     imageUrl: 'https://i.imgur.com/kljua5X.png',
-    category: '',
+    category: 'general',
   ),
 
   ///Oman om
@@ -1788,7 +1788,7 @@ List<ChannelModel> channelList = [
     name: 'Alistiqama TV',
     url: 'https://jmc-live.ercdn.net/alistiqama/alistiqama.m3u8',
     imageUrl: 'https://i.imgur.com/2FPtYZr.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'om',
@@ -1805,14 +1805,14 @@ List<ChannelModel> channelList = [
     name: 'Al Ehsaan TV',
     url: 'https://cdn.bmstudiopk.com/alehsaan/live/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/hRzxiJ3.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'pk',
     name: 'Discover Pakistan',
     url: 'https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/IJH47fJ.png',
-    category: '',
+    category: 'travel',
   ),
 
   ///Portugal pt
@@ -1822,7 +1822,7 @@ List<ChannelModel> channelList = [
     name: 'Kuriakos TV',
     url: 'https://w1.manasat.com/ktv/smil:ktv.smil/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/xdAW0D5.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'pt',
@@ -1830,7 +1830,7 @@ List<ChannelModel> channelList = [
     url: 'https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8',
     imageUrl:
         'https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'pt',
@@ -1838,7 +1838,7 @@ List<ChannelModel> channelList = [
     url: 'http://210.210.155.37/qwr9ew/s/s38/index.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/RTP_Internacional_2016_%28Reduced_Version%29.svg/512px-RTP_Internacional_2016_%28Reduced_Version%29.svg.png',
-    category: '',
+    category: 'general',
   ),
 
   ///Philippines ph
@@ -1848,7 +1848,7 @@ List<ChannelModel> channelList = [
     url: 'https://cinemaone-abscbn-ono.amagi.tv/index.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Cinema_One_2013_logo.svg/512px-Cinema_One_2013_logo.svg.png',
-    category: '',
+    category: 'movies',
   ),
   ChannelModel(
     countryCode: 'ph',
@@ -1862,7 +1862,7 @@ List<ChannelModel> channelList = [
     name: 'MYX Philippines',
     url: 'https://myxnola-abscbn-ono.amagi.tv/index.m3u8',
     imageUrl: 'https://i.imgur.com/pbHuUuV.png',
-    category: '',
+    category: 'music',
   ),
 
   ///Qatar qa
@@ -1871,14 +1871,14 @@ List<ChannelModel> channelList = [
     name: 'Al Jazeera Arabic',
     url: 'https://live-hls-v3-aja.getaj.net/AJA-V3/index.m3u8',
     imageUrl: 'https://i.imgur.com/7bRVpnu.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'qa',
     name: 'Al Jazeera Balkans',
     url: 'https://live-hls-web-ajb.getaj.net/AJB/index.m3u8',
     imageUrl: 'https://i.imgur.com/vMzCr8O.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'qa',
@@ -1887,14 +1887,14 @@ List<ChannelModel> channelList = [
         'https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'qa',
     name: 'Qatar Television',
     url: 'https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8',
     imageUrl: 'https://i.imgur.com/N5RB4sp.png',
-    category: '',
+    category: 'general',
   ),
 
   ///Russia RU
@@ -1910,14 +1910,14 @@ List<ChannelModel> channelList = [
     name: 'Kulinar TV Show',
     url: 'https://api.alpaca.t62a.com/hls/9110/index.m3u8',
     imageUrl: 'https://tv.taurer.org/iptv_content/logos/KULINAR_TEMP.png',
-    category: '',
+    category: 'cooking',
   ),
   ChannelModel(
     countryCode: 'ru',
     name: 'Ocean TV',
     url: 'http://camera.global-x.ru/OceanTV/index.m3u8',
     imageUrl: 'https://i.imgur.com/zswzDZS.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'ru',
@@ -1925,7 +1925,7 @@ List<ChannelModel> channelList = [
     url:
         'https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/IcWtXCZ.png',
-    category: '',
+    category: 'shop',
   ),
 
   ///Saudi Arabia sa
@@ -1935,7 +1935,7 @@ List<ChannelModel> channelList = [
     url:
         'https://al-ekhbaria-prod-dub.shahid.net/out/v1/d443f3203b444032896e3233cb6eaa84/index.m3u8',
     imageUrl: 'https://i.imgur.com/WcRlHQm.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'sa',
@@ -1943,7 +1943,7 @@ List<ChannelModel> channelList = [
     url:
         'https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8',
     imageUrl: 'https://i.imgur.com/Czxi7yk.png',
-    category: '',
+    category: 'documentary',
   ),
   ChannelModel(
     countryCode: 'sa',
@@ -1952,7 +1952,7 @@ List<ChannelModel> channelList = [
         'https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8',
     imageUrl:
         'https://yt3.googleusercontent.com/AFUZ79or1rvrFKbfaMDdoJ1n_814lANCdUOdH0mdGRmcYfIfDH4cfTWwyUkHwie2I2xJPlaTJg=s512-c-k-c0x00ffffff-no-rj',
-    category: '',
+    category: 'documentary',
   ),
   ChannelModel(
     countryCode: 'sa',
@@ -1960,7 +1960,7 @@ List<ChannelModel> channelList = [
     url:
         'https://shls-asharq-prod-dub.shahid.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8',
     imageUrl: 'https://i.imgur.com/bqRC3sl.png',
-    category: '',
+    category: 'business',
   ),
 
   ///Singapore sg
@@ -1970,14 +1970,14 @@ List<ChannelModel> channelList = [
     url:
         'https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8',
     imageUrl: 'https://i.imgur.com/xWglicB.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'sg',
     name: 'ZooMoo Asia',
     url: 'https://cdn4.skygo.mn/live/disk1/Zoomoo/HLSv3-FTA/Zoomoo.m3u8',
     imageUrl: 'https://i.imgur.com/ciTJrnl.png',
-    category: '',
+    category: 'kids',
   ),
 
   ///South Korea kr
@@ -1986,14 +1986,14 @@ List<ChannelModel> channelList = [
     name: 'ABN TV',
     url: 'https://vod2.abn.co.kr/IPHONE/abn.m3u8',
     imageUrl: 'https://www.abn.co.kr/resources/images/logo.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'kr',
     name: 'CGNTV',
     url: 'https://cgntvliveweb-998.acs.wecandeo.com/ms/2850/998/index.m3u8',
     imageUrl: 'https://i.imgur.com/zwZASOB.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'kr',
@@ -2001,7 +2001,7 @@ List<ChannelModel> channelList = [
     url:
         'https://d34t5yjz1ooymj.cloudfront.net/out/v1/875039d5eba0478fa8375a06b3aa5a37/index.m3u8',
     imageUrl: 'https://i.imgur.com/z3L8uNB.png',
-    category: '',
+    category: 'religious',
   ),
 
   ///Somalia so
@@ -2011,21 +2011,21 @@ List<ChannelModel> channelList = [
     url:
         'https://origin3.afxp.telemedia.co.za/PremiumFree/afriwoodseries/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/9NFg3xp.png',
-    category: '',
+    category: 'series',
   ),
   ChannelModel(
     countryCode: 'so',
     name: 'Cinema Hausa',
     url: 'https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/uV5cHDW.png',
-    category: '',
+    category: 'movies',
   ),
   ChannelModel(
     countryCode: 'so',
     name: 'Diva',
     url: 'https://origin3.afxp.telemedia.co.za/PremiumFree/diva/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/bgBZgW0.png',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'so',
@@ -2033,7 +2033,7 @@ List<ChannelModel> channelList = [
     url:
         'https://origin3.afxp.telemedia.co.za/PremiumFree/sportsconnect/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/0sNWg54.png',
-    category: '',
+    category: 'sports',
   ),
 
   ///Taiwan tw
@@ -2042,14 +2042,14 @@ List<ChannelModel> channelList = [
     name: 'Beautiful Life TV',
     url: 'https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8',
     imageUrl: 'Beautiful Life TV',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'tw',
     name: 'Dali TV',
     url: 'http://www.dalitv.com.tw:4568/live/dali/index.m3u8',
     imageUrl: 'https://i.imgur.com/pFIMLsA.png',
-    category: '',
+    category: 'general',
   ),
 
   ///Tanzania tz
@@ -2059,14 +2059,14 @@ List<ChannelModel> channelList = [
     name: 'IBN TV',
     url: 'http://138.68.138.119:8080/live/5a8993709ea19/index.m3u8',
     imageUrl: 'https://i.imgur.com/y3zq0rw.jpg',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'tz',
     name: 'Abood TV',
     url: 'https://goliveafrica.media:9998/live/644db46d1b776/index.m3u8',
     imageUrl: 'https://i.imgur.com/vYEUncC.jpg',
-    category: '',
+    category: 'entertainment',
   ),
 
   ///Ukraine ua
@@ -2077,7 +2077,7 @@ List<ChannelModel> channelList = [
         'https://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/24_Group_Ukraine_04.png/512px-24_Group_Ukraine_04.png',
-    category: '',
+    category: 'news',
   ),
 
   ChannelModel(
@@ -2085,14 +2085,14 @@ List<ChannelModel> channelList = [
     name: 'BamBarBia TV',
     url: 'http://cdn1.live-tv.od.ua:8081/bbb/bbbtv-abr/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/zdRvy87.png',
-    category: '',
+    category: 'travel',
   ),
   ChannelModel(
     countryCode: 'ua',
     name: 'Black Sea TV',
     url: 'https://stream.skyvision.com.ua/blackseatv/stream/main/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/D8YJzHV.png',
-    category: '',
+    category: 'general',
   ),
 
   ///Uganda ug
@@ -2103,7 +2103,7 @@ List<ChannelModel> channelList = [
     url:
         'http://streamfi-alphadgtl1.zettawiseroutes.com:8080/hls/stream_src.m3u8',
     imageUrl: 'https://i.imgur.com/ZlMARQx.jpg',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'ug',
@@ -2111,7 +2111,7 @@ List<ChannelModel> channelList = [
     url:
         'https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/BBSTV/5-hls/live-media.m3u8',
     imageUrl: 'https://i.imgur.com/1CIxIGl.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'ug',
@@ -2136,21 +2136,21 @@ List<ChannelModel> channelList = [
     name: 'BBC News (North America)',
     url: 'https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/vSz2WEp.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'uk',
     name: 'BEN Television',
     url: 'https://webstreaming-11.viewmedia.tv/web_153/Stream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/DUAjjvT.png',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'uk',
     name: 'Bloomberg TV Europe',
     url: 'https://bloomberg.com/media-manifest/streams/eu.m3u8',
     imageUrl: 'https://i.imgur.com/OuogLHx.png',
-    category: '',
+    category: 'business',
   ),
   ChannelModel(
     countryCode: 'uk',
@@ -2159,7 +2159,7 @@ List<ChannelModel> channelList = [
         'https://live-gbnews.simplestreamcdn.com/live5/gbnews/bitrate1.isml/manifest.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/512px-GB_News_Logo.svg.png',
-    category: '',
+    category: 'news',
   ),
 
   ///United States us
@@ -2170,7 +2170,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2178,7 +2178,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023561/abcnews2/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
 
   ChannelModel(
@@ -2187,7 +2187,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023562/abcnews3/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2195,7 +2195,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023563/abcnews4/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2203,7 +2203,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023564/abcnews5/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2211,7 +2211,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023565/abcnews6/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2219,7 +2219,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023566/abcnews7/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2227,7 +2227,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023567/abcnews8/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2235,7 +2235,7 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023568/abcnews9/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2243,14 +2243,14 @@ List<ChannelModel> channelList = [
     url:
         'https://abcnews-streams.akamaized.net/hls/live/2023569/abcnews10/master.m3u8',
     imageUrl: 'https://od.lk/s/MF8yMjk3NjU0OTJf/ABCNewsLive_2021_200x200.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'Adult Swim Channel 5',
     url: 'https://adultswim-vodlive.cdn.turner.com/live/channel-5/stream.m3u8',
     imageUrl: 'https://i.imgur.com/G9TyeCN.png',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2258,28 +2258,28 @@ List<ChannelModel> channelList = [
     url: 'https://30a-tv.com/gh.m3u8',
     imageUrl:
         'https://images.axios.com/JiG3RuYBwpU_WZFeU6HHjt03FAU=/111x0:1191x1080/320x320/2023/11/09/1699558891265.jpg',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABN China',
     url: 'https://mediaserver.abnvideos.com/streams/abnchina.m3u8',
     imageUrl: 'https://i.imgur.com/zagVLQH.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'ABN TV India',
     url: 'https://mediaserver.abnvideos.com/streams/abntvindia.m3u8',
     imageUrl: 'https://i.imgur.com/VcZn60X.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'us',
     name: 'Beach TV Panama City',
     url: 'http://media4.tripsmarter.com:1935/LiveTV/BTVHD/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/HCQDvEe.png',
-    category: '',
+    category: 'travel',
   ),
   ChannelModel(
     countryCode: 'us',
@@ -2287,7 +2287,7 @@ List<ChannelModel> channelList = [
     url:
         'https://bloomberg-bloombergtv-1-us.samsung.wurl.tv/manifest/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/OuogLHx.png',
-    category: '',
+    category: 'business',
   ),
 
   ChannelModel(
@@ -2296,7 +2296,7 @@ List<ChannelModel> channelList = [
     url: 'https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8',
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png',
-    category: '',
+    category: 'news',
   ),
 
   ///Uruguay uy
@@ -2315,21 +2315,21 @@ List<ChannelModel> channelList = [
     name: 'Aguacate TV',
     url: 'https://streamtv.intervenhosting.net:3040/hybrid/play.m3u8',
     imageUrl: 'https://i.ibb.co/wpWBsgf/IMG-20230705-154622.jpg',
-    category: '',
+    category: 'entertainment',
   ),
   ChannelModel(
     countryCode: 've',
     name: 'BTA TV',
     url: 'https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8',
     imageUrl: 'https://i.imgur.com/vygOosC.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 've',
     name: 'Cantina TV',
     url: 'https://vcp.myplaytv.com/cantinatv/cantinatv/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/JWMk2fP.png',
-    category: '',
+    category: 'music',
   ),
 
   ///Vietnam vn
@@ -2345,7 +2345,7 @@ List<ChannelModel> channelList = [
     name: 'Cao Bang TV',
     url: 'http://118.107.85.4:1935/live/smil:CRTV.smil/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/dGonewm.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'vn',
@@ -2353,7 +2353,7 @@ List<ChannelModel> channelList = [
     url:
         'https://livefta.malimarcdn.com/ftaedge00/dhammasapha.stream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/TWJgMuE.jpg',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'vn',
@@ -2367,7 +2367,7 @@ List<ChannelModel> channelList = [
     name: 'Little Saigon TV',
     url: 'https://media.streambrothers.com:1936/8228/8228/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/XyhgeKL.png',
-    category: '',
+    category: 'culture',
   ),
   ChannelModel(
     countryCode: 'vn',
@@ -2375,7 +2375,7 @@ List<ChannelModel> channelList = [
     url: 'https://streaming.thainguyentv.vn/hls/livestream.m3u8',
     imageUrl:
         'https://thainguyentv.vn/modules/frontend/themes/ptthtn/images/logo.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'vn',
@@ -2391,7 +2391,7 @@ List<ChannelModel> channelList = [
     name: 'Almahriah TV',
     url: 'https://master.starmena-cloud.com/hls/almahriah.m3u8',
     imageUrl: 'https://i.imgur.com/GgEeTNr.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'ye',
@@ -2409,14 +2409,14 @@ List<ChannelModel> channelList = [
         'https://cdn.freevisiontv.co.za/sttv/smil:1kzn.stream.smil/playlist.m3u8',
     imageUrl:
         'https://admango.cdn.mangomolo.com/analytics/uploads/188/6544bebaae.jpg',
-    category: '',
+    category: 'family',
   ),
   ChannelModel(
     countryCode: 'za',
     name: 'Afrobeats TV',
     url: 'https://stream.ecable.tv/afrobeats/index.m3u8',
     imageUrl: 'https://i.imgur.com/u0d5j0C.png',
-    category: '',
+    category: 'music',
   ),
   ChannelModel(
     countryCode: 'za',
@@ -2424,14 +2424,14 @@ List<ChannelModel> channelList = [
     url:
         'https://cdn.freevisiontv.co.za/sttv/smil:ctv.stream.smil/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/Y8FK1Kk.png',
-    category: '',
+    category: 'general',
   ),
   ChannelModel(
     countryCode: 'za',
     name: 'GOD TV Africa',
     url: 'https://webstreaming.viewmedia.tv/web_006/Stream/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/hW4g2oe.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'za',
@@ -2439,14 +2439,14 @@ List<ChannelModel> channelList = [
     url:
         'https://cdn5.iqsat.net/iq/aa89b15058a61b904359307cc0a5e80a.sdp/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/tlylDbi.png',
-    category: '',
+    category: 'religious',
   ),
   ChannelModel(
     countryCode: 'za',
     name: 'SABC News',
     url: 'http://185.59.221.131:8081/live/sabcnews/playlist.m3u8',
     imageUrl: 'https://i.imgur.com/liLta8j.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'za',
@@ -2455,6 +2455,6 @@ List<ChannelModel> channelList = [
         'https://cdn.freevisiontv.co.za/sttv/smil:soweto.stream.smil/playlist.m3u8',
     imageUrl:
         'https://admango.cdn.mangomolo.com/analytics/uploads/188/654228e5b5.jpg',
-    category: '',
+    category: 'family',
   ),
 ];
