@@ -109,38 +109,55 @@ class SearchScreen extends StatelessWidget {
                                         Positioned(
                                             top: 0.h,
                                             right: 0.w,
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                //some code here
-                                              },
-                                              child: Icon(
-                                                channelController
-                                                        .selectedChannelList
-                                                        .any((item) =>
-                                                            item.name ==
-                                                            scController
-                                                                .cList[index]
-                                                                .name)
-                                                    ? Icons.favorite
-                                                    : Icons.favorite_border,
-                                                color: channelController
-                                                        .selectedChannelList
-                                                        .any((item) =>
-                                                            item.name ==
-                                                            scController
-                                                                .cList[index]
-                                                                .name)
-                                                    ? Colors.red
-                                                    : greyColor,
-                                                size: 15.w,
+                                            child: Obx(()=>
+                                              GestureDetector(
+                                                onTap: () {
+                                                  if( channelController
+                                                      .selectedChannelList
+                                                      .any((item) =>
+                                                  item.name ==
+                                                      scController
+                                                          .cList[index]
+                                                          .name)) {
+                                                   channelController.removeFromCart(scController
+                                                       .cList[index]);
+                                                   }else{
+                                                    channelController.addToFavorite(
+                                                        scController
+                                                            .cList[index]);
+                                                  }
+                                                },
+                                                child: Icon(
+                                                  channelController
+                                                          .selectedChannelList
+                                                          .any((item) =>
+                                                              item.name ==
+                                                              scController
+                                                                  .cList[index]
+                                                                  .name)
+                                                      ? Icons.favorite
+                                                      : Icons.favorite_border,
+                                                  color: channelController
+                                                          .selectedChannelList
+                                                          .any((item) =>
+                                                              item.name ==
+                                                              scController
+                                                                  .cList[index]
+                                                                  .name)
+                                                      ? Colors.red
+                                                      : greyColor,
+                                                  size: 15.w,
+                                                ),
                                               ),
                                             )),
                                         Center(
                                           child: Column(
+                                            mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
                                             children: [
                                               CustomFastCacheNetworkImage(
-                                                url: channelController
-                                                        .filterList[index]
+                                                url: scController
+                                                        .cList[index]
                                                         .imageUrl ??
                                                     '',
                                                 width: 45.w,
@@ -151,7 +168,8 @@ class SearchScreen extends StatelessWidget {
                                                 text: scController
                                                         .cList[index].name ??
                                                     '',
-                                                fontSize: 12.sp,
+                                                fontSize: 10.sp,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             ],
                                           ),

@@ -128,7 +128,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
               Obx(() => Container(
                     padding: EdgeInsets.symmetric(horizontal: 10.w),
                     decoration: BoxDecoration(
-                        color: whiteColor,
+                        color: cardColor,
                         borderRadius: BorderRadius.circular(10.r)),
                     width: MediaQuery.of(context).size.width,
                     margin: EdgeInsets.symmetric(horizontal: 10.w),
@@ -190,7 +190,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                     child: Container(
                                       padding: EdgeInsets.all(5.w),
                                       decoration: BoxDecoration(
-                                          color: Colors.white,
+                                          color: cardColor,
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(10.r))),
                                       child: Stack(
