@@ -19,6 +19,7 @@ class ChannelController extends GetxController {
       CountryModel(name: 'Afghanistan', code: 'AF', flag: "🇦🇫").obs;
   RxList<ChannelModel> filterList = <ChannelModel>[].obs;
   final isLoading = false.obs;
+  final isFavLoading = false.obs;
 
   @override
   void onInit() {
@@ -30,13 +31,26 @@ class ChannelController extends GetxController {
   }
 
   void getCarts() {
+    isFavLoading.value = true;
     fav.value = box.read('fav') ?? '[]';
     selectedChannelList.clear();
     selectedChannelList.addAll(jsonDecode(fav.value).map<ChannelModel>((item) {
       return ChannelModel.fromJson(item);
     }));
+    Future.delayed(const Duration(milliseconds: 500), () {
+      isFavLoading.value = false;
+    });
   }
-
+  void removeFromCart(ChannelModel item) {
+    selectedChannelList.removeWhere((fav) => fav.countryCode == item.countryCode);
+    updateCartList(); // Call updateCartList to refresh UI and storage
+  }
+  void updateCartList() {
+    // Update the UI
+    update();
+    // Update the storage
+    box.write('carts', jsonEncode(selectedChannelList.map((item) => item.toJson()).toList()));
+  }
   getCountryList() {
     List<dynamic> list = jsonDecode(countryJson);
     countryList.value =

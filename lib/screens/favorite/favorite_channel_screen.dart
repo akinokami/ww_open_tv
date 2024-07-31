@@ -16,6 +16,14 @@ class FavoriteChannelScreen extends StatelessWidget {
     final channelController = Get.put(ChannelController());
     return Scaffold(
         backgroundColor: primaryColor,
+        appBar: AppBar(
+
+          automaticallyImplyLeading: false,
+          backgroundColor: primaryColor,
+          title:  CustomText(text: 'fav'.tr,fontSize: 16.sp,
+            fontWeight: FontWeight.bold,),
+          centerTitle: true,
+        ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -25,7 +33,13 @@ class FavoriteChannelScreen extends StatelessWidget {
               ),
               Expanded(
                 child: Obx(
-                  () => channelController.selectedChannelList.isNotEmpty
+                  () =>
+                  channelController.isFavLoading.value
+                      ? Center(
+                    child: CircularProgressIndicator(),
+                  )
+                      :
+                  channelController.selectedChannelList.isNotEmpty
                       ? GridView.builder(
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
@@ -82,10 +96,12 @@ class FavoriteChannelScreen extends StatelessWidget {
                                           )),
                                       Center(
                                         child: Column(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment.spaceEvenly,
                                           children: [
                                             CustomFastCacheNetworkImage(
                                               url: channelController
-                                                      .filterList[index]
+                                                      .selectedChannelList[index]
                                                       .imageUrl ??
                                                   '',
                                               width: 45.w,
@@ -98,7 +114,8 @@ class FavoriteChannelScreen extends StatelessWidget {
                                                       .name ??
                                                   '',
                                               color: blackTextColor,
-                                              fontSize: 12.sp,
+                                              fontSize: 10.sp,
+                                              fontWeight: FontWeight.bold,
                                               maxLines: 3,
                                             ),
                                           ],
