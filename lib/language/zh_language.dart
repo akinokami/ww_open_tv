@@ -49,9 +49,11 @@ class ZhLanguage {
     'address': '地址 :',
     'trophies': '獎盃',
     'club_records': '俱樂部記錄',
-    'channel': '頻道',
+    'channel': '全部',
     'no_data_found': '沒有找到數據',
     'no_channel_found': '未找到頻道',
     'fav': '最喜欢的',
+    'category': '类别',
+    'view_all': '查看全部',
   };
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:ww_open_tv/screens/categories/categories_screen.dart';
 import 'package:ww_open_tv/screens/channels/channels_screen.dart';
 import 'package:ww_open_tv/screens/favorite/favorite_channel_screen.dart';
 import 'package:ww_open_tv/screens/search/search_screen.dart';
@@ -9,7 +10,7 @@ import 'constants/color_const.dart';
 import 'controller/bottom_nav_controller.dart';
 
 class BottomNavigationMenu extends StatelessWidget {
-  BottomNavigationMenu({super.key});
+  const BottomNavigationMenu({super.key});
 
   buildBottomNavigationMenu(context, landingPageController) {
     return  Builder(
@@ -42,6 +43,14 @@ class BottomNavigationMenu extends StatelessWidget {
                 unselectedLabelStyle: unselectedLabelStyle,
                 selectedLabelStyle: selectedLabelStyle,
                 items: [
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.category,
+                      size: isPortrait ?18.w:15.w,
+                    ),
+                    label: 'category'.tr,
+                    backgroundColor: primaryColor,
+                  ),
                   BottomNavigationBarItem(
                     icon: Icon(
                       Icons.tv,
@@ -93,6 +102,7 @@ class BottomNavigationMenu extends StatelessWidget {
       body: Obx(() => IndexedStack(
             index: bottomNavController.tabIndex.value,
             children: const [
+              CategoriesScreen(),
               ChannelScreen(),
               SearchScreen(),
               FavoriteChannelScreen(),
