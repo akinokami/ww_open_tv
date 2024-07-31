@@ -64,4 +64,8 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.media3:media3-explayer:1.0.0-rc02'
+    implementation 'androidx.media3:media3-ui:1.0.0-rc02'
+}

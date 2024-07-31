@@ -189,6 +189,14 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                         streammingUrl: channelController
                                                 .filterList[index].url ??
                                             ""));
+                                    // Navigator.push(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //         builder: (context) => PlayerScreen(
+                                    //             streammingUrl: channelController
+                                    //                     .filterList[index]
+                                    //                     .url ??
+                                    //                 "")));
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),

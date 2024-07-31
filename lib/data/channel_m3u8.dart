@@ -10,27 +10,30 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'af',
-    name: 'ATN International',
-    url: 'https://d10rltuy0iweup.cloudfront.net/ATNINT/myStream/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/HIPeUDL.png',
-  ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'ATN National',
-    url: 'https://d10rltuy0iweup.cloudfront.net/ATNNAT/myStream/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/HIPeUDL.png',
-  ),
-  ChannelModel(
-    countryCode: 'af',
-    name: 'ATN News',
-    url: 'https://d10rltuy0iweup.cloudfront.net/ATNNEWS/myStream/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/gaGpLPV.png',
-  ),
-  ChannelModel(
-    countryCode: 'af',
     name: 'Dunya Naw TV',
     url: 'https://dunyanhls.wns.live/hls/stream.m3u8',
     imageUrl: 'https://i.ibb.co/nQkLgyn/dunya-naw-tv.png',
+  ),
+  ChannelModel(
+    countryCode: 'af',
+    name: 'Eslah TV',
+    url: 'https://eslahtvhls.wns.live/hls/stream.m3u8',
+    imageUrl: 'https://i.imgur.com/To7VnsA.png',
+  ),
+  ChannelModel(
+    countryCode: 'af',
+    name: 'RTA News',
+    url:
+        'https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA2)/index.m3u8',
+    imageUrl: 'https://rta.af/artmedia/2022/12/rta-logo-final-300x185.png',
+  ),
+  ChannelModel(
+    countryCode: 'af',
+    name: 'Sharq Radio TV',
+    url:
+        'https://59nyqa5elwap-hls-live.5centscdn.com/Sharq/eec89088ee408b80387155272b113256.sdp/playlist.m3u8',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sharq_TV_Logo_2020.jpg/440px-Sharq_TV_Logo_2020.jpg',
   ),
 
   //Albania
@@ -48,9 +51,10 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'al',
-    name: 'News 24',
-    url: 'https://tv.balkanweb.com/news24/livestream/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/zDwIsO3.png',
+    name: 'Ora News',
+    url: 'https://live1.mediadesk.al/oranews.m3u8',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ora_News_%28Albania%29.svg/512px-Ora_News_%28Albania%29.svg.png',
   ),
 
   //Algeria
