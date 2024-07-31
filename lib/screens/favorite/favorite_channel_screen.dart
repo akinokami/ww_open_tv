@@ -89,7 +89,7 @@ class FavoriteChannelScreen extends StatelessWidget {
                                                       .imageUrl ??
                                                   '',
                                               width: 45.w,
-                                              height: 45.h,
+                                              height: 42.h,
                                             ),
                                             CustomText(
                                               text: channelController
@@ -99,7 +99,6 @@ class FavoriteChannelScreen extends StatelessWidget {
                                                   '',
                                               color: blackTextColor,
                                               fontSize: 12.sp,
-                                              fontWeight: FontWeight.bold,
                                               maxLines: 3,
                                             ),
                                           ],

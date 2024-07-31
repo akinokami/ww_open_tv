@@ -252,7 +252,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                                           .imageUrl ??
                                                       '',
                                                   width: 45.w,
-                                                  height: 45.h,
+                                                  height: 42.h,
                                                 ),
                                                 CustomText(
                                                   text: channelController
@@ -261,7 +261,6 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                                       '',
                                                   color: blackTextColor,
                                                   fontSize: 12.sp,
-                                                  fontWeight: FontWeight.bold,
                                                   maxLines: 3,
                                                 ),
                                               ],

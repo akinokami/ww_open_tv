@@ -144,7 +144,7 @@ class SearchScreen extends StatelessWidget {
                                                         .imageUrl ??
                                                     '',
                                                 width: 45.w,
-                                                height: 45.h,
+                                                height: 42.h,
                                               ),
                                               CustomText(
                                                 maxLines: 3,
@@ -152,7 +152,6 @@ class SearchScreen extends StatelessWidget {
                                                         .cList[index].name ??
                                                     '',
                                                 fontSize: 12.sp,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ],
                                           ),

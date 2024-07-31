@@ -212,7 +212,7 @@ List<ChannelModel> channelList = [
     countryCode: 'at',
     name: 'Kronehit',
     url: 'https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8',
-    imageUrl: 'https://imgur.com/dQJQv1X.png',
+    imageUrl: '',
   ),
   ChannelModel(
     countryCode: 'at',
@@ -375,7 +375,7 @@ List<ChannelModel> channelList = [
     countryCode: 'ba',
     name: 'RTV Zenica',
     url: 'https://stream.rtvze.ba/live/123/123.m3u8',
-    imageUrl: 'https://i.imgur.com/DUBvfWb.png',
+    imageUrl: 'https://i.imgur.com/TKUaflB.png',
   ),
 
   //Brazil
@@ -409,7 +409,7 @@ List<ChannelModel> channelList = [
     countryCode: 'br',
     name: 'Canal Gov',
     url: 'https://canalgov-stream.ebc.com.br/index.m3u8',
-    imageUrl: '',
+    imageUrl: 'https://i.imgur.com/rHPY0Yv.png',
   ),
   ChannelModel(
     countryCode: 'br',
