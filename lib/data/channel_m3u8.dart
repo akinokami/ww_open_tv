@@ -1160,7 +1160,7 @@ List<ChannelModel> channelList = [
     name: 'Caribbean Gospel TV',
     url:
         'https://5a1178b42cc03.streamlock.net:443/CGTV2024/CGTV2024/playlist.m3u8',
-    imageUrl: '', //'https://i.imgur.com/mVQ8J4k.png',
+    imageUrl: 'https://i.imgur.com/mVQ8J4k.png',
   ),
   ChannelModel(
     countryCode: 'jm',
@@ -1338,7 +1338,7 @@ List<ChannelModel> channelList = [
     countryCode: 'kg',
     name: 'TV1 KG',
     url: 'http://212.2.225.30:1935/live/site.stream/playlist.m3u8',
-    imageUrl: '', //'https://i.imgur.com/Mti9t9C.png',
+    imageUrl: 'https://i.imgur.com/Mti9t9C.png',
   ),
 
   //Laos
@@ -1600,12 +1600,12 @@ List<ChannelModel> channelList = [
     imageUrl: 'https://i.imgur.com/xdAW0D5.png',
   ),
   ChannelModel(
-      countryCode: 'pt',
-      name: 'ON FM',
-      url: 'https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8',
-      imageUrl: ''
-      // 'https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png',
-      ),
+    countryCode: 'pt',
+    name: 'ON FM',
+    url: 'https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8',
+    imageUrl:
+        'https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png',
+  ),
   ChannelModel(
     countryCode: 'pt',
     name: 'RTP International Asia',
