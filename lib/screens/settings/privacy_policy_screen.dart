@@ -18,7 +18,6 @@ class PrivacyPolicyScreen extends StatelessWidget {
       appBar: AppBar(
           centerTitle: true,
           backgroundColor: primaryColor,
-          iconTheme: IconThemeData(color: lightWhiteColor),
           title: CustomText(
             text: 'policy'.tr,
             fontSize: 16.sp,
@@ -35,7 +34,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                     : languageController.language.value == "zh"
                         ? Global.policyCn
                         : Global.policyViet,
-                style: TextStyle(color: lightWhiteColor),
+                style: TextStyle(color: blackTextColor, fontSize: 12.sp),
               ),
             )
           ],
