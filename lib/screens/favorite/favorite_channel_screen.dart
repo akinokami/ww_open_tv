@@ -5,6 +5,7 @@ import 'package:ww_open_tv/controller/channel_controller.dart';
 import 'package:ww_open_tv/screens/channels/player_screen.dart';
 
 import '../../constants/color_const.dart';
+import '../../custom_widgets/custom_cache_network_image.dart';
 import '../../custom_widgets/custom_text.dart';
 
 class FavoriteChannelScreen extends StatelessWidget {
@@ -31,7 +32,7 @@ class FavoriteChannelScreen extends StatelessWidget {
                                   crossAxisCount: 2,
                                   crossAxisSpacing: 0.w,
                                   mainAxisSpacing: 0.h,
-                                  childAspectRatio: 1.5),
+                                  childAspectRatio: 1.4),
                           itemCount:
                               channelController.selectedChannelList.length,
                           itemBuilder: (context, index) {
@@ -80,15 +81,28 @@ class FavoriteChannelScreen extends StatelessWidget {
                                             ),
                                           )),
                                       Center(
-                                        child: CustomText(
-                                          text: channelController
-                                                  .selectedChannelList[index]
-                                                  .name ??
-                                              '',
-                                          color: blackTextColor,
-                                          fontSize: 14.sp,
-                                          fontWeight: FontWeight.bold,
-                                          maxLines: 3,
+                                        child: Column(
+                                          children: [
+                                            CustomFastCacheNetworkImage(
+                                              url: channelController
+                                                      .filterList[index]
+                                                      .imageUrl ??
+                                                  '',
+                                              width: 45.w,
+                                              height: 45.h,
+                                            ),
+                                            CustomText(
+                                              text: channelController
+                                                      .selectedChannelList[
+                                                          index]
+                                                      .name ??
+                                                  '',
+                                              color: blackTextColor,
+                                              fontSize: 12.sp,
+                                              fontWeight: FontWeight.bold,
+                                              maxLines: 3,
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ],

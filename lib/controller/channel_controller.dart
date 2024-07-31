@@ -18,6 +18,7 @@ class ChannelController extends GetxController {
   Rx<CountryModel> selectedCountry =
       CountryModel(name: 'Afghanistan', code: 'AF', flag: "🇦🇫").obs;
   RxList<ChannelModel> filterList = <ChannelModel>[].obs;
+  final isLoading = false.obs;
 
   @override
   void onInit() {
@@ -43,10 +44,14 @@ class ChannelController extends GetxController {
   }
 
   void filterChannel(String countryCode) {
+    isLoading.value = true;
     filterList.value = channelList
         .where((element) =>
             element.countryCode?.toLowerCase() == countryCode.toLowerCase())
         .toList();
+    Future.delayed(const Duration(milliseconds: 500), () {
+      isLoading.value = false;
+    });
   }
 
   void addToFavorite(ChannelModel channel) {
