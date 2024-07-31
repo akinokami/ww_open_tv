@@ -23,10 +23,10 @@ class CustomFastCacheNetworkImage extends StatelessWidget {
       fit: BoxFit.contain,
       url: url ??
           (placeHolderUrl ??
-              'https://static.vecteezy.com/system/resources/previews/008/290/035/non_2x/online-tv-channel-logo-design-template-tv-icon-white-play-button-live-streaming-entertainment-company-antenna-yellow-orange-black-vector.jpg'),
+              'https://img.freepik.com/premium-vector/tv-channel-button-logo-design-vector-template_567288-1201.jpg'),
       fadeInDuration: const Duration(seconds: 1),
       errorBuilder: (context, exception, stacktrace) {
-        return Image.asset("assets/images/tv.webp",
+        return Image.asset("assets/images/launcher.webp",
             fit: BoxFit.contain, width: width.w, height: height.h);
       },
       loadingBuilder: (context, progress) {
