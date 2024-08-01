@@ -783,14 +783,15 @@ String countryJson = """[
         ],
         "flag": "🇵🇰"
     },
-   
-  
-   
-  
-   
- 
- 
-   
+    {
+        "name": "Philippines",
+        "code": "PH",
+        "languages": [
+            "eng",
+            "fil"
+        ],
+        "flag": "🇵🇭"
+    },
     {
         "name": "Portugal",
         "code": "PT",
