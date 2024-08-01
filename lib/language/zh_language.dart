@@ -82,5 +82,9 @@ class ZhLanguage {
     'cooking': '烹饪',
     'culture': '文化',
     'comedy': '喜剧',
+    'related_channels': '發布頻道',
+    'channel_name': '頻道名稱 :',
+    'country': '國家 :',
+    'category_label': '类别 :',
   };
 }

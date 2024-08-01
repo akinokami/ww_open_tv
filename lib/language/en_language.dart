@@ -83,5 +83,9 @@ class EnLanguage {
     'cooking': 'Cooking',
     'comedy': 'Comedy',
     'culture': 'Culture',
+    'related_channels': 'Related Channels',
+    'channel_name': 'Channel Name :',
+    'country': 'Country :',
+    'category_label': 'Category :',
   };
 }
