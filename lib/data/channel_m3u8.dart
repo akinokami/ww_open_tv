@@ -2333,13 +2333,13 @@ List<ChannelModel> channelList = [
   ),
 
   ///Vietnam vn
-  ChannelModel(
-    countryCode: 'vn',
-    name: 'Bac Ninh TV',
-    url: 'https://stream.thingnet.vn/live/smil:BTV.smil/playlist.m3u8',
-    imageUrl: 'https://i.postimg.cc/WbrWPpVg/BTV-Bac-Ninh-2021.png',
-    category: '',
-  ),
+  // ChannelModel(
+  //   countryCode: 'vn',
+  //   name: 'Bac Ninh TV',
+  //   url: 'https://stream.thingnet.vn/live/smil:BTV.smil/playlist.m3u8',
+  //   imageUrl: 'https://i.postimg.cc/WbrWPpVg/BTV-Bac-Ninh-2021.png',
+  //   category: '',
+  // ),
   ChannelModel(
     countryCode: 'vn',
     name: 'Cao Bang TV',
@@ -2355,13 +2355,13 @@ List<ChannelModel> channelList = [
     imageUrl: 'https://i.imgur.com/TWJgMuE.jpg',
     category: 'religious',
   ),
-  ChannelModel(
-    countryCode: 'vn',
-    name: 'Ha Tinh TV',
-    url: 'https://wse.hatinhtv.net/live/httv1/playlist.m3u8',
-    imageUrl: 'https://i.imgur.com/4yIgKKx.png',
-    category: '',
-  ),
+  // ChannelModel(
+  //   countryCode: 'vn',
+  //   name: 'Ha Tinh TV',
+  //   url: 'https://wse.hatinhtv.net/live/httv1/playlist.m3u8',
+  //   imageUrl: 'https://i.imgur.com/4yIgKKx.png',
+  //   category: '',
+  // ),
   ChannelModel(
     countryCode: 'vn',
     name: 'Little Saigon TV',
