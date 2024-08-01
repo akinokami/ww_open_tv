@@ -12,7 +12,10 @@ import '../screens/channels/player_screen.dart';
 import 'custom_cache_network_image.dart';
 
 class CustomRelatedChannel extends StatelessWidget {
-  const CustomRelatedChannel({super.key, required this.relatedChannelList, required this.channelModel});
+  const CustomRelatedChannel(
+      {super.key,
+      required this.relatedChannelList,
+      required this.channelModel});
 
   final List<ChannelModel> relatedChannelList;
   final ChannelModel channelModel;
@@ -34,17 +37,17 @@ class CustomRelatedChannel extends StatelessWidget {
                   if (relatedChannelList[index].name != channelModel.name) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => PlayerScreen(
-                                    fromScreen: 'custom_related',
-                                    channelModel: relatedChannelList[index],
-                                    channelList: relatedChannelList)));
-                        // Get.to(() => PlayerScreen(
-                        //     fromScreen: 'custom_related',
-                        //     channelModel: relatedChannelList[index],
-                        //     channelList: relatedChannelList));
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => PlayerScreen(
+                        //             fromScreen: 'custom_related',
+                        //             channelModel: relatedChannelList[index],
+                        //             channelList: relatedChannelList)));
+                        Get.offAll(() => PlayerScreen(
+                            fromScreen: 'custom_related',
+                            channelModel: relatedChannelList[index],
+                            channelList: relatedChannelList));
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),

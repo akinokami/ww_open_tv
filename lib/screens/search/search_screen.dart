@@ -28,6 +28,7 @@ class _SearchScreenState extends State<SearchScreen> {
       DeviceOrientation.portraitDown,
     ]);
   }
+
   @override
   Widget build(BuildContext context) {
     final scController = Get.put(SearchChannelController());
@@ -109,11 +110,10 @@ class _SearchScreenState extends State<SearchScreen> {
                               return GestureDetector(
                                 onTap: () {
                                   //some code here
-                                  Get.to(() => PlayerScreen(
+                                  Get.offAll(() => PlayerScreen(
                                       fromScreen: 'search',
                                       channelList: scController.cList,
-                                      channelModel:
-                                          scController.cList[index]));
+                                      channelModel: scController.cList[index]));
                                 },
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
@@ -128,22 +128,25 @@ class _SearchScreenState extends State<SearchScreen> {
                                         Positioned(
                                             top: 0.h,
                                             right: 0.w,
-                                            child: Obx(()=>
-                                              GestureDetector(
+                                            child: Obx(
+                                              () => GestureDetector(
                                                 onTap: () {
-                                                  if( channelController
+                                                  if (channelController
                                                       .selectedChannelList
                                                       .any((item) =>
-                                                  item.name ==
-                                                      scController
-                                                          .cList[index]
-                                                          .name)) {
-                                                   channelController.removeFromCart(scController
-                                                       .cList[index]);
-                                                   }else{
-                                                    channelController.addToFavorite(
-                                                        scController
-                                                            .cList[index]);
+                                                          item.name ==
+                                                          scController
+                                                              .cList[index]
+                                                              .name)) {
+                                                    channelController
+                                                        .removeFromCart(
+                                                            scController
+                                                                .cList[index]);
+                                                  } else {
+                                                    channelController
+                                                        .addToFavorite(
+                                                            scController
+                                                                .cList[index]);
                                                   }
                                                 },
                                                 child: Icon(
@@ -172,11 +175,10 @@ class _SearchScreenState extends State<SearchScreen> {
                                         Center(
                                           child: Column(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
+                                                MainAxisAlignment.spaceEvenly,
                                             children: [
                                               CustomFastCacheNetworkImage(
-                                                url: scController
-                                                        .cList[index]
+                                                url: scController.cList[index]
                                                         .imageUrl ??
                                                     '',
                                                 width: 45.w,
