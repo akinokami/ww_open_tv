@@ -121,92 +121,149 @@ class _PlayerScreenState extends State<PlayerScreen> {
         body: Padding(
           padding:
               fullscreen ? EdgeInsets.zero : const EdgeInsets.only(top: 32.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              YoYoPlayer(
-                aspectRatio: 16 / 9,
-                url:
-                    // 'https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.webm',
-                    // "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
-                    widget.channelModel?.url ?? "",
-                //"https://sfux-ext.sfux.info/hls/chapter/105/1588724110/1588724110.m3u8",
-                allowCacheFile: true,
-                onCacheFileCompleted: (files) {
-                  print('Cached file length ::: ${files?.length}');
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                YoYoPlayer(
+                  aspectRatio: 16 / 9,
+                  url:
+                      // 'https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.webm',
+                      // "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+                      widget.channelModel?.url ?? "",
+                  //"https://sfux-ext.sfux.info/hls/chapter/105/1588724110/1588724110.m3u8",
+                  allowCacheFile: true,
+                  onCacheFileCompleted: (files) {
+                    print('Cached file length ::: ${files?.length}');
 
-                  if (files != null && files.isNotEmpty) {
-                    for (var file in files) {
-                      print('File path ::: ${file.path}');
+                    if (files != null && files.isNotEmpty) {
+                      for (var file in files) {
+                        print('File path ::: ${file.path}');
+                      }
                     }
-                  }
-                },
-                onCacheFileFailed: (error) {
-                  print('Cache file error ::: $error');
-                },
-                videoStyle: const VideoStyle(
-                  qualityStyle: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white,
+                  },
+                  onCacheFileFailed: (error) {
+                    print('Cache file error ::: $error');
+                  },
+                  videoStyle: const VideoStyle(
+                    qualityStyle: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
+                    ),
+                    forwardAndBackwardBtSize: 30.0,
+                    playButtonIconSize: 40.0,
+                    fullScreenIconColor: Colors.black,
+                    playIcon: Icon(
+                      Icons.play_circle_outline,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    pauseIcon: Icon(
+                      Icons.pause_circle_outline,
+                      size: 40.0,
+                      color: Colors.white,
+                    ),
+                    videoQualityPadding: EdgeInsets.all(5.0),
+                    showLiveDirectButton: true,
+                    // enableSystemOrientationsOverride: false,
                   ),
-                  forwardAndBackwardBtSize: 30.0,
-                  playButtonIconSize: 40.0,
-                  fullScreenIconColor: Colors.black,
-                  playIcon: Icon(
-                    Icons.play_circle_outline,
-                    size: 40.0,
-                    color: Colors.white,
-                  ),
-                  pauseIcon: Icon(
-                    Icons.pause_circle_outline,
-                    size: 40.0,
-                    color: Colors.white,
-                  ),
-                  videoQualityPadding: EdgeInsets.all(5.0),
-                  showLiveDirectButton: true,
-                  // enableSystemOrientationsOverride: false,
-                ),
-                videoLoadingStyle: const VideoLoadingStyle(
-                  loading: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image(
-                          image: AssetImage('assets/images/launcher.webp'),
-                          fit: BoxFit.fitHeight,
-                          height: 50,
-                        ),
-                        SizedBox(height: 16.0),
-                        Text("Loading video..."),
-                      ],
+                  videoLoadingStyle: const VideoLoadingStyle(
+                    loading: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/launcher.webp'),
+                            fit: BoxFit.fitHeight,
+                            height: 50,
+                          ),
+                          SizedBox(height: 16.0),
+                          Text("Loading video..."),
+                        ],
+                      ),
                     ),
                   ),
+                  onFullScreen: (value) {
+                    setState(() {
+                      if (fullscreen != value) {
+                        fullscreen = value;
+                      }
+                    });
+                  },
                 ),
-                onFullScreen: (value) {
-                  setState(() {
-                    if (fullscreen != value) {
-                      fullscreen = value;
-                    }
-                  });
-                },
-              ),
-              kSizedBoxH20,
-              if(widget.fromScreen!='favorite')  Padding(
-                padding: EdgeInsets.all(8.w),
-                child: CustomText(
-                  text: "Related Videos",
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.bold,
+                kSizedBoxH20,
+              Container(
+                margin: EdgeInsets.all(8.w),
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: cardColor,
+                  borderRadius: BorderRadius.circular(10.r),
+
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:  EdgeInsets.all(8.w),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width*.6,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CustomText(text: "channel_name".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor),
+                            CustomText(text: widget.channelModel?.name??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.all(8.w),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width*.6,
+                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CustomText(text: "country".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor,),
+                            CustomText(text: widget.channelModel?.countryCode??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.all(8.w),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width*.6,
+                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CustomText(text: "category_label".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor),
+                            CustomText(text: widget.channelModel?.category??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            if(widget.fromScreen!='favorite')  CustomRelatedChannel(
-                fromScreen: widget.fromScreen,
-                channelModel: widget.channelModel ?? ChannelModel(),
-                relatedChannelList: widget.channelList ?? [],
-              )
-            ],
+
+                if(widget.fromScreen!='favorite')  Padding(
+                  padding: EdgeInsets.all(8.w),
+                  child: CustomText(
+                    text: "related_channels".tr,
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              if(widget.fromScreen!='favorite')  CustomRelatedChannel(
+                  fromScreen: widget.fromScreen,
+                  channelModel: widget.channelModel ?? ChannelModel(),
+                  relatedChannelList: widget.channelList ?? [],
+                )
+              ],
+            ),
           ),
         ),
       ),
