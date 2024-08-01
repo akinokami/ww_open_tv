@@ -10,9 +10,10 @@ import '../../models/channel_model.dart';
 import '../channels/player_screen.dart';
 
 class ViewAllScreen extends StatelessWidget {
-  const ViewAllScreen({super.key, required this.label, required this.channelList});
-final String label;
-final List<ChannelModel> channelList;
+  const ViewAllScreen(
+      {super.key, required this.label, required this.channelList});
+  final String label;
+  final List<ChannelModel> channelList;
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
@@ -30,91 +31,86 @@ final List<ChannelModel> channelList;
         children: [
           Expanded(
             child: channelList.isNotEmpty
-                  ? GridView.builder(
-                gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 0.w,
-                    mainAxisSpacing: 0.h,
-                    childAspectRatio: 1.4),
-                itemCount: channelList.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: (){
-                      Get.to(() => PlayerScreen(
-                        fromScreen: 'view_all',
-                        channelModel: channelList[index],
-                          channelList: channelList));
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 150.w,
-                        padding: EdgeInsets.all(10.w),
-                        decoration: BoxDecoration(
-                            color: cardColor,
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(10.r))),
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              top: 0.h,
-                              right: 0.w,
-                              child: Obx(()=>
-                                  GestureDetector(
-                                    onTap: () {
-
-                                      channelController.addToFavorite(
-                                          channelList[index]);
-
-
-                                    },
-                                    child: Icon(
-                                      Icons.favorite,
-
-                                      color:channelController.selectedChannelList.any((element) => element.name==channelList[index].name)? Colors.red:  whiteColor,
-                                      size: 20.w,
+                ? GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 0.w,
+                        mainAxisSpacing: 0.h,
+                        childAspectRatio: 1.4),
+                    itemCount: channelList.length,
+                    itemBuilder: (context, index) {
+                      return GestureDetector(
+                        onTap: () {
+                          Get.offAll(() => PlayerScreen(
+                              fromScreen: 'view_all',
+                              channelModel: channelList[index],
+                              channelList: channelList));
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 150.w,
+                            padding: EdgeInsets.all(10.w),
+                            decoration: BoxDecoration(
+                                color: cardColor,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10.r))),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  top: 0.h,
+                                  right: 0.w,
+                                  child: Obx(
+                                    () => GestureDetector(
+                                      onTap: () {
+                                        channelController
+                                            .addToFavorite(channelList[index]);
+                                      },
+                                      child: Icon(
+                                        Icons.favorite,
+                                        color: channelController
+                                                .selectedChannelList
+                                                .any((element) =>
+                                                    element.name ==
+                                                    channelList[index].name)
+                                            ? Colors.red
+                                            : whiteColor,
+                                        size: 20.w,
+                                      ),
                                     ),
                                   ),
-                              ),
-                            ),
-                            Center(
-                              child: Column(
-                                mainAxisAlignment:
-                                MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  CustomFastCacheNetworkImage(
-                                    url: channelList[index]
-                                        .imageUrl ??
-                                        '',
-                                    width: 45.w,
-                                    height: 42.h,
+                                ),
+                                Center(
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      CustomFastCacheNetworkImage(
+                                        url: channelList[index].imageUrl ?? '',
+                                        width: 45.w,
+                                        height: 42.h,
+                                      ),
+                                      CustomText(
+                                        text: channelList[index].name ?? '',
+                                        color: blackTextColor,
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.bold,
+                                        maxLines: 3,
+                                      ),
+                                    ],
                                   ),
-                                  CustomText(
-                                    text: channelList[
-                                    index]
-                                        .name ??
-                                        '',
-                                    color: blackTextColor,
-                                    fontSize: 10.sp,
-                                    fontWeight: FontWeight.bold,
-                                    maxLines: 3,
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ),
-                  );
-                },
-              )
-                  : Center(
-                child: CustomText(text: 'no_data_found'.tr),
-              ),
-            ),
-
+                      );
+                    },
+                  )
+                : Center(
+                    child: CustomText(text: 'no_data_found'.tr),
+                  ),
+          ),
         ],
       ),
     );
