@@ -97,7 +97,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
               color: Colors.white,
             ),
             videoQualityPadding: EdgeInsets.all(5.0),
-            // showLiveDirectButton: true,
+             showLiveDirectButton: true,
             // enableSystemOrientationsOverride: false,
           ),
           videoLoadingStyle: const VideoLoadingStyle(
