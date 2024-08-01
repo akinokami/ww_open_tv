@@ -261,7 +261,7 @@ List<ChannelModel> channelList = [
     countryCode: 'at',
     name: 'Red Bull TV',
     url: 'https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8',
-    imageUrl: 'https://i.postimg.cc/8c78JM28/image.png',
+    imageUrl: '',
     category: 'sports',
   ),
   ChannelModel(
@@ -1741,14 +1741,14 @@ List<ChannelModel> channelList = [
   ),
 
   ///Nigeria ng
-  ChannelModel(
-    countryCode: 'ng',
-    name: 'AfroSport Nigeria',
-    url: 'https://newproxy3.vidivu.tv/vidivu_afrosport/index.m3u8',
-    imageUrl:
-        'https://pbs.twimg.com/profile_images/1451668129042599936/Uh-Z6Sh1_400x400.jpg',
-    category: 'sports',
-  ),
+  // ChannelModel(
+  //   countryCode: 'ng',
+  //   name: 'AfroSport Nigeria',
+  //   url: 'https://newproxy3.vidivu.tv/vidivu_afrosport/index.m3u8',
+  //   imageUrl:
+  //       'https://pbs.twimg.com/profile_images/1451668129042599936/Uh-Z6Sh1_400x400.jpg',
+  //   category: 'sports',
+  // ),
   ChannelModel(
     countryCode: 'ng',
     name: 'AMusic Channel',
