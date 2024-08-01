@@ -33,13 +33,20 @@ List<ChannelModel> channelList = [
   ),
   ChannelModel(
     countryCode: 'af',
-    name: 'Sharq Radio TV',
-    url:
-        'https://59nyqa5elwap-hls-live.5centscdn.com/Sharq/eec89088ee408b80387155272b113256.sdp/playlist.m3u8',
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sharq_TV_Logo_2020.jpg/440px-Sharq_TV_Logo_2020.jpg',
-    category: 'general',
+    name: 'Tamadon TV',
+    url: 'https://hls.tamadon.live/hls/stream.m3u8',
+    imageUrl: 'https://i.imgur.com/edGyj5H.png',
+    category: 'news',
   ),
+  // ChannelModel(
+  //   countryCode: 'af',
+  //   name: 'Sharq Radio TV',
+  //   url:
+  //       'https://59nyqa5elwap-hls-live.5centscdn.com/Sharq/eec89088ee408b80387155272b113256.sdp/playlist.m3u8',
+  //   imageUrl:
+  //       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sharq_TV_Logo_2020.jpg/440px-Sharq_TV_Logo_2020.jpg',
+  //   category: 'general',
+  // ),
 
   //Albania
   ChannelModel(
