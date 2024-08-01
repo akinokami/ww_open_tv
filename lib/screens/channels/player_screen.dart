@@ -206,6 +206,17 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 12.w),
                   child: CustomText(
+                    text: "description".tr,
+                    maxLines: 4,
+                    fontSize: 12.sp,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                kSizedBoxH20,
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12.w),
+                  child: CustomText(
                       text: "info".tr,
                       fontSize: 16.sp,
                       fontWeight: FontWeight.bold),

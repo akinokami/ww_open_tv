@@ -87,5 +87,6 @@ class EnLanguage {
     'channel_name': 'Channel Name :',
     'country': 'Country :',
     'category_label': 'Category :',
+    'description': 'Some channels may take a while to load as they have high quality streams. Please be patient.',
   };
 }
