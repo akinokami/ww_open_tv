@@ -65,7 +65,17 @@ flutter {
 }
 
 dependencies {
-    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    // implementation 'androidx.media3:media3-explayer:1.0.0-rc02'
-    // implementation 'androidx.media3:media3-ui:1.0.0-rc02'
+//     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+// //    implementation 'androidx.media3:media3-explayer:1.0.0-rc02'
+// //    implementation 'androidx.media3:media3-ui:1.0.0-rc02'
+//     implementation "androidx.media3:media3-exoplayer:1.3.1"
+//     implementation "androidx.media3:media3-exoplayer-dash:1.3.1"
+//     implementation "androidx.media3:media3-ui:1.3.1"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "androidx.constraintlayout:constraintlayout:2.1.0"
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.1'
+    implementation 'com.google.android.exoplayer:extension-ima:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.19.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
