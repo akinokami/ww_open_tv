@@ -29,7 +29,7 @@ List<ChannelModel> channelList = [
     url:
         'https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA2)/index.m3u8',
     imageUrl: 'https://rta.af/artmedia/2022/12/rta-logo-final-300x185.png',
-    category: '',
+    category: 'news',
   ),
   ChannelModel(
     countryCode: 'af',
