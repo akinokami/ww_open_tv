@@ -110,8 +110,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                 onTap: () {
                                   //some code here
                                   Get.to(() => PlayerScreen(
-                                      streammingUrl:
-                                          scController.cList[index].url ?? ""));
+                                      channelModel:
+                                          scController.cList[index]));
                                 },
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),

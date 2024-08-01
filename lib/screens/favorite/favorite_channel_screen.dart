@@ -71,9 +71,8 @@ class _FavoriteChannelScreenState extends State<FavoriteChannelScreen> {
                               onTap: () {
                                 //some code here
                                 Get.to(() => PlayerScreen(
-                                    streammingUrl: channelController
-                                            .selectedChannelList[index].url ??
-                                        ""));
+                                    channelModel: channelController
+                                            .selectedChannelList[index]));
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),

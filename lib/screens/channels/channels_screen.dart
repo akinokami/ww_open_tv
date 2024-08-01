@@ -186,9 +186,8 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                   onTap: () {
                                     //some code here
                                     Get.to(() => PlayerScreen(
-                                        streammingUrl: channelController
-                                                .filterList[index].url ??
-                                            ""));
+                                        channelModel: channelController
+                                                .filterList[index]));
                                     // Navigator.push(
                                     //     context,
                                     //     MaterialPageRoute(

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lecle_yoyo_player/lecle_yoyo_player.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
+import 'package:ww_open_tv/models/channel_model.dart';
+
+import '../../custom_widgets/custom_text.dart';
 
 class PlayerScreen extends StatefulWidget {
-  final String streammingUrl;
-  const PlayerScreen({super.key, required this.streammingUrl});
+
+  final ChannelModel channelModel;
+  const PlayerScreen({super.key, required this.channelModel});
 
   @override
   State<PlayerScreen> createState() => _PlayerScreenState();
@@ -44,7 +49,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
       appBar: fullscreen == false
           ? AppBar(
         backgroundColor:primaryColor,
-        title:const Text(''),
+        title: CustomText(text: widget.channelModel.name??"", fontSize: 16.sp, fontWeight: FontWeight.bold, ),
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -62,7 +67,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
           url:
           // 'https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.webm',
           // "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
-          widget.streammingUrl,
+          widget.channelModel.url??"",
           //"https://sfux-ext.sfux.info/hls/chapter/105/1588724110/1588724110.m3u8",
           allowCacheFile: true,
           onCacheFileCompleted: (files) {

@@ -42,8 +42,7 @@ final List<ChannelModel> channelList;
                   return GestureDetector(
                     onTap: (){
                       Get.to(() => PlayerScreen(
-                          streammingUrl: channelList[index].url ??
-                              ""));
+                          channelModel: channelList[index]));
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
