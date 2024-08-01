@@ -1,7 +1,7 @@
-import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player/video_player.dart';
+import 'package:lecle_yoyo_player/lecle_yoyo_player.dart';
+import 'package:ww_open_tv/constants/color_const.dart';
 
 class PlayerScreen extends StatefulWidget {
   final String streammingUrl;
@@ -12,8 +12,7 @@ class PlayerScreen extends StatefulWidget {
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
-  late VideoPlayerController videoPlayerController;
-  late ChewieController chewieController;
+  bool fullscreen = false;
   bool isLoading = true;
 
   @override
@@ -25,24 +24,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
     ]);
-    videoPlayerController =
-        VideoPlayerController.networkUrl(Uri.parse(widget.streammingUrl))
-          ..initialize().then((_) {
-            setState(() {
-              isLoading = false;
-            });
-          }).catchError((error) {
-            setState(() {
-              isLoading = false;
-            });
-          });
 
-    chewieController = ChewieController(
-      videoPlayerController: videoPlayerController,
-      autoPlay: true,
-      looping: true,
-      aspectRatio: 16 / 9,
-    );
   }
 
   @override
@@ -52,65 +34,99 @@ class _PlayerScreenState extends State<PlayerScreen> {
       DeviceOrientation.portraitDown,
 
     ]);
-    videoPlayerController.dispose();
-    chewieController.dispose();
+
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        //title: const Text('Player'),
-      ),
-      body: isLoading
-          ? const Center(
-              child: CircularProgressIndicator(),
-            )
-          : Chewie(
-              controller: chewieController,
+      appBar: fullscreen == false
+          ? AppBar(
+        backgroundColor:primaryColor,
+        title:const Text(''),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      )
+          : null,
+      body: Padding(
+        padding:
+        fullscreen ? EdgeInsets.zero : const EdgeInsets.only(top: 32.0),
+        child: YoYoPlayer(
+          aspectRatio: 16 / 9,
+          url:
+          // 'https://dsqqu7oxq6o1v.cloudfront.net/preview-9650dW8x3YLoZ8.webm',
+          // "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+          widget.streammingUrl,
+          //"https://sfux-ext.sfux.info/hls/chapter/105/1588724110/1588724110.m3u8",
+          allowCacheFile: true,
+          onCacheFileCompleted: (files) {
+            print('Cached file length ::: ${files?.length}');
+
+            if (files != null && files.isNotEmpty) {
+              for (var file in files) {
+                print('File path ::: ${file.path}');
+              }
+            }
+          },
+          onCacheFileFailed: (error) {
+            print('Cache file error ::: $error');
+          },
+          videoStyle:  const VideoStyle(
+            qualityStyle: TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
             ),
+            forwardAndBackwardBtSize: 30.0,
+            playButtonIconSize: 40.0,
+            fullScreenIconColor:Colors.black,
+            playIcon: Icon(
+              Icons.play_circle_outline,
+              size: 40.0,
+              color: Colors.white,
+            ),
+            pauseIcon: Icon(
+              Icons.pause_circle_outline,
+              size: 40.0,
+              color: Colors.white,
+            ),
+            videoQualityPadding: EdgeInsets.all(5.0),
+            // showLiveDirectButton: true,
+            // enableSystemOrientationsOverride: false,
+          ),
+          videoLoadingStyle: const VideoLoadingStyle(
+            loading: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image(
+                    image: AssetImage('assets/images/launcher.webp'),
+                    fit: BoxFit.fitHeight,
+                    height: 50,
+                  ),
+                  SizedBox(height: 16.0),
+                  Text("Loading video..."),
+                ],
+              ),
+            ),
+          ),
+          onFullScreen: (value) {
+            setState(() {
+              if (fullscreen != value) {
+                fullscreen = value;
+              }
+            });
+          },
+        ),
+      ),
+
     );
   }
 }
-
-// import 'package:chewie/chewie.dart';
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import 'package:video_player/video_player.dart';
-
-// import '../../constants/color_const.dart';
-// import '../../controller/player_controller.dart';
-
-// class PlayerScreen extends StatelessWidget {
-//   const PlayerScreen({super.key, required this.url});
-// final String url;
-//   @override
-//   Widget build(BuildContext context) {
-//     final playerController = Get.put(PlayerController());
-//     playerController.initializePlayer(url);
-//     return Scaffold(
-//         backgroundColor: primaryColor,
-//         body: Column(
-//           children: [
-//             Expanded(
-//               child: Center(
-//                 child: Obx(() {
-//                   if(playerController.chewieController!.videoPlayerController.value.isInitialized){
-//                     return Chewie(
-//                       controller: playerController.chewieController!,
-
-//                     );
-//                   }else{
-//                     return const CircularProgressIndicator();
-//                   }
-
-
-//                 }
-//                 ),
-//               ),
-//             ),
-//           ],
-//         ));
-//   }
-// }
