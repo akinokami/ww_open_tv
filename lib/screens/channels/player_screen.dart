@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,6 +11,7 @@ import 'package:ww_open_tv/constants/dimen_const.dart';
 import 'package:ww_open_tv/controller/bottom_nav_controller.dart';
 import 'package:ww_open_tv/custom_widgets/custom_related_channel.dart';
 import 'package:ww_open_tv/data/channel_m3u8.dart';
+import 'package:ww_open_tv/data/country.dart';
 import 'package:ww_open_tv/models/channel_model.dart';
 import 'package:ww_open_tv/screens/categories/categories_screen.dart';
 import 'package:ww_open_tv/screens/channels/channels_screen.dart';
@@ -17,6 +20,7 @@ import 'package:ww_open_tv/screens/search/search_screen.dart';
 
 import '../../custom_widgets/custom_label_and_listview.dart';
 import '../../custom_widgets/custom_text.dart';
+import '../../models/country_model.dart';
 
 class PlayerScreen extends StatefulWidget {
   final List<ChannelModel>? channelList;
@@ -60,6 +64,15 @@ class _PlayerScreenState extends State<PlayerScreen> {
   @override
   Widget build(BuildContext context) {
     final navController = Get.put(BottomNavController());
+    List<dynamic> list = jsonDecode(countryJson);
+    List<CountryModel> countryList =
+        list.map((json) => CountryModel.fromJson(json)).toList();
+    String? countryName = countryList
+        .where((element) =>
+            (element.code)?.toLowerCase() == widget.channelModel?.countryCode)
+        .toList()
+        .first
+        .name;
     return WillPopScope(
       onWillPop: () async {
         return false;
@@ -85,8 +98,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               builder: (context) =>
                                   const BottomNavigationMenu()),
                           (route) => false);
-                    }
-                   else if (widget.fromScreen == 'search') {
+                    } else if (widget.fromScreen == 'search') {
                       navController.tabIndex.value = 2;
                       Navigator.pushAndRemoveUntil(
                           context,
@@ -94,28 +106,25 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               builder: (context) =>
                                   const BottomNavigationMenu()),
                           (route) => false);
-                    }
-                    else if (widget.fromScreen == 'channel') {
+                    } else if (widget.fromScreen == 'channel') {
                       navController.tabIndex.value = 1;
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                              const BottomNavigationMenu()),
-                              (route) => false);
-                    }
-                    else  {
+                                  const BottomNavigationMenu()),
+                          (route) => false);
+                    } else {
                       navController.tabIndex.value = 0;
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                              const BottomNavigationMenu()),
-                              (route) => false);
+                                  const BottomNavigationMenu()),
+                          (route) => false);
                     }
                   },
                 ),
-
               )
             : null,
         body: Padding(
@@ -194,74 +203,103 @@ class _PlayerScreenState extends State<PlayerScreen> {
                   },
                 ),
                 kSizedBoxH20,
-              Container(
-                margin: EdgeInsets.all(8.w),
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: cardColor,
-                  borderRadius: BorderRadius.circular(10.r),
-
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding:  EdgeInsets.all(8.w),
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width*.6,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CustomText(text: "channel_name".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor),
-                            CustomText(text: widget.channelModel?.name??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding:  EdgeInsets.all(8.w),
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width*.6,
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CustomText(text: "country".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor,),
-                            CustomText(text: widget.channelModel?.countryCode??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding:  EdgeInsets.all(8.w),
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width*.6,
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CustomText(text: "category_label".tr, fontSize: 12.sp, fontWeight: FontWeight.bold,color: greyColor),
-                            CustomText(text: widget.channelModel?.category??"", fontSize: 12.sp, fontWeight: FontWeight.bold),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
-                if(widget.fromScreen!='favorite')  Padding(
-                  padding: EdgeInsets.all(8.w),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12.w),
                   child: CustomText(
-                    text: "related_channels".tr,
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.bold,
+                      text: "info".tr,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 12.w),
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    color: cardColor,
+                    borderRadius: BorderRadius.circular(10.r),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(8.w),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width * .6,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CustomText(
+                                  text: "channel_name".tr,
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: greyColor),
+                              CustomText(
+                                  text: widget.channelModel?.name ?? "",
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.bold),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.w),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width * .6,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CustomText(
+                                text: "country".tr,
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.bold,
+                                color: greyColor,
+                              ),
+                              CustomText(
+                                  text: countryName ?? "",
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.bold),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(8.w),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width * .6,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CustomText(
+                                  text: "category_label".tr,
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: greyColor),
+                              CustomText(
+                                  text: widget.channelModel?.category ?? "",
+                                  fontSize: 12.sp,
+                                  fontWeight: FontWeight.bold),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              if(widget.fromScreen!='favorite')  CustomRelatedChannel(
-                  fromScreen: widget.fromScreen,
-                  channelModel: widget.channelModel ?? ChannelModel(),
-                  relatedChannelList: widget.channelList ?? [],
-                )
+                kSizedBoxH20,
+                if (widget.fromScreen != 'favorite')
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12.w),
+                    child: CustomText(
+                      text: "related_channels".tr,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                if (widget.fromScreen != 'favorite')
+                  CustomRelatedChannel(
+                    fromScreen: widget.fromScreen,
+                    channelModel: widget.channelModel ?? ChannelModel(),
+                    relatedChannelList: widget.channelList ?? [],
+                  )
               ],
             ),
           ),
