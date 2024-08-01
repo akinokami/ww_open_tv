@@ -1,7 +1,6 @@
-import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player/video_player.dart';
+import 'package:lecle_yoyo_player/lecle_yoyo_player.dart';
 
 class PlayerScreen extends StatefulWidget {
   final String streammingUrl;
@@ -12,8 +11,8 @@ class PlayerScreen extends StatefulWidget {
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
-  late VideoPlayerController videoPlayerController;
-  late ChewieController chewieController;
+  // late VideoPlayerController videoPlayerController;
+  // late ChewieController chewieController;
   bool isLoading = true;
 
   @override
@@ -25,24 +24,24 @@ class _PlayerScreenState extends State<PlayerScreen> {
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
     ]);
-    videoPlayerController =
-        VideoPlayerController.networkUrl(Uri.parse(widget.streammingUrl))
-          ..initialize().then((_) {
-            setState(() {
-              isLoading = false;
-            });
-          }).catchError((error) {
-            setState(() {
-              isLoading = false;
-            });
-          });
-
-    chewieController = ChewieController(
-      videoPlayerController: videoPlayerController,
-      autoPlay: true,
-      looping: true,
-      aspectRatio: 16 / 9,
-    );
+    // videoPlayerController =
+    //     VideoPlayerController.networkUrl(Uri.parse(widget.streammingUrl))
+    //       ..initialize().then((_) {
+    //         setState(() {
+    //           isLoading = false;
+    //         });
+    //       }).catchError((error) {
+    //         setState(() {
+    //           isLoading = false;
+    //         });
+    //       });
+    //
+    // chewieController = ChewieController(
+    //   videoPlayerController: videoPlayerController,
+    //   autoPlay: true,
+    //   looping: true,
+    //   aspectRatio: 16 / 9,
+    // );
   }
 
   @override
@@ -52,8 +51,8 @@ class _PlayerScreenState extends State<PlayerScreen> {
       DeviceOrientation.portraitDown,
 
     ]);
-    videoPlayerController.dispose();
-    chewieController.dispose();
+    // videoPlayerController.dispose();
+    // chewieController.dispose();
     super.dispose();
   }
 
@@ -63,13 +62,20 @@ class _PlayerScreenState extends State<PlayerScreen> {
       appBar: AppBar(
         //title: const Text('Player'),
       ),
-      body: isLoading
-          ? const Center(
-              child: CircularProgressIndicator(),
-            )
-          : Chewie(
-              controller: chewieController,
-            ),
+      body:
+      // isLoading
+      //     ? const Center(
+      //         child: CircularProgressIndicator(),
+      //       ):
+      YoYoPlayer(
+        aspectRatio: 16 / 9,
+        url: widget.streammingUrl,
+        videoStyle: VideoStyle(),
+        videoLoadingStyle: VideoLoadingStyle(),
+      ),
+          // : Chewie(
+          //     controller: chewieController,
+          //   ),
     );
   }
 }

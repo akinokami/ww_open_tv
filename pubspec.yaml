@@ -46,6 +46,7 @@ dependencies:
   flutter_dropdown_search: ^0.0.4
   flutter_launcher_icons:
   fast_cached_network_image: ^1.2.0
+  lecle_yoyo_player: ^0.0.8
 
 dev_dependencies:
   flutter_test:
