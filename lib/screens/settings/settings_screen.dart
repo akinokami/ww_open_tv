@@ -42,7 +42,7 @@ class SettingsScreen extends StatelessWidget {
                   Get.to(const ChangeLanguageScreen());
                 },
                 child: Card(
-                    color: whiteColor,
+                    color: cardColor,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -102,7 +102,7 @@ class SettingsScreen extends StatelessWidget {
                   Get.to(const PrivacyPolicyScreen());
                 },
                 child: Card(
-                    color: whiteColor,
+                    color: cardColor,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -135,7 +135,7 @@ class SettingsScreen extends StatelessWidget {
               ),
               kSizedBoxH10,
               Card(
-                  color: whiteColor,
+                  color: cardColor,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
