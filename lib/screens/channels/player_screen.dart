@@ -286,6 +286,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 ),
                 kSizedBoxH20,
                 if (widget.fromScreen != 'favorite')
+                  ((widget.channelList?.length??0)>1 )?
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12.w),
                     child: CustomText(
@@ -293,7 +294,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                       fontSize: 16.sp,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
+                  ):Container(),
                 if (widget.fromScreen != 'favorite')
                   CustomRelatedChannel(
                     fromScreen: widget.fromScreen,
