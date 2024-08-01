@@ -12,10 +12,11 @@ import '../screens/channels/player_screen.dart';
 import 'custom_cache_network_image.dart';
 
 class CustomRelatedChannel extends StatelessWidget {
-  const CustomRelatedChannel({super.key, required this.relatedChannelList, required this.channelModel});
+  const CustomRelatedChannel({super.key, required this.relatedChannelList, required this.channelModel, required this.fromScreen});
 
   final List<ChannelModel> relatedChannelList;
   final ChannelModel channelModel;
+  final String fromScreen;
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
@@ -38,7 +39,7 @@ class CustomRelatedChannel extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => PlayerScreen(
-                                    fromScreen: 'custom_related',
+                                    fromScreen:fromScreen,
                                     channelModel: relatedChannelList[index],
                                     channelList: relatedChannelList)));
                         // Get.to(() => PlayerScreen(
