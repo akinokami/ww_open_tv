@@ -110,6 +110,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                 onTap: () {
                                   //some code here
                                   Get.to(() => PlayerScreen(
+                                      fromScreen: 'search',
+                                      channelList: scController.cList,
                                       channelModel:
                                           scController.cList[index]));
                                 },

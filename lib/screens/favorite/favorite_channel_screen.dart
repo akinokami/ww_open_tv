@@ -71,6 +71,9 @@ class _FavoriteChannelScreenState extends State<FavoriteChannelScreen> {
                               onTap: () {
                                 //some code here
                                 Get.to(() => PlayerScreen(
+                                  fromScreen: 'favorite',
+                                    channelList: channelController
+                                        .selectedChannelList,
                                     channelModel: channelController
                                             .selectedChannelList[index]));
                               },

@@ -42,7 +42,9 @@ final List<ChannelModel> channelList;
                   return GestureDetector(
                     onTap: (){
                       Get.to(() => PlayerScreen(
-                          channelModel: channelList[index]));
+                        fromScreen: 'view_all',
+                        channelModel: channelList[index],
+                          channelList: channelList));
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),

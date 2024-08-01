@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -186,6 +188,8 @@ class _ChannelScreenState extends State<ChannelScreen> {
                                   onTap: () {
                                     //some code here
                                     Get.to(() => PlayerScreen(
+                                      fromScreen: 'channel',
+                                        channelList: channelController.filterList,
                                         channelModel: channelController
                                                 .filterList[index]));
                                     // Navigator.push(
