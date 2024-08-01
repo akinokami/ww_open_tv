@@ -2465,27 +2465,27 @@ List<ChannelModel> channelList = [
     category: 'family',
   ),
 
-  //Philippines ph
-  ChannelModel(
-    countryCode: 'ph',
-    name: 'MYX Philippines',
-    url: 'https://myxnola-abscbn-ono.amagi.tv/index.m3u8',
-    imageUrl: 'https://i.imgur.com/pbHuUuV.png',
-    category: 'music',
-  ),
-  ChannelModel(
-    countryCode: 'ph',
-    name: 'Great Commission TV',
-    url: 'http://45.32.115.103/live/livestream/index.m3u8',
-    imageUrl: 'https://i.imgur.com/8cvikOo.png',
-    category: '',
-  ),
-  ChannelModel(
-    countryCode: 'ph',
-    name: 'Cinema One',
-    url: 'https://cinemaone-abscbn-ono.amagi.tv/index.m3u8',
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Cinema_One_2013_logo.svg/512px-Cinema_One_2013_logo.svg.png',
-    category: 'movies',
-  ),
+  // //Philippines ph
+  // ChannelModel(
+  //   countryCode: 'ph',
+  //   name: 'MYX Philippines',
+  //   url: 'https://myxnola-abscbn-ono.amagi.tv/index.m3u8',
+  //   imageUrl: 'https://i.imgur.com/pbHuUuV.png',
+  //   category: 'music',
+  // ),
+  // ChannelModel(
+  //   countryCode: 'ph',
+  //   name: 'Great Commission TV',
+  //   url: 'http://45.32.115.103/live/livestream/index.m3u8',
+  //   imageUrl: 'https://i.imgur.com/8cvikOo.png',
+  //   category: '',
+  // ),
+  // ChannelModel(
+  //   countryCode: 'ph',
+  //   name: 'Cinema One',
+  //   url: 'https://cinemaone-abscbn-ono.amagi.tv/index.m3u8',
+  //   imageUrl:
+  //       'https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Cinema_One_2013_logo.svg/512px-Cinema_One_2013_logo.svg.png',
+  //   category: 'movies',
+  // ),
 ];
