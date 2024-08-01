@@ -23,7 +23,7 @@ class CustomRelatedChannel extends StatelessWidget {
     final channelController = Get.put(ChannelController());
     final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding:  EdgeInsets.symmetric(horizontal: 6.w),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
