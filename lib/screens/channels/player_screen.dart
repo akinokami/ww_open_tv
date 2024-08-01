@@ -8,6 +8,10 @@ import 'package:ww_open_tv/constants/dimen_const.dart';
 import 'package:ww_open_tv/custom_widgets/custom_related_channel.dart';
 import 'package:ww_open_tv/data/channel_m3u8.dart';
 import 'package:ww_open_tv/models/channel_model.dart';
+import 'package:ww_open_tv/screens/categories/categories_screen.dart';
+import 'package:ww_open_tv/screens/channels/channels_screen.dart';
+import 'package:ww_open_tv/screens/favorite/favorite_channel_screen.dart';
+import 'package:ww_open_tv/screens/search/search_screen.dart';
 
 import '../../custom_widgets/custom_label_and_listview.dart';
 import '../../custom_widgets/custom_text.dart';
@@ -66,7 +70,29 @@ class _PlayerScreenState extends State<PlayerScreen> {
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () {
-                  Navigator.pop(context);
+                 switch (widget.fromScreen) {
+                    case 'custom':
+                      Get.to(CategoriesScreen());
+                      break;
+                    case 'custom_related':
+                      Get.to(CategoriesScreen());
+                      break;
+                    case 'view_all':
+                      Get.to(CategoriesScreen());
+                      break;
+                    case 'favorite':
+                      Get.to(FavoriteChannelScreen());
+                      break;
+                   case 'search':
+                     Get.to(SearchScreen());
+                     break;
+                   case 'channel':
+                     Get.to(ChannelScreen());
+                     break;
+                    default:
+                      Get.to(CategoriesScreen());
+                      break;
+                  }
                 },
               ),
             )
@@ -155,6 +181,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
               ),
             ),
             CustomRelatedChannel(
+              channelModel: widget.channelModel ?? ChannelModel(),
               relatedChannelList: widget.channelList ?? [],
             )
           ],
