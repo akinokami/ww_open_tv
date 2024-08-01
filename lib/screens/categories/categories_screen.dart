@@ -14,6 +14,7 @@ class CategoriesScreen extends StatelessWidget {
     final channelController = Get.put(ChannelController());
     var allChannels = channelList;
     var sportsChannels = allChannels.where((element) => element.category == "sports").toList();
+    var noGenreChannels = allChannels.where((element) => element.category == "").toList();
     var musicChannels = allChannels.where((element) => element.category == "music").toList();
     var movieChannels = allChannels.where((element) => element.category == "movies").toList();
     var religiousChannels = allChannels.where((element) => element.category == "religious").toList();
@@ -46,6 +47,7 @@ class CategoriesScreen extends StatelessWidget {
       body: ListView(
         children: [
        if(sportsChannels.isNotEmpty)  CustomLabelAndListView(label: "Sports", channelList: sportsChannels),
+          if(noGenreChannels.isNotEmpty) CustomLabelAndListView(label: "No Genre", channelList: noGenreChannels),
           if(musicChannels.isNotEmpty) CustomLabelAndListView(label: "Musics", channelList: musicChannels),
           if(movieChannels.isNotEmpty) CustomLabelAndListView(label: "Movies", channelList: movieChannels),
           if(religiousChannels.isNotEmpty) CustomLabelAndListView(label: "Religious", channelList: religiousChannels),
