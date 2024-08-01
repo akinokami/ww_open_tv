@@ -15,11 +15,11 @@ class CategoriesScreen extends StatelessWidget {
     var allChannels = channelList;
     var sportsChannels = allChannels.where((element) => element.category == "sports").toList();
     var noGenreChannels = allChannels.where((element) => element.category == "").toList();
+    var newsChannels = allChannels.where((element) => element.category == "news").toList();
     var musicChannels = allChannels.where((element) => element.category == "music").toList();
     var movieChannels = allChannels.where((element) => element.category == "movies").toList();
     var religiousChannels = allChannels.where((element) => element.category == "religious").toList();
     var educationChannels = allChannels.where((element) => element.category == "education").toList();
-    var newsChannels = allChannels.where((element) => element.category == "news").toList();
     var autoChannels = allChannels.where((element) => element.category == "auto").toList();
     var animationChannels = allChannels.where((element) => element.category == "animation").toList();
     var businessChannels = allChannels.where((element) => element.category == "business").toList();
