@@ -88,35 +88,35 @@ class ChangeLanguageScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Obx(
-                //   () => GestureDetector(
-                //     onTap: () {
-                //       languageController.changeLanguage("vi", "VN");
-                //     },
-                //     child: Card(
-                //       color: cardColor,
-                //       child: ListTile(
-                //         leading: Image.asset(
-                //           "assets/images/vietnam.webp",
-                //           width: 20.w,
-                //           height: 20.h,
-                //         ),
-                //         title: CustomText(
-                //           text: "Tiếng Việt",
-                //           color: lightWhiteColor,
-                //         ),
-                //         trailing: Icon(
-                //           languageController.language.value == "vi"
-                //               ? Icons.check_circle
-                //               : Icons.check_circle_outline,
-                //           color: languageController.language.value == "vi"
-                //               ? secondaryColor
-                //               : lightWhiteColor,
-                //         ),
-                //       ),
-                //     ),
-                //   ),
-                // ),
+                Obx(
+                  () => GestureDetector(
+                    onTap: () {
+                      languageController.changeLanguage("vi", "VN");
+                    },
+                    child: Card(
+                      color: cardColor,
+                      child: ListTile(
+                        leading: Image.asset(
+                          "assets/images/vietnam.webp",
+                          width: 20.w,
+                          height: 20.h,
+                        ),
+                        title: CustomText(
+                          text: "Tiếng Việt",
+                          //color: lightWhiteColor,
+                        ),
+                        trailing: Icon(
+                          languageController.language.value == "vi"
+                              ? Icons.check_circle
+                              : Icons.check_circle_outline,
+                          color: languageController.language.value == "vi"
+                              ? secondaryColor
+                              : greyColor,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

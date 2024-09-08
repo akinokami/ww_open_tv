@@ -87,5 +87,6 @@ class ZhLanguage {
     'country': '國家 :',
     'category_label': '类别 :',
     'description': '某些频道可能需要一段时间才能加载，因为它们具有高质量的流。请耐心等待。',
+  'please_wait': '请稍候...',
   };
 }

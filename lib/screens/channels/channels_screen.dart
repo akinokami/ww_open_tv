@@ -59,7 +59,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
                       children: [
                         Text(
                             languageController.language.value == "en"
-                                ? Global.policyEn
+                                ? Global.policyEn :languageController.language.value == "vi"? Global.policyViet
                                 : Global.policyCn,
                             style: TextStyle(fontSize: 12.sp)),
                         Row(

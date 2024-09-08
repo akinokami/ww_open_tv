@@ -1,4 +1,4 @@
-package com.example.ww_open_tv
+package com.sport.various_tv
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine

@@ -158,7 +158,7 @@ class SettingsScreen extends StatelessWidget {
                       Padding(
                         padding:  EdgeInsets.symmetric(
                             horizontal: 10.w, vertical: 10.h),
-                        child: Text("1.0.0",
+                        child: Text("1.0.1",
                             style: TextStyle(
                                  fontSize: 12.sp)),
                       ),

@@ -1,4 +1,5 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
 import 'package:ww_open_tv/constants/dimen_const.dart';
 import 'package:ww_open_tv/custom_widgets/custom_text.dart';
@@ -27,7 +28,7 @@ class SplashScreen extends StatelessWidget {
               valueColor: AlwaysStoppedAnimation<Color>(secondaryColor),
             ),
             kSizedBoxH30,
-            const CustomText(text: 'Please wait......', ),
+             CustomText(text: 'please_wait'.tr, ),
           ],
         ),
       ),
