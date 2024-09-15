@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final splashScreenController = Get.put(SplashScreenController());
+    Get.put(SplashScreenController());
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -22,13 +22,19 @@ class SplashScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset("assets/images/launcher.webp",width: 100.w,height: 100.h,),
+            Image.asset(
+              "assets/images/launcher.webp",
+              width: 100.w,
+              height: 100.h,
+            ),
             kSizedBoxH30,
-             CircularProgressIndicator(
+            CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(secondaryColor),
             ),
             kSizedBoxH30,
-             CustomText(text: 'please_wait'.tr, ),
+            CustomText(
+              text: 'please_wait'.tr,
+            ),
           ],
         ),
       ),

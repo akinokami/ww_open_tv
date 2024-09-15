@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final box = GetStorage();
-    Global.language = box.read('language') ?? "vi";
+    Global.language = box.read('language') ?? "zh";
 
     return ScreenUtilInit(
       designSize: const Size(360, 690),

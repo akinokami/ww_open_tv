@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ww_open_tv/constants/color_const.dart';
 import 'package:ww_open_tv/custom_widgets/custom_text.dart';
-import 'package:ww_open_tv/screens/categories/view_all_screen.dart';
 
 import '../controller/channel_controller.dart';
 import '../models/channel_model.dart';
@@ -13,7 +10,11 @@ import '../screens/channels/player_screen.dart';
 import 'custom_cache_network_image.dart';
 
 class CustomRelatedChannel extends StatelessWidget {
-  const CustomRelatedChannel({super.key, required this.relatedChannelList, required this.channelModel, required this.fromScreen});
+  const CustomRelatedChannel(
+      {super.key,
+      required this.relatedChannelList,
+      required this.channelModel,
+      required this.fromScreen});
 
   final List<ChannelModel> relatedChannelList;
   final ChannelModel channelModel;
@@ -21,14 +22,15 @@ class CustomRelatedChannel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final channelController = Get.put(ChannelController());
-    final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
+    final isPortrait =
+        MediaQuery.of(context).orientation == Orientation.portrait;
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 6.w),
+      padding: EdgeInsets.symmetric(horizontal: 6.w),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-              height:isPortrait? 130.h:200.h,
+              height: isPortrait ? 130.h : 200.h,
               child: ListView.builder(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
@@ -41,7 +43,7 @@ class CustomRelatedChannel extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => PlayerScreen(
-                                    fromScreen:fromScreen,
+                                    fromScreen: fromScreen,
                                     channelModel: relatedChannelList[index],
                                     channelList: relatedChannelList)));
                         // Get.to(() => PlayerScreen(
@@ -52,8 +54,7 @@ class CustomRelatedChannel extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          width:isPortrait? 150.w:130.w,
-
+                          width: isPortrait ? 150.w : 130.w,
                           padding: EdgeInsets.all(10.w),
                           decoration: BoxDecoration(
                               color: cardColor,

@@ -8,6 +8,6 @@ class Languages extends Translations {
   Map<String, Map<String, String>> get keys => {
         'zh_CN': ZhLanguage().zhLanguage,
         'en_US': EnLanguage().enLanguage,
-         'vi_VN': ViLanguage().viLanguage,
+        'vi_VN': ViLanguage().viLanguage,
       };
 }

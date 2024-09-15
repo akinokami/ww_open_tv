@@ -15,7 +15,7 @@ class ChangeLanguageScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: primaryColor,
       appBar: AppBar(
-         // iconTheme: IconThemeData(color: lightWhiteColor),
+          // iconTheme: IconThemeData(color: lightWhiteColor),
           centerTitle: true,
           backgroundColor: primaryColor,
           title: CustomText(
@@ -43,7 +43,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                           width: 20.w,
                           height: 20.h,
                         ),
-                        title: CustomText(
+                        title: const CustomText(
                           text: "English",
                           //color: lightWhiteColor,
                         ),
@@ -72,7 +72,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                           width: 20.w,
                           height: 20.h,
                         ),
-                        title: CustomText(
+                        title: const CustomText(
                           text: "中国人",
                           //color: lightWhiteColor,
                         ),
@@ -101,7 +101,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                           width: 20.w,
                           height: 20.h,
                         ),
-                        title: CustomText(
+                        title: const CustomText(
                           text: "Tiếng Việt",
                           //color: lightWhiteColor,
                         ),
