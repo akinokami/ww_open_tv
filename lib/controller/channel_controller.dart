@@ -10,7 +10,6 @@ import '../data/channel_m3u8.dart';
 
 class ChannelController extends GetxController {
   final box = GetStorage();
-  RxList<ChannelModel> favList = <ChannelModel>[].obs;
   final fav = ''.obs;
   final selectedIndex = 0.obs;
   final selectedChannelList = <ChannelModel>[].obs;
